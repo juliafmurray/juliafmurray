@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="o-main">
+  <h1>Pre-gemification Jekyll build.</h1>
+  <ul class="c-blog-post-list">
+    {% for post in site.posts %}
+      <li class="c-blog-post-list__post">
+        <a href="{{ post.url}}">
+          <h2 class="c-blog-post-list__post--title">{{ post.title }}</h2>
+          <h3>{{ post.date | date: '%b %d %Y' }}</h2>
+          <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
