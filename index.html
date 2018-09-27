@@ -5,16 +5,16 @@ layout: default
 <div class="o-main">
   <h1>Julias Apprenticeship Blog</h1>
   <ul class="c-blog-post-list">
-    <!-- {% for post in site.posts %} -->
+    {% for post in site.posts %}
       <li class="c-blog-post-list__post">
-        <a href="http://www.juliafmurray.github.io/juliafmurray/blog/post/2018/09/26/accessibility.html">Post</a>
+        <!-- <a href="http://www.juliafmurray.github.io/juliafmurray/blog/post/2018/09/26/accessibility.html">Post</a> -->
 
 
-        <!-- <a href="{{post.url}}">
+         <a href="{{post.url}}">
           <h2 class="c-blog-post-list__post--title">{{ post.title }}</h2>
           <h3>{{ post.date | date: '%b %d %Y' }}</h2>
           <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
-        </a> -->
+        </a>
 
       </li>
     {% endfor %}
