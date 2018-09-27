@@ -17,4 +17,4 @@ github_username:  juliafmurray
 # Build settings
 markdown: kramdown
 
-theme: jekyll-bare
+theme: jekyll-theme-slate
