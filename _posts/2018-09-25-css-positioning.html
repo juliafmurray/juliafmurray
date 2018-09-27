@@ -1,0 +1,174 @@
+---
+layout: post
+title:  "Post 2.1"
+date:   2018-09-25
+categories: blog post
+---
+
+<header>
+  <h1>CSS Positioning</h1>
+</header>
+<br>
+
+    <p>
+    The <code>position</code> property specifies the type of positioning method used for an element. The position
+    types are <code>static</code> <code>relative</code> <code>fixed</code> <code>absolute</code> and <code>sticky.</code><br>
+    </p>
+<div class ="positions">
+
+<div class="content">
+<h2>Static</h2>
+    <p>
+    HTML elements are positioned <code>static</code> by default. Static positioned elements are not affected by the <code>top</code>
+    <code>bottom</code> <code>left</code> and <code>right</code> properties. An element with position: <code>static</code> is
+    not positioned in any special way; it is always positioned according to the normal flow of the page:
+    </p>
+      <code>
+        .block1<br>
+        {<br>
+        padding: 15px;<br>
+        background-color: red;<br>
+        height: 90px;<br>
+        <span style="color:red">position: static;</span><br>
+        }<br>
+      </code>
+
+      <div class="static1">static</div>
+      <div class="middle"></div>
+      <div class="right"></div>
+</div>
+
+<div class="content">
+<h2>Relative</h2>
+    <p>
+    An element with <code>position: relative;</code> is positioned relative to its normal position. Setting the <code>top</code>
+    <code>right</code> <code>bottom</code> and <code>left</code> properties of a relatively-positioned element will cause
+    it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+    </p>
+
+    <code>
+    .block1<br>
+    {<br>
+    padding: 15px;<br>
+    background-color: red;<br>
+    height: 90px;<br>
+    <span style="color:red">position: relative;</span><br>
+    <span style="color:red">left: 30px;</span><br>
+    }<br>
+    </code>
+
+    <div class="relative1">relative</div>
+    <div class="middle"></div>
+    <div class="right"></div>
+</div>
+
+<div class="content">
+<h2>Fixed</h2>
+  <p>
+    An element with <code>position: fixed;</code> is positioned relative to the viewport, which means it always stays in the
+    same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+    A fixed element does not leave a gap in the page where it would normally have been located.
+  </p>
+
+  <code>
+    .block1<br>
+    {<br>
+    padding: 15px;<br>
+    background-color: red;<br>
+    height: 90px;<br>
+    <span style="color:red">position: fixed;</span><br>
+    <span style="color:red">bottom: 0;</span><br>
+    <span style="color:red">right: 0;</span><br>
+    }<br>
+  </code>
+
+  <div class="fixed1">fixed</div>
+  <div class="middle"></div>
+  <div class="right"></div>
+</div>
+
+<div class="content">
+<h2>Sticky</h2>
+  <p>
+  An element with <code>position: sticky;</code> is positioned based on the user's scroll position. A sticky element toggles
+  between relative and fixed, depending on the scroll position. It is positioned <code>relative</code> until a given offset
+  position is met in the viewport - then it "sticks" in place (like position:fixed).
+  </p>
+
+  <code>
+    .box1<br>
+    {<br>
+    width: 100px;<br>
+    height: 100px;<br>
+    <span style="color:red">position: sticky;</span><br>
+    <span style="color:red">top: 0;</span><br>
+    <span style="color:red">border: 2px solid #4CAF50;</span><br>
+    }<br>
+  </code>
+
+  <div class="sticky">sticky</div>
+  <div class="middle"></div>
+  <div class="right"></div>
+</div>
+
+<div class="content">
+<h2>Absolute</h2>
+  <p>
+    An element with <code>position: absolute;</code> is positioned relative to the nearest positioned ancestor
+    (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no
+    positioned ancestors, it uses the document body, and moves along with page scrolling.
+  </p>
+
+  <code>
+    .block1<br>
+    {<br>
+    padding: 15px;<br>
+    background-color: red;<br>
+    height: 90px;<br>
+    <span style="color:red">position: relative;</span><br>
+    }<br>
+  </code>
+
+  <code>
+    .block2<br>
+    {<br>
+    padding: 15px;<br>
+    background-color: white;<br>
+    height: 90px;<br>
+    <span style="color:red">position: absolute;</span><br>
+    <span style="color:red">top: 80px;</span><br>
+    <span style="color:red">right: 0;</span><br>
+    }<br>
+  </code>
+
+  <div class="absolute1">relative</div>
+  <div class="absolute2">absolute</div>
+  <div class="right"></div>
+</div>
+
+<div class="content">
+    <h3>Z Index</h3>
+    <p>
+    When elements are positioned, they can overlap other elements. The <code>z-index</code> property specifies the stack order
+    of an element (which element should be placed in front of, or behind, the others). An element can have a positive or
+    negative stack order.
+    </p>
+
+    <code>
+      .block1<br>
+      {<br>
+      padding: 15px;<br>
+      background-color: pink;<br>
+      height: 90px;<br>
+      position: absolute;<br>
+      left: 50px;<br>
+      top: 2300px;<br>
+      z-index: 1;<br>
+      }<br>
+    </code>
+
+  <div class="zindex1">z-index</div>
+  <div class="middle"></div>
+  <div class="right"></div>
+</div>
+</div>

@@ -1,51 +1,855 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Julias Design Apprenticeship Blog</title>
+    <description>This blog contains Julia Murrays learnings during her Design Apprenticeship at 8th Light. 
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Sep 2018 13:19:56 -0500</pubDate>
-    <lastBuildDate>Fri, 21 Sep 2018 13:19:56 -0500</lastBuildDate>
+    <pubDate>Thu, 27 Sep 2018 14:11:35 -0500</pubDate>
+    <lastBuildDate>Thu, 27 Sep 2018 14:11:35 -0500</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
-        <title>Project Mercury</title>
-        <description>&lt;p&gt;Quick rundown of the system&lt;/p&gt;
+        <title>Post 2.2</title>
+        <description>&lt;header&gt;
+  &lt;h1&gt;Web Accessibility&lt;/h1&gt;
+&lt;/header&gt;
+&lt;br&gt;
+    &lt;h2&gt;What is Web Accessibility&lt;/h2&gt;
+    &lt;p&gt;
+      Web accessibility is the practice of building (design and developing) websites and other digital products so that users of
+      all abilities can access them. The Web Content Accessibility Guidelines (WCAG) provides a standard on how to do this and
+      provides a success criteria of A, AA, and AAA. A success criteria is essentially a measure for the level of complaiance
+      a website or application holds itself to.
+    &lt;/p&gt;
+    &lt;br&gt;
+      &lt;h3&gt;Inaccessible websites create barriers for users who are/have:&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+        Blind or low vision
+        &lt;/li&gt;
+        &lt;li&gt;
+        Deaf or Hearing Impaired
+        &lt;/li&gt;
+        &lt;li&gt;
+        Cognitative disabilities
+        &lt;/uli&gt;
+        &lt;li&gt;
+        Limited motor skills
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br&gt;
+    &lt;h3&gt;Why Should We Care?&lt;/h3&gt;
+    &lt;p&gt;
+      Often times companies brush of accessibility as unnecessary. Remarks such as &quot;Those arent our users&quot; and &quot;We've always
+      done it this way&quot; are common rationals for keeping up with the status quo. In a perfect world we should all genuinely
+      care about all users, including those with disabilities. Fortunately, there are several benefits to accessibility
+      besides that fuzzy feeling you get when you're a decent human being.
+    &lt;/p&gt;
+    &lt;p&gt;
+      To put it simply: accessibilty means good business. For example, if a site uses proper things like image alt attributes,
+      title and header tags and html semantic markup, it returns better SEO results. Another factor is that most people
+      at some point in their lives experience become disabled, even temporarily. Often times, most people
+      will have difficulty viewing screens after lasik eye surgery. Broswer features like high contrast mode allow users to
+      view screens with less strain on their eyes. Lastly, designing for accessibility safeguards your client against legal
+      ramifications for non-complaince. If your client works in areas of the government, healthcare or airlines they are
+      are most likely legally bound to adhere to WCAG. Even if they are outside these industries, they are still vulnerable
+      to lawsuits. &lt;a href=&quot;https://www.boia.org/blog/2018s-flood-of-accessibility-lawsuits&quot;&gt;Among others in 2018&lt;/a&gt;, giants like
+      Amazon and Nike have come under attack for non-compliance.
+      &lt;/table&gt;
+    &lt;/p&gt;
+    &lt;br&gt;
 
+    &lt;h3&gt;Start by Starting&lt;/h3&gt;
+    &lt;p&gt;
+      Creating and implementing accessible digital products has 3 contributing parties: design (UX/visual), development and
+      business. If you and/or your company is new to web accessibility, it can seem pretty intimidating to start. As a designer,
+      your advantage is that you have influence from the very begining on implementing accessibity into your digital product.
+      Up next well go through some very easy steps in order to start designing for accessibility and its benefits.
+    &lt;/p&gt;
+
+    &lt;h2&gt;Make sure your colors meet contrast ratios&lt;/h2&gt;
+      &lt;a href=&quot;http://www.getstark.co/&quot;&gt;Stark sketch plugin&lt;/a&gt;
+      &lt;a href=&quot;http://contrast-finder.tanaguru.com/&quot;&gt;Tanaguru contrast checker&lt;/a&gt;
+
+    &lt;h2&gt;Don’t use color alone to communicate&lt;/h2&gt;
+    &lt;a href=&quot;https://medium.com/intrepid-s-insights/designing-for-and-with-color-blindness-48392aab3d87&quot;&gt;Stark sketch plugin&lt;/a&gt;
+
+    &lt;h2&gt;Design focus states for all ui components and allow for keyboard navigation&lt;/h2&gt;
+    &lt;a href=&quot;https://designsystem.digital.gov/components/form-controls/&quot;&gt;focus states&lt;/a&gt;
+
+    &lt;h2&gt;Don't confuse placeholder text for form labels&lt;/h2&gt;
+    &lt;a href=&quot;https://material.io/design/components/text-fields.html&quot;&gt;Googles material design forms&lt;/a&gt;
+
+    &lt;h2&gt;Use alt text for non-text components&lt;/h2&gt;
+
+    &lt;a href=&quot;https://www.microsoft.com/design/inclusive/&quot;&gt;Microsoft voice-over all text&lt;/a&gt;
+
+    &lt;h2&gt;Use semantic markup for headings in your HTML&lt;/h2&gt;
+
+    &lt;a href=&quot;https://type-scale.com/&quot;&gt;type scale&lt;/a&gt;&quot;
 </description>
-        <pubDate>Tue, 31 Oct 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/jekyll/update/2017/10/31/project-mercury.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2017/10/31/project-mercury.html</guid>
+        <pubDate>Wed, 26 Sep 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/post/2018/09/26/accessibility.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/post/2018/09/26/accessibility.html</guid>
         
         
-        <category>jekyll</category>
+        <category>blog</category>
         
-        <category>update</category>
+        <category>post</category>
         
       </item>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Post 2.1</title>
+        <description>&lt;header&gt;
+  &lt;h1&gt;CSS Positioning&lt;/h1&gt;
+&lt;/header&gt;
+&lt;br&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+    &lt;p&gt;
+    The &lt;code&gt;position&lt;/code&gt; property specifies the type of positioning method used for an element. The position
+    types are &lt;code&gt;static&lt;/code&gt; &lt;code&gt;relative&lt;/code&gt; &lt;code&gt;fixed&lt;/code&gt; &lt;code&gt;absolute&lt;/code&gt; and &lt;code&gt;sticky.&lt;/code&gt;&lt;br&gt;
+    &lt;/p&gt;
+&lt;div class =&quot;positions&quot;&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;h2&gt;Static&lt;/h2&gt;
+    &lt;p&gt;
+    HTML elements are positioned &lt;code&gt;static&lt;/code&gt; by default. Static positioned elements are not affected by the &lt;code&gt;top&lt;/code&gt;
+    &lt;code&gt;bottom&lt;/code&gt; &lt;code&gt;left&lt;/code&gt; and &lt;code&gt;right&lt;/code&gt; properties. An element with position: &lt;code&gt;static&lt;/code&gt; is
+    not positioned in any special way; it is always positioned according to the normal flow of the page:
+    &lt;/p&gt;
+      &lt;code&gt;
+        .block1&lt;br&gt;
+        {&lt;br&gt;
+        padding: 15px;&lt;br&gt;
+        background-color: red;&lt;br&gt;
+        height: 90px;&lt;br&gt;
+        &lt;span style=&quot;color:red&quot;&gt;position: static;&lt;/span&gt;&lt;br&gt;
+        }&lt;br&gt;
+      &lt;/code&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+      &lt;div class=&quot;static1&quot;&gt;static&lt;/div&gt;
+      &lt;div class=&quot;middle&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;h2&gt;Relative&lt;/h2&gt;
+    &lt;p&gt;
+    An element with &lt;code&gt;position: relative;&lt;/code&gt; is positioned relative to its normal position. Setting the &lt;code&gt;top&lt;/code&gt;
+    &lt;code&gt;right&lt;/code&gt; &lt;code&gt;bottom&lt;/code&gt; and &lt;code&gt;left&lt;/code&gt; properties of a relatively-positioned element will cause
+    it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+    &lt;/p&gt;
 
+    &lt;code&gt;
+    .block1&lt;br&gt;
+    {&lt;br&gt;
+    padding: 15px;&lt;br&gt;
+    background-color: red;&lt;br&gt;
+    height: 90px;&lt;br&gt;
+    &lt;span style=&quot;color:red&quot;&gt;position: relative;&lt;/span&gt;&lt;br&gt;
+    &lt;span style=&quot;color:red&quot;&gt;left: 30px;&lt;/span&gt;&lt;br&gt;
+    }&lt;br&gt;
+    &lt;/code&gt;
+
+    &lt;div class=&quot;relative1&quot;&gt;relative&lt;/div&gt;
+    &lt;div class=&quot;middle&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;content&quot;&gt;
+&lt;h2&gt;Fixed&lt;/h2&gt;
+  &lt;p&gt;
+    An element with &lt;code&gt;position: fixed;&lt;/code&gt; is positioned relative to the viewport, which means it always stays in the
+    same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+    A fixed element does not leave a gap in the page where it would normally have been located.
+  &lt;/p&gt;
+
+  &lt;code&gt;
+    .block1&lt;br&gt;
+    {&lt;br&gt;
+    padding: 15px;&lt;br&gt;
+    background-color: red;&lt;br&gt;
+    height: 90px;&lt;br&gt;
+    &lt;span style=&quot;color:red&quot;&gt;position: fixed;&lt;/span&gt;&lt;br&gt;
+    &lt;span style=&quot;color:red&quot;&gt;bottom: 0;&lt;/span&gt;&lt;br&gt;
+    &lt;span style=&quot;color:red&quot;&gt;right: 0;&lt;/span&gt;&lt;br&gt;
+    }&lt;br&gt;
+  &lt;/code&gt;
+
+  &lt;div class=&quot;fixed1&quot;&gt;fixed&lt;/div&gt;
+  &lt;div class=&quot;middle&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;content&quot;&gt;
+&lt;h2&gt;Sticky&lt;/h2&gt;
+  &lt;p&gt;
+  An element with &lt;code&gt;position: sticky;&lt;/code&gt; is positioned based on the user's scroll position. A sticky element toggles
+  between relative and fixed, depending on the scroll position. It is positioned &lt;code&gt;relative&lt;/code&gt; until a given offset
+  position is met in the viewport - then it &quot;sticks&quot; in place (like position:fixed).
+  &lt;/p&gt;
+
+  &lt;code&gt;
+    .box1&lt;br&gt;
+    {&lt;br&gt;
+    width: 100px;&lt;br&gt;
+    height: 100px;&lt;br&gt;
+    &lt;span style=&quot;color:red&quot;&gt;position: sticky;&lt;/span&gt;&lt;br&gt;
+    &lt;span style=&quot;color:red&quot;&gt;top: 0;&lt;/span&gt;&lt;br&gt;
+    &lt;span style=&quot;color:red&quot;&gt;border: 2px solid #4CAF50;&lt;/span&gt;&lt;br&gt;
+    }&lt;br&gt;
+  &lt;/code&gt;
+
+  &lt;div class=&quot;sticky&quot;&gt;sticky&lt;/div&gt;
+  &lt;div class=&quot;middle&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;content&quot;&gt;
+&lt;h2&gt;Absolute&lt;/h2&gt;
+  &lt;p&gt;
+    An element with &lt;code&gt;position: absolute;&lt;/code&gt; is positioned relative to the nearest positioned ancestor
+    (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no
+    positioned ancestors, it uses the document body, and moves along with page scrolling.
+  &lt;/p&gt;
+
+  &lt;code&gt;
+    .block1&lt;br&gt;
+    {&lt;br&gt;
+    padding: 15px;&lt;br&gt;
+    background-color: red;&lt;br&gt;
+    height: 90px;&lt;br&gt;
+    &lt;span style=&quot;color:red&quot;&gt;position: relative;&lt;/span&gt;&lt;br&gt;
+    }&lt;br&gt;
+  &lt;/code&gt;
+
+  &lt;code&gt;
+    .block2&lt;br&gt;
+    {&lt;br&gt;
+    padding: 15px;&lt;br&gt;
+    background-color: white;&lt;br&gt;
+    height: 90px;&lt;br&gt;
+    &lt;span style=&quot;color:red&quot;&gt;position: absolute;&lt;/span&gt;&lt;br&gt;
+    &lt;span style=&quot;color:red&quot;&gt;top: 80px;&lt;/span&gt;&lt;br&gt;
+    &lt;span style=&quot;color:red&quot;&gt;right: 0;&lt;/span&gt;&lt;br&gt;
+    }&lt;br&gt;
+  &lt;/code&gt;
+
+  &lt;div class=&quot;absolute1&quot;&gt;relative&lt;/div&gt;
+  &lt;div class=&quot;absolute2&quot;&gt;absolute&lt;/div&gt;
+  &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;content&quot;&gt;
+    &lt;h3&gt;Z Index&lt;/h3&gt;
+    &lt;p&gt;
+    When elements are positioned, they can overlap other elements. The &lt;code&gt;z-index&lt;/code&gt; property specifies the stack order
+    of an element (which element should be placed in front of, or behind, the others). An element can have a positive or
+    negative stack order.
+    &lt;/p&gt;
+
+    &lt;code&gt;
+      .block1&lt;br&gt;
+      {&lt;br&gt;
+      padding: 15px;&lt;br&gt;
+      background-color: pink;&lt;br&gt;
+      height: 90px;&lt;br&gt;
+      position: absolute;&lt;br&gt;
+      left: 50px;&lt;br&gt;
+      top: 2300px;&lt;br&gt;
+      z-index: 1;&lt;br&gt;
+      }&lt;br&gt;
+    &lt;/code&gt;
+
+  &lt;div class=&quot;zindex1&quot;&gt;z-index&lt;/div&gt;
+  &lt;div class=&quot;middle&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
-        <pubDate>Fri, 07 Apr 2017 12:48:59 -0500</pubDate>
-        <link>http://localhost:4000/jekyll/update/2017/04/07/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2017/04/07/welcome-to-jekyll.html</guid>
+        <pubDate>Tue, 25 Sep 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/post/2018/09/25/css-positioning.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/post/2018/09/25/css-positioning.html</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>post</category>
+        
+      </item>
+    
+      <item>
+        <title>Post 1.2</title>
+        <description>&lt;header&gt;
+  &lt;h1&gt;css positioning&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;section&gt;
+&lt;h3&gt;Metadata Content&lt;/h3&gt;
+  &lt;code&gt;base&lt;/code&gt;
+    Determines the base url for all links. When a link goes off to an external site this element has to appear before it.&lt;br&gt;
+  &lt;code&gt;link&lt;/code&gt;
+    Used to connect a document to an external resource such as external stylesheets.&lt;br&gt;
+  &lt;code&gt;meta&lt;/code&gt;
+    Specifies all the metadata within the html document, like author, description or keywords.
+    This information is not visible on the page.&lt;br&gt;
+  &lt;code&gt;noscript&lt;/code&gt;
+    If there are disabled scripts or issues with browser support &lt;code&gt;noscript&lt;/code&gt; allows for alternate content.
+    It can be used in the &lt;code&gt;body&lt;/code&gt; and the &lt;code&gt;head&lt;/code&gt;. If in the &lt;code&gt;head&lt;/code&gt;
+    elements are limited to &lt;code&gt;link&lt;/code&gt; &lt;code&gt;style&lt;/code&gt; and &lt;code&gt;meta&lt;/code&gt;.&lt;br&gt;
+  &lt;code&gt;script&lt;/code&gt;
+    Where scripts instructions are kept or link to external ones. Used to dynamically create block and/or
+    inline content&lt;br&gt;
+  &lt;code&gt;style&lt;/code&gt;
+    Defines style info in the document and specifies how different elements should be styled.&lt;br&gt;
+  &lt;code&gt;title&lt;/code&gt;
+    title of a document, specified in the &lt;code&gt;head&lt;/code&gt; section in an html document. The content entered
+    here appears in the browser toolbar, creates a title when the page is added to favorites and displays a title
+    in search engine results. &lt;br&gt;
+
+&lt;h3&gt;Flow Content&lt;/h3&gt;
+  &lt;code&gt;a&lt;/code&gt;
+    Defines something as a hyperlink; an interactive element that will take the user to another page.&lt;br&gt;
+  &lt;code&gt;abbr&lt;/code&gt;
+    Defines something as an abbreviation or an acronym&lt;br&gt;
+  &lt;code&gt;address&lt;/code&gt;
+    Contact info for the owner of a document&lt;br&gt;
+  &lt;code&gt;article&lt;/code&gt;
+    Defines an article in the document which could be a blog post, news story, comment, etc.&lt;br&gt;
+  &lt;code&gt;aside&lt;/code&gt;
+    Defines content aside from main content. Aside content should still be related to the main content.&lt;br&gt;
+  &lt;code&gt;audio&lt;/code&gt;
+    Defines audio content in the document. It accepts .mp3, .wav and .ogg&lt;br&gt;
+  &lt;code&gt;b&lt;/code&gt;
+    Styles text within the html to be bold.&lt;br&gt;
+  &lt;code&gt;bdi&lt;/code&gt;
+    Stands for bidirectional isolation. This is to take specific text and change the directionality from the direction of the text around it.&lt;br&gt;
+  &lt;code&gt;bdo&lt;/code&gt;
+    Overrides the text direction of the entire document.&lt;br&gt;
+  &lt;code&gt;blockquote&lt;/code&gt;
+    Will define content quoted from another source, and is usually indented.&lt;br&gt;
+  &lt;code&gt;br&lt;/code&gt;
+    Creates a break in a line of text. It’s an empty tag, so there is no closing tag.&lt;br&gt;
+  &lt;code&gt;button&lt;/code&gt;
+    Defines a clickable button. This can contain text or an image.&lt;br&gt;
+  &lt;code&gt;canvas&lt;/code&gt;
+    Is used as a container to draw graphics via a script in javascript. This is just a container, the ability to draw is in the javascript.&lt;br&gt;
+  &lt;code&gt;cite&lt;/code&gt;
+    Defines the title of work in art, literature, film, theater, etc.&lt;br&gt;
+  &lt;code&gt;code&lt;/code&gt;
+    Defines a piece of computer code.&lt;br&gt;
+  &lt;code&gt;data&gt;&lt;/code&gt;
+    This allows content to be translated to a machine readable value and also provides for a browser rendering that can be consumed by users.&lt;br&gt;
+  &lt;code&gt;datalist&lt;/code&gt;
+    Provides a list of predefined for an &lt;code&gt;input&lt;/code&gt; element. This allows for autocomplete via a dropdown.&lt;br&gt;
+  &lt;code&gt;del&lt;/code&gt;
+    Text that has been deleted from a document.&lt;br&gt;
+  &lt;code&gt;details&lt;/code&gt;
+    Allows user to show/hide details about something. The default of &lt;code&gt;details&lt;/code&gt; should be hidden unless the attribute is set to open.&lt;br&gt;
+  &lt;code&gt;dfm&lt;/code&gt;
+    Defines an instance of a term and is usually the first time the term is used in the document.&lt;br&gt;
+  &lt;code&gt;div&lt;/code&gt;
+    Creates a division within the html. Divs are used in css to style html or to do certain things in javascript.&lt;br&gt;
+  &lt;code&gt;dl&lt;/code&gt;
+    Description list, is used with &lt;code&gt;dd&lt;/code&gt; and &lt;code&gt;dt&lt;/code&gt;.&lt;br&gt;
+  &lt;code&gt;dt&lt;/code&gt;
+    Term/name description in a description list. Used with &lt;code&gt;dd&lt;/code&gt; and &lt;code&gt;dl&lt;/code&gt;.&lt;br&gt;
+  &lt;code&gt;em&lt;/code&gt;
+    Emphasized text.&lt;br&gt;
+  &lt;code&gt;embed&lt;/code&gt;
+    container for an external application or a plugin.&lt;br&gt;
+  &lt;code&gt;fieldset&lt;/code&gt;
+    used to group information within a form and creates a box around it.&lt;br&gt;
+  &lt;code&gt;figure&lt;/code&gt;
+    Specifies self contained content like an illustration, diagram, photos, etc.&lt;br&gt;
+  &lt;code&gt;footer&lt;/code&gt;
+    Footer of a document, has information it’s containing content like author, related links, site map, contact info, etc.&lt;br&gt;
+  &lt;code&gt;form&lt;/code&gt;
+    creates an html form that the user can interact with and enter an input. &lt;code&gt;input&lt;/code&gt; &lt;code&gt;textarea&lt;/code&gt; &lt;code&gt;button&lt;/code&gt; &lt;code&gt;select&lt;/code&gt; &lt;code&gt;option&lt;/code&gt; &lt;code&gt;optgroup&lt;/code&gt; &lt;code&gt;fieldset&lt;/code&gt; &lt;code&gt;label&lt;/code&gt; can all be contained in a form. &lt;code&gt;h1&lt;/code&gt;  to &lt;code&gt;h6&lt;/code&gt; Define html headings. H1 has the most importance, H6 has the least importance.&lt;br&gt;
+  &lt;code&gt;header&lt;/code&gt;
+    Has introductory content and/or navigation. It can contain &lt;code&gt;h1&lt;/code&gt; to &lt;code&gt;h6&lt;/code&gt;, logo or authorship info.&lt;br&gt;
+  &lt;code&gt;hr&lt;/code&gt;
+    defines a thematic break in content and is often used to visually separate content.&lt;br&gt;
+  &lt;code&gt;i&lt;/code&gt;
+    Identifies a shift in mood or tone within a set of text. Indicates a technical term, ship name, thought in a foreign language, etc. This should be rarely used, other options are &lt;code&gt;em&lt;/code&gt; &lt;code&gt;strong&lt;/code&gt; &lt;code&gt;mark&lt;/code&gt; &lt;code&gt;cite&lt;/code&gt; &lt;code&gt;dfn&lt;/code&gt;&lt;br&gt;
+  &lt;code&gt;iframe&lt;/code&gt;
+    defines an inline frame and embeds another document within the html.&lt;br&gt;
+  &lt;code&gt;img&lt;/code&gt;
+    Defines an image within the document. Has 2 required attributes, src and alt.
+    &lt;code&gt;img&lt;/code&gt; holds a space for the image. The actual image is linked to the document within
+    &lt;code&gt;a&lt;/code&gt; tag.&lt;br&gt;
+  &lt;code&gt;input&lt;/code&gt;
+    Used within the &lt;code&gt;form&lt;/code&gt; element, this allows user to input data into the form.&lt;br&gt;
+  &lt;code&gt;ins&lt;/code&gt;
+    Defines text that has been inserted into a document.&lt;br&gt;
+  &lt;code&gt;kpd&lt;/code&gt;
+    defines a keyboard input and is a phrase tag. Can be achieved with CSS.&lt;br&gt;
+  &lt;code&gt;label&lt;/code&gt;
+    Defines a label for an input field.&lt;br&gt;
+  &lt;code&gt;main&lt;/code&gt;
+    Specifies the main content of a document. There can only be one &lt;code&gt;main&lt;/code&gt; element per document.&lt;br&gt;
+  &lt;code&gt;map&lt;/code&gt;
+    Creates an image map, which is an image with clickable areas. Contains multiple &lt;code&gt;area&lt;/code&gt; elements.&lt;br&gt;
+  &lt;code&gt;mark&lt;/code&gt;
+    Will define a section of text you want to mark and highlights it.&lt;br&gt;
+  &lt;code&gt;math&lt;/code&gt;
+    The top element in MathML, a mathematical markup language, used as an XML application.
+  &lt;code&gt;meter&lt;/code&gt;
+    Defines a scaled measurement like a gauge or fractional value. Examples are disk usage, query result, etc.&lt;br&gt;
+  &lt;code&gt;nav&lt;/code&gt;
+    defines a set of navigation links.&lt;br&gt;
+  &lt;code&gt;noscript&lt;/code&gt;
+    If there are disabled scripts or issues with browser support &lt;code&gt;noscript&lt;/code&gt; allows for alternate content. It can be used in the &lt;code&gt;body&lt;/code&gt; and the &lt;code&gt;head&lt;/code&gt;. If in the &lt;code&gt;head&lt;/code&gt; elements are limited to &lt;code&gt;link&lt;/code&gt; &lt;code&gt;style&lt;/code&gt; and &lt;code&gt;meta&lt;/code&gt;.&lt;br&gt;
+  &lt;code&gt;object&lt;/code&gt;
+    Identifies embedded objects in the document such as audio, video, javascript, pdf, other web pages, etc.&lt;br&gt;
+  &lt;code&gt;ol&lt;/code&gt;
+    specifies an ordered list and can be either numeric or alphabetical. Used with &lt;code&gt;li&lt;/code&gt;&lt;br&gt;
+  &lt;code&gt;optgroup&lt;/code&gt;
+    used to create groups of data in a dropdown list, each group with its own label.&lt;br&gt;
+  &lt;code&gt;output&lt;/code&gt;
+    Shows the result of a calculation that is run by a script.&lt;br&gt;
+  &lt;code&gt;p&lt;/code&gt;
+    Paragraph&lt;br&gt;
+  &lt;code&gt;pre&lt;/code&gt;
+    Preformatted text that preserved line breaks and spaces within the html.&lt;br&gt;
+  &lt;code&gt;progress&lt;/code&gt;
+    Shows the progress as a task.&lt;br&gt;
+  &lt;code&gt;q&lt;/code&gt;
+    Short quotation.&lt;br&gt;
+  &lt;code&gt;ruby&lt;/code&gt;
+    specifies a ruby annotation. It’s attached to the main text to indicate the pronunciation or meaning on the text. Used with east asian typography.&lt;br&gt;
+  &lt;code&gt;s&lt;/code&gt;
+    Indicates content is not longer accurate.&lt;br&gt;
+  &lt;code&gt;samp&lt;/code&gt;
+    Defines sample output from computer program.&lt;br&gt;
+  &lt;code&gt;script&lt;/code&gt;
+    Where scripts instructions are kept or link to external ones. Used to dynamically create block and/or inline content&lt;br&gt;
+  &lt;code&gt;section&lt;/code&gt;
+    defines sections of a document like chapters headers or footers.&lt;br&gt;
+  &lt;code&gt;select&lt;/code&gt;
+    creates a drop down list. Used with &lt;code&gt;option&lt;/code&gt;&lt;br&gt;
+  &lt;code&gt;small&lt;/code&gt;
+    Defines smaller text or side comments.&lt;br&gt;
+  &lt;code&gt;span&lt;/code&gt;
+    Used to ground inline elements in a document.&lt;br&gt;
+  &lt;code&gt;strong&lt;/code&gt;
+    is a phrase tag that emphasizes important text.&lt;br&gt;
+  &lt;code&gt;sub&lt;/code&gt;
+    Allows for subscript text which appears half a character below the baseline of text.&lt;br&gt;
+  &lt;code&gt;sup&lt;/code&gt;
+    Allows for subscript text which appears half a character above the baseline of text.&lt;br&gt;
+  &lt;code&gt;svg&lt;/code&gt;
+    container for svg graphics which has many ways of drawing shapes, lines and images.&lt;br&gt;
+  &lt;code&gt;table&lt;/code&gt;
+    Creates an HTML table that contains &lt;code&gt;tr&lt;/code&gt; &lt;code&gt;th&lt;/code&gt; and &lt;code&gt;td&lt;/code&gt; and can also be as complex to include &lt;caption&gt; &lt;col&gt; &lt;colgroup&gt; &lt;thread&gt; &lt;tfoot&gt; &lt;tbody&gt;
+  &lt;code&gt;template&lt;/code&gt;
+    Allows content to be hidden from the user, and it won’t be rendered in the browser.&lt;br&gt;
+  &lt;code&gt;textarea&lt;/code&gt;
+    creates a multiline input control and can hold an unlimited number of characters.&lt;br&gt;
+  &lt;code&gt;time&lt;/code&gt;
+    human readable date or time. Can also encode dates/times in a machine readable way.&lt;br&gt;
+  &lt;code&gt;ul&lt;/code&gt;
+    defines an unordered, bulleted list. Each list item is defined by &lt;code&gt;li&lt;/code&gt;&lt;br&gt;
+  &lt;code&gt;var&lt;/code&gt;
+    phrase tage used to define a variable.&lt;br&gt;
+  &lt;code&gt;video&lt;/code&gt;
+    defines a video like a movie clip or video streaming. Files supported are .mp4, .ogg, .webm
+  &lt;code&gt;wbr&lt;/code&gt;
+    A position within text where the browser may optionally break a line, but not always at the location the element is in.
+    &lt;br&gt;
+
+&lt;h3&gt;Sectioning Content&lt;/h3&gt;
+  &lt;code&gt;article&lt;/code&gt;
+    Defines an article in the document which could be a blog post, news story, comment, etc.&lt;br&gt;
+  &lt;code&gt;aside&lt;/code&gt;
+    Defines content aside from main content. Aside content should still be related to the main content.&lt;br&gt;
+  &lt;code&gt;footer&lt;/code&gt;
+    Footer of a document, has information it’s containing content like author, related links, site map, contact info, etc.&lt;br&gt;
+  &lt;code&gt;header&lt;/code&gt;
+    Has introductory content and/or navigation. It can contain &lt;code&gt;h1&lt;/code&gt; to &lt;code&gt;h6&lt;/code&gt;, logo or authorship info.&lt;br&gt;
+  &lt;code&gt;nav&lt;/code&gt;
+    defines a set of navigation links.&lt;br&gt;
+  &lt;code&gt;section&lt;/code&gt;
+    defines sections of a document like chapters headers or footers.&lt;br&gt;
+    &lt;br&gt;
+
+&lt;h3&gt;Heading Content&lt;/h3&gt;
+  &lt;code&gt;h1&lt;/code&gt; &lt;code&gt;h2&lt;/code&gt; &lt;code&gt;h3&lt;/code&gt; &lt;code&gt;h4&lt;/code&gt; &lt;code&gt;h5&lt;/code&gt; &lt;code&gt;h6&lt;/code&gt;
+    Six levels of section headings. &lt;code&gt;h1&lt;/code&gt; is the highest section level and &lt;code&gt;h6&lt;/code&gt; is the lowest..&lt;br&gt;
+    &lt;br&gt;
+
+&lt;h3&gt;Phrasing Content&lt;/h3&gt;
+  &lt;code&gt;abbr&lt;/code&gt;
+    Defines something as an abbreviation or an acronym&lt;br&gt;
+  &lt;code&gt;audio&lt;/code&gt;
+    Defines audio content in the document. It accepts .mp3, .wav and .ogg&lt;br&gt;
+  &lt;code&gt;b&lt;/code&gt;
+    Styles text within the html to be bold.&lt;br&gt;
+  &lt;code&gt;bdo&lt;/code&gt;
+    overrides the text direction of the entire document.&lt;br&gt;
+  &lt;code&gt;br&lt;/code&gt;
+    Creates a break in a line of text. It’s an empty tag, so there is no closing tag.&lt;br&gt;
+  &lt;code&gt;button&lt;/code&gt;
+    defines a clickable button. This can contain text or an image.&lt;br&gt;
+  &lt;code&gt;canvas&lt;/code&gt;
+    is used as a container to draw graphics via a script in javascript. This is just a container, the ability to draw is in the javascript.&lt;br&gt;
+  &lt;code&gt;cite&lt;/code&gt;
+    Defines the title of work in art, literature, film, theater, etc.&lt;br&gt;
+  &lt;code&gt;code&lt;/code&gt;
+    defines a piece of computer code.&lt;br&gt;
+  &lt;code&gt;data&gt;&lt;/code&gt;
+    This allows content to be translated to a machine readable value and also provides for a browser rendering that can be consumed by users.&lt;br&gt;
+  &lt;code&gt;datalist&lt;/code&gt;
+    provides a list of predefined for an &lt;code&gt;input&lt;/code&gt; element. This allows for autocomplete via a dropdown.&lt;br&gt;
+  &lt;code&gt;dfn&lt;/code&gt;
+    Defines an instance of a term and is usually the first time the term is used in the document.&lt;br&gt;
+  &lt;code&gt;em&lt;/code&gt;
+    emphasized text.&lt;br&gt;
+  &lt;code&gt;embed&lt;/code&gt;
+    container for an external application or a plugin.&lt;br&gt;
+  &lt;code&gt;i&lt;/code&gt;
+    Identifies a shift in mood or tone within a set of text. Indicates a technical term, ship name, thought in a foreign language, etc. This should be rarely used, other options are &lt;code&gt;em&lt;/code&gt; &lt;code&gt;strong&lt;/code&gt; &lt;code&gt;mark&lt;/code&gt; &lt;code&gt;cite&lt;/code&gt; &lt;code&gt;dfn&lt;/code&gt;&lt;br&gt;
+  &lt;code&gt;iframe&lt;/code&gt;
+    defines an inline frame and embeds another document within the html.&lt;br&gt;
+  &lt;code&gt;img&lt;/code&gt;
+    Defines an image within the document. Has 2 required attributes, src and alt. &lt;code&gt;img&lt;/code&gt; holds a space for the image. The actual image is linked to the document within &lt;code&gt;a&lt;/code&gt; tag.&lt;br&gt;
+  &lt;code&gt;input&lt;/code&gt;
+    Used within the &lt;code&gt;form&lt;/code&gt; element, this allows user to input data into the form.&lt;br&gt;
+  &lt;code&gt;kbd&lt;/code&gt;
+    defines a keyboard input and is a phrase tag. Can be achieved with CSS.&lt;br&gt;
+  &lt;code&gt;label&lt;/code&gt;
+    Defines a label for an input field.&lt;br&gt;
+  &lt;code&gt;mark&lt;/code&gt;
+    Will define a section of text you want to mark and highlights it.&lt;br&gt;
+  &lt;code&gt;meter&lt;/code&gt;
+    Defines a scaled measurement like a gauge or fractional value. Examples are disk usage, query result, etc.&lt;br&gt;
+  &lt;code&gt;math&lt;/code&gt;
+    The top element in MathML, a mathematical markup language, used as an XML application.
+  &lt;code&gt;noscript&lt;/code&gt;
+    If there are disabled scripts or issues with browser support &lt;code&gt;noscript&lt;/code&gt; allows for alternate content. It can be used in the &lt;code&gt;body&lt;/code&gt; and the &lt;code&gt;head&lt;/code&gt;. If in the &lt;code&gt;head&lt;/code&gt; elements are limited to &lt;code&gt;link&lt;/code&gt; &lt;code&gt;style&lt;/code&gt; and &lt;code&gt;meta&lt;/code&gt;.&lt;br&gt;
+  &lt;code&gt;object&lt;/code&gt;
+    Identifies embedded objects in the document such as audio, video, javascript, pdf, other web pages, etc.&lt;br&gt;
+  &lt;code&gt;output&lt;/code&gt;
+    Shows the result of a calculation that is run by a script.&lt;br&gt;
+  &lt;code&gt;progress&lt;/code&gt;
+    Shows the progress as a task.&lt;br&gt;
+  &lt;code&gt;q&lt;/code&gt;
+    Short quotation.&lt;br&gt;
+  &lt;code&gt;small&lt;/code&gt;
+    Defines smaller text or side comments.&lt;br&gt;
+  &lt;code&gt;span&lt;/code&gt;
+    Used to ground inline elements in a document.&lt;br&gt;
+  &lt;code&gt;strong&lt;/code&gt;
+    is a phrase tag that emphasizes important text.&lt;br&gt;
+  &lt;code&gt;sub&lt;/code&gt;
+    Allows for subscript text which appears half a character below the baseline of text.&lt;br&gt;
+  &lt;code&gt;sup&lt;/code&gt;
+    Allows for subscript text which appears half a character above the baseline of text.&lt;br&gt;
+  &lt;code&gt;svg&lt;/code&gt;
+    container for svg graphics which has many ways of drawing shapes, lines and images.&lt;br&gt;
+  &lt;code&gt;textarea&lt;/code&gt; c
+    reates a multiline input control and can hold an unlimited number of characters.&lt;br&gt;
+  &lt;code&gt;time&lt;/code&gt;
+    human readable date or time. Can also encode dates/times in a machine readable way.&lt;br&gt;
+  &lt;code&gt;var&lt;/code&gt;
+    phrase tage used to define a variable.&lt;br&gt;
+  &lt;code&gt;video&lt;/code&gt;
+    defines a video like a movie clip or video streaming. Files supported are .mp4, .ogg, .webm
+  &lt;code&gt;wbr&lt;/code&gt;
+    A position within text where the browser may optionally break a line, but not always at the location the element is in.
+    &lt;br&gt;
+
+&lt;h3&gt;Embedded Content&lt;/h3&gt;
+  &lt;code&gt;audio&lt;/code&gt;
+    Defines audio content in the document. It accepts .mp3, .wav and .ogg&lt;br&gt;
+  &lt;code&gt;canvas&lt;/code&gt;
+    is used as a container to draw graphics via a script in javascript. This is just a container, the ability to draw is in the javascript.&lt;br&gt;
+  &lt;code&gt;embed&lt;/code&gt;
+    container for an external application or a plugin.&lt;br&gt;
+  &lt;code&gt;iframe&lt;/code&gt;
+    defines an inline frame and embeds another document within the html.&lt;br&gt;
+  &lt;code&gt;img&lt;/code&gt;
+    Defines an image within the document. Has 2 required attributes, src and alt. &lt;code&gt;img&lt;/code&gt; holds a space for the image. The actual image is linked to the document within &lt;code&gt;a&lt;/code&gt; tag.&lt;br&gt;
+  &lt;code&gt;math&lt;/code&gt;
+    The top element in MathML, a mathematical markup language, used as an XML application.
+  &lt;code&gt;object&lt;/code&gt;
+    Identifies embedded objects in the document such as audio, video, javascript, pdf, other web pages, etc.&lt;br&gt;
+  &lt;code&gt;svg&lt;/code&gt;
+    container for svg graphics which has many ways of drawing shapes, lines and images.&lt;br&gt;
+  &lt;code&gt;video&lt;/code&gt;
+    defines a video like a movie clip or video streaming. Files supported are .mp4, .ogg, .webm
+    &lt;br&gt;
+
+&lt;h3&gt;Interactive Content&lt;/h3&gt;
+  &lt;code&gt;a&lt;/code&gt;
+    Defines something as a hyperlink; an interactive element that will take the user to another page.&lt;br&gt;
+  &lt;code&gt;button&lt;/code&gt;
+    defines a clickable button. This can contain text or an image.&lt;br&gt;
+  &lt;code&gt;details&lt;/code&gt;
+    Allows user to show/hide details about something. The default of &lt;code&gt;details&lt;/code&gt; should be hidden unless the attribute is set to open.&lt;br&gt;
+  &lt;code&gt;embed&lt;/code&gt;
+    container for an external application or a plugin.&lt;br&gt;
+  &lt;code&gt;iframe&lt;/code&gt;
+    defines an inline frame and embeds another document within the html.&lt;br&gt;
+  &lt;code&gt;label&lt;/code&gt;
+    Defines a label for an input field.&lt;br&gt;
+  &lt;code&gt;select&lt;/code&gt;
+    creates a drop down list. Used with &lt;code&gt;option&lt;/code&gt;&lt;br&gt;
+  &lt;code&gt;textarea&lt;/code&gt;
+    creates a multiline input control and can hold an unlimited number of characters.&lt;br&gt;
+    &lt;br&gt;
+
+&lt;h3&gt;Form Associated Content&lt;/h3&gt;
+&lt;h4&gt;Listed&lt;/h4&gt;
+  &lt;code&gt;button&lt;/code&gt;
+    defines a clickable button. This can contain text or an image.&lt;br&gt;
+  &lt;code&gt;fieldset&lt;/code&gt;
+    used to group information within a form and creates a box around it.&lt;br&gt;
+  &lt;code&gt;input&lt;/code&gt;
+    Used within the &lt;code&gt;form&lt;/code&gt; element, this allows user to input data into the form.&lt;br&gt;
+  &lt;code&gt;object&lt;/code&gt;
+    Identifies embedded objects in the document such as audio, video, javascript, pdf, other web pages, etc.&lt;br&gt;
+  &lt;code&gt;output&lt;/code&gt;
+    Shows the result of a calculation that is run by a script.&lt;br&gt;
+  &lt;code&gt;select&lt;/code&gt;
+    creates a drop down list.&lt;br&gt;
+  &lt;code&gt;textarea&lt;/code&gt;
+    creates a multiline input control and can hold an unlimited number of characters.&lt;br&gt;
+    &lt;br&gt;
+
+&lt;h4&gt;Lableable&lt;/h4&gt;
+  &lt;code&gt;button&lt;/code&gt;
+    defines a clickable button. This can contain text or an image.&lt;br&gt;
+  &lt;code&gt;input&lt;/code&gt;
+    Used within the &lt;code&gt;form&lt;/code&gt; element, this allows user to input data into the form.&lt;br&gt;
+  &lt;code&gt;label&lt;/code&gt;
+    Defines a label for an input field.&lt;br&gt;
+  &lt;code&gt;meter&lt;/code&gt;
+    Defines a scaled measurement like a gauge or fractional value. Examples are disk usage, query result, etc.&lt;br&gt;
+  &lt;code&gt;output&lt;/code&gt;
+    Shows the result of a calculation that is run by a script.&lt;br&gt;
+  &lt;code&gt;progress&lt;/code&gt;
+    Shows the progress as a task.&lt;br&gt;
+  &lt;code&gt;select&lt;/code&gt;
+    creates a drop down list.&lt;br&gt;
+  &lt;code&gt;textarea&lt;/code&gt;
+    creates a multiline input control and can hold an unlimited number of characters.&lt;br&gt;
+    &lt;br&gt;
+
+&lt;h4&gt;Submitable&lt;/h4&gt;
+&lt;code&gt;button&lt;/code&gt;
+  defines a clickable button. This can contain text or an image.&lt;br&gt;
+&lt;code&gt;output&lt;/code&gt;
+  Shows the result of a calculation that is run by a script.&lt;br&gt;
+&lt;code&gt;select&lt;/code&gt;
+  creates a drop down list.&lt;br&gt;
+&lt;code&gt;textarea&lt;/code&gt;
+  creates a multiline input control and can hold an unlimited number of characters.&lt;br&gt;
+  &lt;br&gt;
+
+&lt;h4&gt;Resetable&lt;/h4&gt;
+&lt;code&gt;input&lt;/code&gt;
+  Used within the &lt;code&gt;form&lt;/code&gt; element, this allows user to input data into the form.&lt;br&gt;
+&lt;code&gt;output&lt;/code&gt;
+  Shows the result of a calculation that is run by a script.&lt;br&gt;
+&lt;code&gt;select&lt;/code&gt;
+  creates a drop down list.&lt;br&gt;
+&lt;code&gt;textarea&lt;/code&gt;
+  creates a multiline input control and can hold an unlimited number of characters.&lt;br&gt;
+  &lt;code&gt;button&lt;/code&gt;
+    defines a clickable button. This can contain text or an image.&lt;br&gt;
+  &lt;code&gt;fieldset&lt;/code&gt;
+    used to group information within a form and creates a box around it.&lt;br&gt;
+  &lt;code&gt;form&lt;/code&gt;
+    creates an html form that the user can interact with and enter an input. &lt;code&gt;input&lt;/code&gt; &lt;code&gt;textarea&lt;/code&gt; &lt;code&gt;button&lt;/code&gt; &lt;code&gt;select&lt;/code&gt; &lt;code&gt;option&lt;/code&gt; &lt;code&gt;optgroup&lt;/code&gt; &lt;code&gt;fieldset&lt;/code&gt; &lt;code&gt;label&lt;/code&gt; can all be contained in a form. &lt;code&gt;h1&lt;/code&gt;  to &lt;code&gt;h6&lt;/code&gt; Define html headings. H1 has the most importance, H6 has the least importance.&lt;br&gt;
+  &lt;code&gt;input&lt;/code&gt;
+    Used within the &lt;code&gt;form&lt;/code&gt; element, this allows user to input data into the form.&lt;br&gt;
+  &lt;code&gt;label&lt;/code&gt;
+    Defines a label for an input field.&lt;br&gt;
+  &lt;code&gt;meter&lt;/code&gt;
+    Defines a scaled measurement like a gauge or fractional value. Examples are disk usage, query result, etc.&lt;br&gt;
+  &lt;code&gt;object&lt;/code&gt;
+    Identifies embedded objects in the document such as audio, video, javascript, pdf, other web pages, etc.&lt;br&gt;
+  &lt;code&gt;output&lt;/code&gt;
+    Shows the result of a calculation that is run by a script.&lt;br&gt;
+  &lt;code&gt;progress&lt;/code&gt;
+    Shows the progress as a task.&lt;br&gt;
+  &lt;code&gt;select&lt;/code&gt;
+    creates a drop down list. Used with &lt;code&gt;option&lt;/code&gt;&lt;br&gt;
+  &lt;code&gt;textarea&lt;/code&gt;
+    creates a multiline input control and can hold an unlimited number of characters.&lt;br&gt;
+&lt;br&gt;
+
+&lt;details&gt;
+  &lt;summary&gt;
+      &lt;h3&gt;All Elements&lt;/h3&gt;
+  &lt;/summary&gt;
+&lt;code&gt;!--...--&lt;/code&gt; A way to make notes in the html without it affecting the actual document&lt;br&gt;
+&lt;code&gt;!DOCTYPE&lt;/code&gt; Defines the doc type
+&lt;code&gt;a&lt;/code&gt; Defines something as a hyperlink; an interactive element that will take the user to another page.&lt;br&gt;
+&lt;code&gt;abbr&lt;/code&gt; Defines something as an abbreviation or an acronym&lt;br&gt;
+&lt;code&gt;address&lt;/code&gt; Contact info for the owner of a document&lt;br&gt;
+&lt;code&gt;area&lt;/code&gt; Defines area inside of an image map which has clickable area in it. It’s always contained within a map element.&lt;br&gt;
+&lt;code&gt;article&lt;/code&gt; Defines an article in the document which could be a blog post, news story, comment, etc.&lt;br&gt;
+&lt;code&gt;aside&lt;/code&gt; Defines content aside from main content. Aside content should still be related to the main content.&lt;br&gt;
+&lt;code&gt;audio&lt;/code&gt; Defines audio content in the document. It accepts .mp3, .wav and .ogg&lt;br&gt;
+&lt;code&gt;b&lt;/code&gt; Styles text within the html to be bold.&lt;br&gt;
+&lt;code&gt;base&lt;/code&gt; Determines the base url for all links. When a link goes off to an external site this element has to appear before it.&lt;br&gt;
+&lt;code&gt;bdi&lt;/code&gt; Stands for bidirectional isolation. This is to take specific text and change the directionality from the direction of the text around it.&lt;br&gt;
+&lt;code&gt;bdo&lt;/code&gt; overrides the text direction of the entire document.&lt;br&gt;
+&lt;code&gt;blockquote&lt;/code&gt; Will define content quoted from another source, and is usually indented.&lt;br&gt;
+&lt;code&gt;body&lt;/code&gt; defines all the content within the html document. Everything in the body is visible to the user.&lt;br&gt;
+&lt;code&gt;br&lt;/code&gt; Creates a break in a line of text. It’s an empty tag, so there is no closing tag.&lt;br&gt;
+&lt;code&gt;button&lt;/code&gt; defines a clickable button. This can contain text or an image.&lt;br&gt;
+&lt;code&gt;canvas&lt;/code&gt; is used as a container to draw graphics via a script in javascript. This is just a container, the ability to draw is in the javascript.&lt;br&gt;
+&lt;code&gt;caption&lt;/code&gt; Lives within a &lt;code&gt;table&lt;/code&gt; and allows one caption per table.&lt;br&gt;
+&lt;code&gt;cite&lt;/code&gt; Defines the title of work in art, literature, film, theater, etc.&lt;br&gt;
+&lt;code&gt;code&lt;/code&gt; defines a piece of computer code.&lt;br&gt;
+&lt;code&gt;col&lt;/code&gt; Defines properties of a column within a &lt;code&gt;colgroup&lt;/code&gt;.&lt;br&gt;
+&lt;code&gt;colgroup&lt;/code&gt; defines formatting multiple columns within a table. &lt;br&gt;
+&lt;code&gt;data&gt;&lt;/code&gt;This allows content to be translated to a machine readable value and also provides for a browser rendering that can be consumed by users.&lt;br&gt;
+&lt;code&gt;datalist&lt;/code&gt;provides a list of predefined for an &lt;code&gt;input&lt;/code&gt; element. This allows for autocomplete via a dropdown.&lt;br&gt;
+&lt;code&gt;dd&lt;/code&gt; Allows for a term/name description list. It is used with &lt;code&gt;dl&lt;/code&gt; and &lt;code&gt;dt&lt;/code&gt;.&lt;br&gt;
+&lt;code&gt;del&lt;/code&gt; Text that has been deleted from a document.&lt;br&gt;
+&lt;code&gt;details&lt;/code&gt; Allows user to show/hide details about something. The default of &lt;code&gt;details&lt;/code&gt; should be hidden unless the attribute is set to open.&lt;br&gt;
+&lt;code&gt;dfm&lt;/code&gt; Defines an instance of a term and is usually the first time the term is used in the document.&lt;br&gt;
+&lt;code&gt;dialog&lt;/code&gt; creates a dialog box, often used for pop ups or modals.&lt;br&gt;
+&lt;code&gt;div&lt;/code&gt; creates a division within the html. Divs are used in css to style html or to do certain things in javascript.&lt;br&gt;
+&lt;code&gt;dl&lt;/code&gt; Description list, is used with &lt;code&gt;dd&lt;/code&gt; and &lt;code&gt;dt&lt;/code&gt;.&lt;br&gt;
+&lt;code&gt;dt&lt;/code&gt; term/name description in a description list. Used with &lt;code&gt;dd&lt;/code&gt; and &lt;code&gt;dl&lt;/code&gt;.&lt;br&gt;
+&lt;code&gt;em&lt;/code&gt; emphasized text.&lt;br&gt;
+&lt;code&gt;embed&lt;/code&gt; container for an external application or a plugin.&lt;br&gt;
+&lt;code&gt;fieldset&lt;/code&gt; used to group information within a form and creates a box around it.&lt;br&gt;
+&lt;code&gt;figcap&lt;/code&gt; Caption for a &lt;code&gt;figure&lt;/code&gt; element. Can be the first or last child of the element.&lt;br&gt;
+&lt;code&gt;figure&lt;/code&gt; Specifies self contained content like an illustration, diagram, photos, etc.&lt;br&gt;
+&lt;code&gt;footer&lt;/code&gt; Footer of a document, has information it’s containing content like author, related links, site map, contact info, etc.&lt;br&gt;
+&lt;code&gt;form&lt;/code&gt; creates an html form that the user can interact with and enter an input. &lt;code&gt;input&lt;/code&gt; &lt;code&gt;textarea&lt;/code&gt; &lt;code&gt;button&lt;/code&gt; &lt;code&gt;select&lt;/code&gt; &lt;code&gt;option&lt;/code&gt; &lt;code&gt;optgroup&lt;/code&gt; &lt;code&gt;fieldset&lt;/code&gt; &lt;code&gt;label&lt;/code&gt; can all be contained in a form. &lt;code&gt;h1&lt;/code&gt;  to &lt;code&gt;h6&lt;/code&gt; Define html headings. H1 has the most importance, H6 has the least importance.&lt;br&gt;
+&lt;code&gt;head&lt;/code&gt; Where all the metadata and other processing info is kept. &lt;code&gt;title&lt;/code&gt; &lt;code&gt;style&lt;/code&gt; &lt;code&gt;head&lt;/code&gt; Where all the metadata and other processing info is kept. &lt;code&gt;title&lt;/code&gt; &lt;code&gt;base&lt;/code&gt; &lt;code&gt;link&lt;/code&gt; &lt;code&gt;meta&lt;/code&gt; &lt;code&gt;script&lt;/code&gt; &lt;code&gt;noscript&lt;/code&gt; can all go in the head.&lt;br&gt;
+&lt;code&gt;link&lt;/code&gt; &lt;code&gt;meta&lt;/code&gt; &lt;code&gt;script&lt;/code&gt; &lt;code&gt;noscript&lt;/code&gt; can all go in the head.&lt;br&gt;
+&lt;code&gt;header&lt;/code&gt; Has introductory content and/or navigation. It can contain &lt;code&gt;h1&lt;/code&gt; to &lt;code&gt;h6&lt;/code&gt;, logo or authorship info.&lt;br&gt;
+&lt;code&gt;hr&lt;/code&gt; defines a thematic break in content and is often used to visually separate content.&lt;br&gt;
+&lt;code&gt;html&lt;/code&gt; identifies the document as html and communicates it to the browser. It contains all html elements except &lt;code&gt;!DOCTYPE&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;i&lt;/code&gt; Identifies a shift in mood or tone within a set of text. Indicates a technical term, ship name, thought in a foreign language, etc. This should be rarely used, other options are &lt;code&gt;em&lt;/code&gt; &lt;code&gt;strong&lt;/code&gt; &lt;code&gt;mark&lt;/code&gt; &lt;code&gt;cite&lt;/code&gt; &lt;code&gt;dfn&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;iframe&lt;/code&gt; defines an inline frame and embeds another document within the html.&lt;br&gt;
+&lt;code&gt;img&lt;/code&gt; Defines an image within the document. Has 2 required attributes, src and alt. &lt;code&gt;img&lt;/code&gt; holds a space for the image. The actual image is linked to the document within &lt;code&gt;a&lt;/code&gt; tag.&lt;br&gt;
+&lt;code&gt;input&lt;/code&gt; Used within the &lt;code&gt;form&lt;/code&gt; element, this allows user to input data into the form.&lt;br&gt;
+&lt;code&gt;ins&lt;/code&gt; Defines text that has been inserted into a document.&lt;br&gt;
+&lt;code&gt;kpd&lt;/code&gt; defines a keyboard input and is a phrase tag. Can be achieved with CSS.&lt;br&gt;
+&lt;code&gt;label&lt;/code&gt; Defines a label for an input field.&lt;br&gt;
+&lt;code&gt;legend&lt;/code&gt; for a &lt;code&gt;fieldset&lt;/code&gt; element.&lt;br&gt;
+&lt;code&gt;li&lt;/code&gt; Creates a list item and is used with &lt;code&gt;ul&lt;/code&gt;, &lt;code&gt;ol&lt;/code&gt; and &lt;code&gt;menu&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;link&lt;/code&gt; Used to connect a document to an external resource such as external stylesheets.&lt;br&gt;
+&lt;code&gt;main&lt;/code&gt; Specifies the main content of a document. There can only be one &lt;code&gt;main&lt;/code&gt; element per document.&lt;br&gt;
+&lt;code&gt;map&lt;/code&gt; Creates an image map, which is an image with clickable areas. Contains multiple &lt;code&gt;area&lt;/code&gt; elements.&lt;br&gt;
+&lt;code&gt;mark&lt;/code&gt; Will define a section of text you want to mark and highlights it.&lt;br&gt;
+&lt;code&gt;meta&lt;/code&gt; Specifies all the metadata within the html document, like author, description or keywords. This information is not visible on the page.&lt;br&gt;
+&lt;code&gt;meter&lt;/code&gt; Defines a scaled measurement like a gauge or fractional value. Examples are disk usage, query result, etc.&lt;br&gt;
+&lt;code&gt;nav&lt;/code&gt; defines a set of navigation links.&lt;br&gt;
+&lt;code&gt;noscript&lt;/code&gt; If there are disabled scripts or issues with browser support &lt;code&gt;noscript&lt;/code&gt; allows for alternate content. It can be used in the &lt;code&gt;body&lt;/code&gt; and the &lt;code&gt;head&lt;/code&gt;. If in the &lt;code&gt;head&lt;/code&gt; elements are limited to &lt;code&gt;link&lt;/code&gt; &lt;code&gt;style&lt;/code&gt; and &lt;code&gt;meta&lt;/code&gt;.&lt;br&gt;
+&lt;code&gt;object&lt;/code&gt; Identifies embedded objects in the document such as audio, video, javascript, pdf, other web pages, etc.&lt;br&gt;
+&lt;code&gt;ol&lt;/code&gt; specifies an ordered list and can be either numeric or alphabetical. Used with &lt;code&gt;li&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;optgroup&lt;/code&gt; used to create groups of data in a dropdown list, each group with its own label.&lt;br&gt;
+&lt;code&gt;option&lt;/code&gt; Defines objects in a select list/dropdown. Used with either &lt;code&gt;select&lt;/code&gt; or &lt;code&gt;datalist&lt;/code&gt;.&lt;br&gt;
+&lt;code&gt;output&lt;/code&gt; Shows the result of a calculation that is run by a script.&lt;br&gt;
+&lt;code&gt;p&lt;/code&gt; Paragraph&lt;br&gt;
+&lt;code&gt;param&lt;/code&gt; defines parameters for plugins embedded with &lt;code&gt;object&lt;/code&gt;.&lt;br&gt;
+&lt;code&gt;picture&lt;/code&gt; Allows for multiple designed images to be used depending on the browser viewport. You can use &lt;img&gt; or &lt;source&gt; tags with it.&lt;br&gt;
+&lt;code&gt;pre&lt;/code&gt; Preformatted text that preserved line breaks and spaces within the html.&lt;br&gt;
+&lt;code&gt;progress&lt;/code&gt; Shows the progress as a task.&lt;br&gt;
+&lt;code&gt;q&lt;/code&gt;Short quotation.&lt;br&gt;
+&lt;code&gt;rp&lt;/code&gt; Creates parentheses around a ruby text, shown by browsers that don’t support ruby annotations.&lt;br&gt;.
+&lt;code&gt;rt&lt;/code&gt; gives a ruby annotation that defines an explanation/pronunciation for east asian typography. Used with &lt;code&gt;ruby&lt;/code&gt; and &lt;code&gt;rt&lt;/code&gt;.&lt;br&gt;
+&lt;code&gt;ruby&lt;/code&gt; specifies a ruby annotation. It’s attached to the main text to indicate the pronunciation or meaning on the text. Used with east asian typography.&lt;br&gt;
+&lt;code&gt;s&lt;/code&gt; Indicates content is not longer accurate.&lt;br&gt;
+&lt;code&gt;samp&lt;/code&gt; Defines sample output from computer program.&lt;br&gt;
+&lt;code&gt;script&lt;/code&gt; Where scripts instructions are kept or link to external ones. Used to dynamically create block and/or inline content&lt;br&gt;
+&lt;code&gt;section&lt;/code&gt; defines sections of a document like chapters headers or footers.&lt;br&gt;
+&lt;code&gt;select&lt;/code&gt; creates a drop down list. Used with &lt;code&gt;option&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;small&lt;/code&gt; Defines smaller text or side comments.&lt;br&gt;
+&lt;code&gt;source&lt;/code&gt; The source tag is used to indicate multiple media resources like &lt;code&gt;video&lt;/code&gt; &lt;code&gt;audio&lt;/code&gt; and &lt;code&gt;picture&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;span&lt;/code&gt; Used to ground inline elements in a document.&lt;br&gt;
+&lt;code&gt;strong&lt;/code&gt; is a phrase tag that emphasizes important text.&lt;br&gt;
+&lt;code&gt;style&lt;/code&gt; defines style info in the document and specifies how different elements should be styled.&lt;br&gt;
+&lt;code&gt;sub&lt;/code&gt; Allows for subscript text which appears half a character below the baseline of text.&lt;br&gt;
+&lt;code&gt;summary&lt;/code&gt; creates a visible heading for the &lt;code&gt;details&lt;/code&gt; element.&lt;br&gt;
+&lt;code&gt;sup&lt;/code&gt; Allows for subscript text which appears half a character above the baseline of text.&lt;br&gt;
+&lt;code&gt;svg&lt;/code&gt; container for svg graphics which has many ways of drawing shapes, lines and images.&lt;br&gt;
+&lt;code&gt;table&lt;/code&gt; Creates an HTML table that contains &lt;code&gt;tr&lt;/code&gt; &lt;code&gt;th&lt;/code&gt; and &lt;code&gt;td&lt;/code&gt; and can also be as complex to include &lt;caption&gt; &lt;col&gt; &lt;colgroup&gt; &lt;thread&gt; &lt;tfoot&gt; &lt;tbody&gt;
+&lt;code&gt;tbody&lt;/code&gt; Body content in an html table.&lt;br&gt;
+&lt;code&gt;td&lt;/code&gt; standard cell within an html table. &lt;br&gt;
+&lt;code&gt;template&lt;/code&gt; Allows content to be hidden from the user, and it won’t be rendered in the browser.&lt;br&gt;
+&lt;code&gt;textarea&lt;/code&gt; creates a multiline input control and can hold an unlimited number of characters.&lt;br&gt;
+&lt;code&gt;tfoot&lt;/code&gt; groups footer content inside an html table.&lt;br&gt;
+&lt;code&gt;th&lt;/code&gt; header cell in an html table.&lt;br&gt;
+&lt;code&gt;thead&lt;/code&gt; groups header content inside an html table.&lt;br&gt;
+&lt;code&gt;time&lt;/code&gt; human readable date or time. Can also encode dates/times in a machine readable way.&lt;br&gt;
+&lt;code&gt;title&lt;/code&gt; title of a document, specified in the &lt;code&gt;head&lt;/code&gt; section in an html document. The content entered here appears in the browser toolbar, creates a title when the page is added to favorites and displays a title in search engine results.&lt;br&gt;
+&lt;code&gt;tr&lt;/code&gt; row in an html table.&lt;br&gt;
+&lt;code&gt;track&lt;/code&gt; text tracks for media elements, is visible when the media is playing.&lt;br&gt;
+&lt;code&gt;u&lt;/code&gt; Used for text that should be stylistically different. Usage should be avoided because its easily confused with a link.&lt;br&gt;
+&lt;code&gt;ul&lt;/code&gt; defines an unordered, bulleted list. Each list item is defined by &lt;code&gt;li&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;var&lt;/code&gt; phrase tage used to define a variable.&lt;br&gt;
+&lt;code&gt;video&lt;/code&gt; defines a video like a movie clip or video streaming. Files supported are .mp4, .ogg, .webm
+&lt;/details&gt;
+&lt;/section&gt;
+</description>
+        <pubDate>Fri, 21 Sep 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/post/2018/09/21/htmlelements.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/post/2018/09/21/htmlelements.html</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>post</category>
+        
+      </item>
+    
+      <item>
+        <title>Post 1.1</title>
+        <description>&lt;header&gt;
+  &lt;h1&gt;Apprenticeship Goals&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;section&gt;
+  &lt;p&gt;
+  This week I started my design apprenticeship at 8th Light. As I am at the beginning of my journey here, I have some thoughts about how I want to improve during my apprenticeship.
+  &lt;/p&gt;
+
+&lt;h2&gt;Where I’ve been&lt;/h2&gt;
+  &lt;p&gt;
+  I’m a native Texan where I come from a traditional graphic design background. I received my undergrad there, and instantly realized I couldn't stand the subjectivity of branding and art direction. My last year there I was fortunate enough to get an introduction to UX by taking some usability and app design courses, which changed everything for me. Shortly after graduating I moved with my (now) wife up to Chicago, where I started working as a Product Designer at Threadless.
+  There I got to work in a more generalist environment, doing research, ux, visual design and some front end on a platform called Artist Shops. I loved being able to have that focus on a single product and to have an impact on it through every step of our design process. Since then, I’ve been a contract UX Designer at some larger fortune 500 corporations, first at United Airlines and most recently at Blue Cross Blue Shield. The work that I’ve done in the past 2 years has given me valuable experience in conducting ux research, evidence based design, interaction design, accessibility and visual design.
+  &lt;/p&gt;
+
+&lt;h2&gt;Where I want to go&lt;/h2&gt;
+    &lt;p&gt;
+    I’ve noticed a common frustration in my experience as a designer: bad code limits access between humans and quality user experiences. This is common thing most professionals in the software world can understand. That sense of hopelessness you get as a designer when after months of research, white boarding and prototyping gets de-scoped into something unrecognizable. On the other hand,  developers often get handled a mock-up with zero documentation and functionality
+    that doesn’t exist within the current framework. I'm sure there are many reasons why this happens, but in the end, it's hard handoffs between design and development that makes users hate bad software.
+    &lt;/p&gt;
+
+    &lt;h4&gt;Front End Development&lt;/h4&gt;
+      &lt;p&gt;
+      My primary goal is to focus more on front end development,  as I feel it is my weakest area.  I'm competent in building a pretty basic html/css responsive site. I would like to strengthen my skills and knowledge regarding implementation of my code. I'm still very new to GitHub, and specifically would like to understand best practices about file structure, branches and repositories. I’d also like to get experience workings in component libraries. On the design side, I'm pretty obsessed with pattern libraries, and have even built one myself, but would love to understand the front end side of things as well. I've done extensive work on the design side of accessibility standards but I would like to strengthen my development skills in that area as well.
+      &lt;/p&gt;
+
+    &lt;h4&gt;Design&lt;/h4&gt;
+      &lt;p&gt;
+      In terms of UX and visual design, I'm experienced and confident in many subjects, but there are definitely areas to improve. In the past I've planned, conducted and synthesized user research into UX strategy, but I've never had the opportunity to sit down with stakeholders and define an mvp with feature prioritization. One of the things that won me over during my interview was learning about how designers have impact on a product starting with the first meeting with the client. In addition, I would like to strengthen my skills with content management and strategy. In my past job I did have the  opportunity to work with a content strategist. As designers, we tend to box the &quot;user experience&quot; to just the interface on the screen and we often forget about the words that we use.
+      &lt;/p&gt;
+
+    &lt;h2&gt;How I'm going to get there&lt;/h2&gt;
+      &lt;p&gt;
+        I think the biggest challenge for me is training my brain to think in a different way. Coming from a design background where everything is done is a visual way. This week I began introducing myself to our blog framework which includes understanding the command line and working with ruby. By forcing myself to change my visual right sided brain to think in a more analytical and linear way, I'm making myself extremely uncomfortable, which I couldn't be happier about. Even though I'm putting myself in unfamiliar territory, the people here at 8th Light have been amazing in helping me to work through my blockers quickly and providing me with resources to grow as a professional.
+      &lt;/p&gt;
+&lt;/section&gt;
+</description>
+        <pubDate>Fri, 21 Sep 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/jekyll/update/2018/09/21/apprenticeship-goals.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/09/21/apprenticeship-goals.html</guid>
         
         
         <category>jekyll</category>
