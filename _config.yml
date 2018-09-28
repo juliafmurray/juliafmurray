@@ -11,7 +11,7 @@ email: jmurray@8thlight.com
 description: > # this means to ignore newlines until "baseurl:"
   This blog contains Julia Murrays learnings during her Design Apprenticeship at 8th Light.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com/juliafmurray" # the base hostname & protocol for your site
+url: "https://juliafmurray.github.io/" # the base hostname & protocol for your site
 github_username:  juliafmurray
 
 # Build settings

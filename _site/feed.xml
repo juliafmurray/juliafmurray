@@ -4,10 +4,10 @@
     <title>Julias Design Apprenticeship Blog</title>
     <description>This blog contains Julia Murrays learnings during her Design Apprenticeship at 8th Light.
 </description>
-    <link>http://yourdomain.com/juliafmurray/</link>
-    <atom:link href="http://yourdomain.com/juliafmurray/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Sep 2018 16:39:19 -0500</pubDate>
-    <lastBuildDate>Thu, 27 Sep 2018 16:39:19 -0500</lastBuildDate>
+    <link>https://juliafmurray.github.io//</link>
+    <atom:link href="https://juliafmurray.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 28 Sep 2018 09:34:56 -0500</pubDate>
+    <lastBuildDate>Fri, 28 Sep 2018 09:34:56 -0500</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -70,6 +70,28 @@
     &lt;/p&gt;
 
     &lt;h2&gt;Make sure your colors meet contrast ratios&lt;/h2&gt;
+      &lt;p&gt; One of the first things a designer can to to ensure for accessibility is to make sure their designs meet the
+          correct color contrast ratio. The most recent guidelines just came out, 2.1 and with that comes some additional
+          requirements from the previous 2.0.
+      &lt;/p&gt;
+      &lt;h3&gt;2.0: Text and Background Color:&lt;/h3&gt;
+      &lt;p&gt;
+        Previously, the only thing color contrast applied to was text and background color. Level AA requires a contrast
+        ratio of at least 4.5:1 for normal text and 3:1 for large text. Level AAA requires a contrast ratio of at least
+        7:1 for normal text and 4.5:1 for large text.
+      &lt;/p&gt;
+      &lt;h3&gt;2.1: Images and UI Elements:&lt;/h3&gt;
+      &lt;p&gt;
+        In the case that a graphic is essential for understanding content or functionality on website, the contrast ratio
+        of at least 4.5:1 against the surrounding colors. This isnt a hard and fast rule though, as there are some exceptions.
+        Any graphic that has a minimum height and width of 3px as well as logo types or anything that is non-essential is excluded.
+      &lt;/p&gt;
+      &lt;p&gt;UI elements are also required to meet contrast standards in 2.1. Any UI elemenet deemed essential
+        to understand content functionality must meet a contrast ratio of 4.5:1 against the surrounding colors. Exceptions for This
+        include elements with a minimum of 3px must meet a contrast ratio of 3:1. Disbaled or inactive UI elements are also
+        exempt from this guideline.
+      &lt;/p&gt;
+      &lt;p&gt; Caluculating these contrast ratios seems like a really tedious task, but it's not!
       &lt;a href=&quot;http://www.getstark.co/&quot;&gt;Stark sketch plugin&lt;/a&gt;
       &lt;a href=&quot;http://contrast-finder.tanaguru.com/&quot;&gt;Tanaguru contrast checker&lt;/a&gt;
 
@@ -91,8 +113,8 @@
     &lt;a href=&quot;https://type-scale.com/&quot;&gt;type scale&lt;/a&gt;&quot;
 </description>
         <pubDate>Wed, 26 Sep 2018 00:00:00 -0500</pubDate>
-        <link>http://yourdomain.com/juliafmurray/blog/post/2018/09/26/accessibility.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/juliafmurray/blog/post/2018/09/26/accessibility.html</guid>
+        <link>https://juliafmurray.github.io//blog/post/2018/09/26/accessibility.html</link>
+        <guid isPermaLink="true">https://juliafmurray.github.io//blog/post/2018/09/26/accessibility.html</guid>
         
         
         <category>blog</category>
@@ -272,8 +294,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 25 Sep 2018 00:00:00 -0500</pubDate>
-        <link>http://yourdomain.com/juliafmurray/blog/post/2018/09/25/css-positioning.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/juliafmurray/blog/post/2018/09/25/css-positioning.html</guid>
+        <link>https://juliafmurray.github.io//blog/post/2018/09/25/css-positioning.html</link>
+        <guid isPermaLink="true">https://juliafmurray.github.io//blog/post/2018/09/25/css-positioning.html</guid>
         
         
         <category>blog</category>
@@ -798,8 +820,8 @@
 &lt;/section&gt;
 </description>
         <pubDate>Fri, 21 Sep 2018 00:00:00 -0500</pubDate>
-        <link>http://yourdomain.com/juliafmurray/blog/post/2018/09/21/htmlelements.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/juliafmurray/blog/post/2018/09/21/htmlelements.html</guid>
+        <link>https://juliafmurray.github.io//blog/post/2018/09/21/htmlelements.html</link>
+        <guid isPermaLink="true">https://juliafmurray.github.io//blog/post/2018/09/21/htmlelements.html</guid>
         
         
         <category>blog</category>
@@ -848,8 +870,8 @@
 &lt;/section&gt;
 </description>
         <pubDate>Fri, 21 Sep 2018 00:00:00 -0500</pubDate>
-        <link>http://yourdomain.com/juliafmurray/jekyll/update/2018/09/21/apprenticeship-goals.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/juliafmurray/jekyll/update/2018/09/21/apprenticeship-goals.html</guid>
+        <link>https://juliafmurray.github.io//jekyll/update/2018/09/21/apprenticeship-goals.html</link>
+        <guid isPermaLink="true">https://juliafmurray.github.io//jekyll/update/2018/09/21/apprenticeship-goals.html</guid>
         
         
         <category>jekyll</category>
