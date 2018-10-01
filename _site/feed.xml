@@ -4,10 +4,10 @@
     <title>Julias Design Apprenticeship Blog</title>
     <description>This blog contains Julia Murrays learnings during her Design Apprenticeship at 8th Light.
 </description>
-    <link>https://juliafmurray.github.io//</link>
-    <atom:link href="https://juliafmurray.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Oct 2018 10:31:55 -0500</pubDate>
-    <lastBuildDate>Mon, 01 Oct 2018 10:31:55 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 01 Oct 2018 10:39:05 -0500</pubDate>
+    <lastBuildDate>Mon, 01 Oct 2018 10:39:05 -0500</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -160,8 +160,8 @@
 &lt;/section&gt;
 </description>
         <pubDate>Thu, 27 Sep 2018 00:00:00 -0500</pubDate>
-        <link>https://juliafmurray.github.io//jekyll/update/2018/09/27/Git-for-Humans.html</link>
-        <guid isPermaLink="true">https://juliafmurray.github.io//jekyll/update/2018/09/27/Git-for-Humans.html</guid>
+        <link>http://localhost:4000/jekyll/update/2018/09/27/Git-for-Humans.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/09/27/Git-for-Humans.html</guid>
         
         
         <category>jekyll</category>
@@ -327,8 +327,8 @@
     &lt;/p&gt;
 </description>
         <pubDate>Wed, 26 Sep 2018 00:00:00 -0500</pubDate>
-        <link>https://juliafmurray.github.io//blog/post/2018/09/26/accessibility.html</link>
-        <guid isPermaLink="true">https://juliafmurray.github.io//blog/post/2018/09/26/accessibility.html</guid>
+        <link>http://localhost:4000/blog/post/2018/09/26/accessibility.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/post/2018/09/26/accessibility.html</guid>
         
         
         <category>blog</category>
@@ -512,8 +512,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 25 Sep 2018 00:00:00 -0500</pubDate>
-        <link>https://juliafmurray.github.io//blog/post/2018/09/25/css-positioning.html</link>
-        <guid isPermaLink="true">https://juliafmurray.github.io//blog/post/2018/09/25/css-positioning.html</guid>
+        <link>http://localhost:4000/blog/post/2018/09/25/css-positioning.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/post/2018/09/25/css-positioning.html</guid>
         
         
         <category>blog</category>
@@ -1038,8 +1038,8 @@
 &lt;/section&gt;
 </description>
         <pubDate>Fri, 21 Sep 2018 00:00:00 -0500</pubDate>
-        <link>https://juliafmurray.github.io//blog/post/2018/09/21/htmlelements.html</link>
-        <guid isPermaLink="true">https://juliafmurray.github.io//blog/post/2018/09/21/htmlelements.html</guid>
+        <link>http://localhost:4000/blog/post/2018/09/21/htmlelements.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/post/2018/09/21/htmlelements.html</guid>
         
         
         <category>blog</category>
@@ -1088,8 +1088,8 @@
 &lt;/section&gt;
 </description>
         <pubDate>Fri, 21 Sep 2018 00:00:00 -0500</pubDate>
-        <link>https://juliafmurray.github.io//jekyll/update/2018/09/21/apprenticeship-goals.html</link>
-        <guid isPermaLink="true">https://juliafmurray.github.io//jekyll/update/2018/09/21/apprenticeship-goals.html</guid>
+        <link>http://localhost:4000/jekyll/update/2018/09/21/apprenticeship-goals.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/09/21/apprenticeship-goals.html</guid>
         
         
         <category>jekyll</category>
