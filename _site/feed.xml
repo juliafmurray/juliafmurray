@@ -6,17 +6,176 @@
 </description>
     <link>https://juliafmurray.github.io//</link>
     <atom:link href="https://juliafmurray.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Sep 2018 09:34:56 -0500</pubDate>
-    <lastBuildDate>Fri, 28 Sep 2018 09:34:56 -0500</lastBuildDate>
+    <pubDate>Mon, 01 Oct 2018 10:31:55 -0500</pubDate>
+    <lastBuildDate>Mon, 01 Oct 2018 10:31:55 -0500</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
-        <title>Post 2.2</title>
+        <title>Git for Humans</title>
         <description>&lt;header&gt;
-  &lt;h1&gt;Web Accessibility&lt;/h1&gt;
+  &lt;h2&gt;Git for Humans&lt;/h2&gt;
+&lt;/header&gt;
+
+&lt;section&gt;
+  &lt;p&gt;
+    I’m only about 2 weeks into my apprenticeship as well as my introduction to Git and Github. So far I'd like to say one thing:
+    Git makes me feel really dumb. Going through some of these concepts makes me feel like I am literally re-wiring my
+    brain, but some of the wires aren't connecting. One of my first steps of being not dumb at Git has been to read
+    &lt;cite&gt;Git for Humans&lt;/cite&gt; by David Demaree. Overall it was a really helpful book, but mostly due to the subject matter,
+    it wasn't exactly a page turner. Next I'll go through the general concepts from the book, explain them with brief command
+    examples.
+  &lt;/p&gt;
+&lt;br&gt;
+&lt;h3&gt;Version Control&lt;/h3&gt;
+  &lt;p&gt;
+    Overall, I understand the need for version control software, especially for larger companies with multiple people working
+    on different design iterations of the same site or application. As a designer one of my pet peeves is to have a work folder
+    with 20 different files with no specificity or naming convention, especially when you find out the file names have nothing
+    to do with the actual content in the file.
+  &lt;/p&gt;
+  &lt;br&gt;
+&lt;h3&gt;The Command Line&lt;/h3&gt;
+  &lt;p&gt;
+    The command line makes me feel really dumb. As a designer, I think in terms of visually moving a thing to a things and
+    seeing that thing happen makes me feel like there is some order to this crazy world. The command line turns my brain inside
+    out and upside down and leaves me unsure about what reality really is. That being said, I feel like I am 20 times more
+    comfortable with the command line than I did my first day.
+  &lt;/p&gt;
+  &lt;p&gt;
+    The command line is essentially a non-graphical way to navigate through directories both locally on your computer and (I think)
+    somehow, remotely find other directories other places, like Github. You as a user can type in commands into an program
+    called Terminal, those commands will run, and sometimes, you will get a confirmation about the result of those commands.
+    If you ever saw the 1995 movie Hackers, you may have a better understanding of what I'm talking about. If only we were
+    cool enough to have nicknames like &quot;Zero Cool&quot; or &quot;Crash Override&quot;.
+    &lt;/head&gt;
+  &lt;/p&gt;
+&lt;br&gt;
+&lt;h3&gt;Start a New Project or Clone an Existing Project&lt;/h3&gt;
+  &lt;p&gt;
+    After initializing Github, you'll either need to create a new project or start on an exisitng project. In
+    order to start a new project you first need to make a directory for it by sending the command:&lt;br&gt;
+    &lt;code&gt;$: mkdir new-project&lt;/code&gt;.&lt;br&gt;
+    This will make a new directory with a folder called &quot;new project&quot;. Next we need to change to that directory
+    in order to start working in it:&lt;br&gt;
+    &lt;code&gt;$: cd new:project&lt;/code&gt;&lt;br&gt;
+    The last step in this step is to initiaize the repository&lt;br&gt;
+    &lt;code&gt;$: git init&lt;/code&gt;&lt;br&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    More often than not, you'll be working on exisiting software that you need to make changes to. This means that
+    you'll need to clone off of an existing repo. Cloning means that what gets saved in your local directory is an
+    exact replica of the files on the server. You'll start out with the &lt;code&gt;git clone&lt;/code&gt; command which a real
+    powerhouse command that does multiple things at once. It will create the new directory, initializes the new
+    repository, adds an &lt;code&gt;origin&lt;/code&gt; remote while pulling changes from the it at the same time.
+  &lt;/p&gt;
+  &lt;br&gt;
+&lt;h3&gt;Commiting to a Branch&lt;/h3&gt;
+  &lt;p&gt;
+    After you have your project set up in your directory, and you've made the changes in your code, you need to commit.
+    A commit is essentially a stored version of the project with your changes in it, but separate because it hasnt been
+    merged with what is live. This book refers to it as an object, which is a strange and overly vague term that that isn't
+    really helpful. So I'll just call it an unmerged version. I'm not quite sure what the process is for 8th Light, but
+    I assume as a design crafter I would commit my changes, have a code review and then they would be merged with the master
+    branch.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Before you commit, you need to decide on a branch to commit it to. What is a branch exactly? To out it simple a branch
+    is merely a label, saying this code is different from what is live and we categorize it by &quot;x&quot; branch. When starting a
+    new project, Git creates a default branch and calls it master. In many cases master is what you will see live on the
+    site, but not always, it depends on the company and their front end development process.
+  &lt;p&gt;
+  &lt;p&gt;
+    In many cases you'll want to create a new branch. Git has separate commands for creating a new branch and checking
+    it our (which moves you to it) but thats annoying. Great thing is theres a combination command that does both things
+    at once:&lt;br&gt;
+    &lt;code&gt; git checkout -b new-project&lt;/code&gt;. Once this is done you can confirm that you created and in the
+    branch that you want by passing:&lt;br&gt;
+    &lt;code&gt;$: git branch&lt;/code&gt;
+    If everything is working correctly, you should recieve a message with a &lt;code&gt;*&lt;/code&gt; and the branch name you just made.
+  &lt;/p&gt;
+&lt;br&gt;
+&lt;h3&gt;Merging&lt;/h3&gt;
+  &lt;p&gt;
+    So far you've created or modified a directory, made some changes to it and committed those changes to a branch within
+    the repository. After reviewing your code to make sure everything is good, the next step would be to merge it with
+    the masterbranch, or whichever branch you've decided the live site is pulling from. The first thing you do would be
+    to checkout the master branch with &lt;code&gt;$: git checkout master&lt;/code&gt;. You'll then want to pull changes from the previous
+    branch you were working on and merge them with master, so you'll pass along &lt;code&gt;$: git merge new-project&lt;/code&gt;.
+  &lt;/p&gt;
+  &lt;p&gt;
+    There are two kinds of merges, fast forward and merge commits. Fast forwards are great, but only really work when one of the
+    two branches you're merging has a new commit (this is usually the non-master one). Here, git moves the head of the master
+    commit to the &quot;other&quot; one you just committed to. If you've got changes both in your master and your other branch, the
+    best thing to do is a merge commit. With this, Git needs to create a combined snapshot of the changes in both branches
+    and figure out what the new merge is going to look like. In order to do this it will find the first common ancestor
+    in order to figure out what has changed and what hasn't. As long as both branches don't have changes in the same line,
+    Git should be able to merge both branches successfully.
+  &lt;/p&gt;
+&lt;br&gt;
+&lt;h3&gt;Remotes&lt;/h3&gt;
+  &lt;p&gt;
+    So far, many of the topics I've discussed work perfectly for someone working on a project locally on their compputer.
+    One of the most powerful things about Git is that is allows multiple people from multiple locations in the world
+    to collaborate on a project. This is where remotes come in. A remote repository is how a single person can access
+    a directory that lives somewhere besides that persons local computer. Most of the itme, this is where Github comes
+    in. While Git is the version control system, Github is a hosting service for Git repositories. Going back to one of
+    the earier terms in this post, a remote is where you would clone your repository onto your local computer and make
+    changes that would then be commited and merged into a branch.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Something you may have to do with remotes is make a remote an origin for our project. To do this, you pass along
+    &lt;code&gt;
+      (master) $: git remote add origin https://new-project.com
+    &lt;/code&gt; &lt;br&gt;
+    &lt;code&gt;git remote&lt;/code&gt; is a command with several sub-commands. The sub-commands for &lt;code&gt;git remote&lt;/code&gt;
+    are &lt;code&gt;add&lt;/code&gt; and &lt;code&gt;rm&lt;/code&gt; among others.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Related to remotes is &lt;code&gt;git fetch&lt;/code&gt; whic allows you to work offline. It'll pull down a copy of every branch
+    of a remote and it will allow you to commit changes and merge to a branch without having to be online.
+  &lt;/p&gt;
+&lt;br&gt;
+&lt;h3&gt;History&lt;/h3&gt;
+  &lt;p&gt;
+    For every commit that's made theres a history of it, which is a really powerful feature. You can even view the commit
+    history even if you don't use Github as a hosting service. The first command you'll pass is &lt;code&gt;git log&lt;/code&gt;
+    and in response you'll get a list of every commit for a project and will give you the commit id, author, date, and
+    what the change was.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Most of the time seeing every commit that ever happened isn't the most useful thing, but Git
+    has a solution for that. You can add on a format string, which is just an addition to the &lt;code&gt;git log&lt;/code&gt;
+    command. The format string &lt;code&gt;--pretty=oneline&lt;/code&gt; will only show the commit id and commit message in a single line.
+    Another helpful command is that you can choose to view your commit history in a range format. For this your
+    reference points are two commit references to see what happened between then in a start and end format:&lt;br&gt;
+    &lt;code&gt;$: git log --oneline master..new-homepage&lt;/code&gt;&lt;br&gt;
+    The &lt;code&gt;..&lt;/code&gt;separates the start and end branch and returns with the history wihtin those ranges for you.
+  &lt;/p&gt;
+  &lt;p&gt;
+    You can also filter your commit history by recency, date range, or by author. You can do this by passing along:&lt;br&gt;
+    &lt;code&gt;$: git log --author=Murray --grep=cats --oneline Gemfile&lt;/code&gt;&lt;br&gt;
+    This is telling Git that you want to see a commit history for something authored by me, containing the words cats
+    and changed the file called Gemfile.
+  &lt;/p&gt;
+&lt;/section&gt;
+</description>
+        <pubDate>Thu, 27 Sep 2018 00:00:00 -0500</pubDate>
+        <link>https://juliafmurray.github.io//jekyll/update/2018/09/27/Git-for-Humans.html</link>
+        <guid isPermaLink="true">https://juliafmurray.github.io//jekyll/update/2018/09/27/Git-for-Humans.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Web Accessibility</title>
+        <description>&lt;header&gt;
+  &lt;h2&gt;What is Web Accessibility&lt;/h2&gt;
 &lt;/header&gt;
 &lt;br&gt;
-    &lt;h2&gt;What is Web Accessibility&lt;/h2&gt;
     &lt;p&gt;
       Web accessibility is the practice of building (design and developing) websites and other digital products so that users of
       all abilities can access them. The Web Content Accessibility Guidelines (WCAG) provides a standard on how to do this and
@@ -69,18 +228,18 @@
       Up next well go through some very easy steps in order to start designing for accessibility and its benefits.
     &lt;/p&gt;
 
-    &lt;h2&gt;Make sure your colors meet contrast ratios&lt;/h2&gt;
+    &lt;h3&gt;1). Make sure your colors meet contrast ratios&lt;/h3&gt;
       &lt;p&gt; One of the first things a designer can to to ensure for accessibility is to make sure their designs meet the
           correct color contrast ratio. The most recent guidelines just came out, 2.1 and with that comes some additional
           requirements from the previous 2.0.
       &lt;/p&gt;
-      &lt;h3&gt;2.0: Text and Background Color:&lt;/h3&gt;
+      &lt;h4&gt;2.0: Text and Background Color:&lt;/h4&gt;
       &lt;p&gt;
         Previously, the only thing color contrast applied to was text and background color. Level AA requires a contrast
         ratio of at least 4.5:1 for normal text and 3:1 for large text. Level AAA requires a contrast ratio of at least
         7:1 for normal text and 4.5:1 for large text.
       &lt;/p&gt;
-      &lt;h3&gt;2.1: Images and UI Elements:&lt;/h3&gt;
+      &lt;h4&gt;2.1: Images and UI Elements:&lt;/h4&gt;
       &lt;p&gt;
         In the case that a graphic is essential for understanding content or functionality on website, the contrast ratio
         of at least 4.5:1 against the surrounding colors. This isnt a hard and fast rule though, as there are some exceptions.
@@ -91,26 +250,81 @@
         include elements with a minimum of 3px must meet a contrast ratio of 3:1. Disbaled or inactive UI elements are also
         exempt from this guideline.
       &lt;/p&gt;
-      &lt;p&gt; Caluculating these contrast ratios seems like a really tedious task, but it's not!
-      &lt;a href=&quot;http://www.getstark.co/&quot;&gt;Stark sketch plugin&lt;/a&gt;
-      &lt;a href=&quot;http://contrast-finder.tanaguru.com/&quot;&gt;Tanaguru contrast checker&lt;/a&gt;
+      &lt;p&gt; Caluculating these contrast ratios seems like a really tedious task, but it's not! There are a lot of great resources out
+        there but here are the two main ones I use in my workflow:
+        &lt;br&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+              &lt;a href=&quot;http://contrast-finder.tanaguru.com/&quot;&gt;
+                Tanaguru contrast checker
+              &lt;/a&gt;
+              is one of my favorite web-based tools for this. It not only allows you to choose between contrast ratios, it also
+              offers suggestions for similar colors if your combination doesn't meet the ratio you need.
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;http://www.getstark.co/&quot;&gt;
+              Stark sketch plugin
+            &lt;/a&gt;
+            is a way to check your contrast ratios right within Sketch. One of the cool things about this one is that
+            you can also test your color combinations against the many types of color blindess (yes, there are several types).
+          &lt;/li&gt;
+        &lt;/ul&gt;
 
-    &lt;h2&gt;Don’t use color alone to communicate&lt;/h2&gt;
-    &lt;a href=&quot;https://medium.com/intrepid-s-insights/designing-for-and-with-color-blindness-48392aab3d87&quot;&gt;Stark sketch plugin&lt;/a&gt;
 
-    &lt;h2&gt;Design focus states for all ui components and allow for keyboard navigation&lt;/h2&gt;
-    &lt;a href=&quot;https://designsystem.digital.gov/components/form-controls/&quot;&gt;focus states&lt;/a&gt;
 
-    &lt;h2&gt;Don't confuse placeholder text for form labels&lt;/h2&gt;
-    &lt;a href=&quot;https://material.io/design/components/text-fields.html&quot;&gt;Googles material design forms&lt;/a&gt;
+    &lt;h3&gt;2). Don’t use color alone to communicate&lt;/h3&gt;
+    &lt;p&gt;
+      While we are on the subject of color blindness, we also need to make sure that color is not an essential communicator
+      of content or functionality. This mainly pertains to forms and error states. If an error is communicated to a color
+      blind user only by the use of red text, there really is no way for them to know where that error is in the page.
+      Many accessible websites will use the &lt;span&gt;&amp;#9888;&lt;/span&gt; warning symbol along with red text to communicate than
+      and error has occured.
+    &lt;/p&gt;
+    &lt;p&gt;
+      One of my favorite games is Dots , a silly phone game that releases serotonin in your brain when you connect
+      colored dots together. The game does have a great color blind mode where each dot has a shape inside it that corresponds
+      to its color. A medium article written by &lt;a href=&quot;https://medium.com/intrepid-s-insights/designing-for-and-with-color-blindness-48392aab3d87&quot;&gt;color blind designer, Aaron Tenbuuren&lt;/a&gt;
+      goes into detail about how Dots and other apps design for color blind users successfully.
+    &lt;/p&gt;
 
-    &lt;h2&gt;Use alt text for non-text components&lt;/h2&gt;
+    &lt;h3&gt;3.) Design focus states for all ui components and allow for keyboard navigation&lt;/h3&gt;
+    &lt;p&gt;
+    As a someone who doesn't use accessibility features on devices, I definately have a bias towards navigating
+    with a mouse or trackpad over a keyboard or other assistive devices. Many different types of users will use
+    non-mouse devices including blind users who use screen readers. People with MS or arthritis will use the keyboard
+    because using a mouse is often painful and difficult. Power users of complex forms also use keyboard naviagtion
+    simply because its a more efficient than clicking into each and every element. Regardless of a users ability or
+    behavior, allowing for keyboard navigation requires considering what all the different states of a form element
+    will look like. States include disabled, deafult, active and focus. The focus state is especially helpful because
+    it communicates to users what part of the website they are currently on. One of my favorite resources for this
+    is the &lt;a href=&quot;https://designsystem.digital.gov/components/form-controls/&quot;&gt;U.S. Web Design Standards&lt;/a&gt;,
+    which is an open source design system used by all U.S. federal websites.
+    &lt;/p&gt;
 
-    &lt;a href=&quot;https://www.microsoft.com/design/inclusive/&quot;&gt;Microsoft voice-over all text&lt;/a&gt;
+    &lt;h3&gt;4). Use alt text for non-text components&lt;/h3&gt;
+      &lt;p&gt;
+        For people that use screen readers to read written conenet also need access to non-written content. This includes
+        maps, graphics, photos, animations and video. In order to do this alt tags are added in HTML to include a short
+        message of what the non-text content is about. Although this is something done mostly during front end development,
+        as designers we not only design the UI, but we also design and shape the content. It's important to craft image
+        descriptions to give the same context for both sighted and non sighted users.
+        &lt;a href=&quot;https://www.microsoft.com/design/inclusive/&quot;&gt;Microsoft design&lt;/a&gt; has a series of videos
+        about the power of inclusive design that has great voice over descriptions of what is happening in the video. These
+        not only give context to the videos, but they add value for all users.
+      &lt;/p&gt;
 
-    &lt;h2&gt;Use semantic markup for headings in your HTML&lt;/h2&gt;
 
-    &lt;a href=&quot;https://type-scale.com/&quot;&gt;type scale&lt;/a&gt;&quot;
+    &lt;h3&gt;5). Use proper headings with HTML semantic markup&lt;/h3&gt;
+    &lt;p&gt;
+      Another practice that makes sure users who with screen readers can easily navigate through a websites content is
+      by using proper HTML mark up for headings. Doing this the screen reader reads each header to the user as they
+      go through the content on the page from top to bottom. It will tell the user what is a header and what is paragraph
+      content. It also allows the user to easily and quickly jump through content, by listing out the headings from h1 to
+      h6 so they can be used as a table of contents. Although writing this code is a part of front end development, you need
+      to establish the type heirarchy first. An easy way to figure out your type sizes, I reccomend using
+      &lt;a href=&quot;https://type-scale.com/&quot;&gt;type scale&lt;/a&gt;&quot;, a web based tools that sets heirarchy based on a different set of
+      ratios.
+    &lt;/p&gt;
 </description>
         <pubDate>Wed, 26 Sep 2018 00:00:00 -0500</pubDate>
         <link>https://juliafmurray.github.io//blog/post/2018/09/26/accessibility.html</link>
@@ -124,7 +338,7 @@
       </item>
     
       <item>
-        <title>Post 2.1</title>
+        <title>CSS Positioning</title>
         <description>&lt;header&gt;
   &lt;h1&gt;CSS Positioning&lt;/h1&gt;
 &lt;/header&gt;
@@ -144,18 +358,19 @@
     not positioned in any special way; it is always positioned according to the normal flow of the page:
     &lt;/p&gt;
       &lt;code&gt;
-        .block1&lt;br&gt;
+        .static&lt;br&gt;
         {&lt;br&gt;
-        padding: 15px;&lt;br&gt;
-        background-color: red;&lt;br&gt;
-        height: 90px;&lt;br&gt;
+        width: 100px;&lt;br&gt;
+        height: 100px;&lt;br&gt;
+        background-color: #ff6a6a;&lt;br&gt;
+        float: left;&lt;br&gt;
         &lt;span style=&quot;color:red&quot;&gt;position: static;&lt;/span&gt;&lt;br&gt;
         }&lt;br&gt;
       &lt;/code&gt;
 
       &lt;div class=&quot;static1&quot;&gt;static&lt;/div&gt;
       &lt;div class=&quot;middle&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+
 &lt;/div&gt;
 
 &lt;div class=&quot;content&quot;&gt;
@@ -167,19 +382,20 @@
     &lt;/p&gt;
 
     &lt;code&gt;
-    .block1&lt;br&gt;
-    {&lt;br&gt;
-    padding: 15px;&lt;br&gt;
-    background-color: red;&lt;br&gt;
-    height: 90px;&lt;br&gt;
-    &lt;span style=&quot;color:red&quot;&gt;position: relative;&lt;/span&gt;&lt;br&gt;
-    &lt;span style=&quot;color:red&quot;&gt;left: 30px;&lt;/span&gt;&lt;br&gt;
-    }&lt;br&gt;
+    .relative&lt;br&gt;
+      {&lt;br&gt;
+      width: 100px;&lt;br&gt;
+      height: 100px;&lt;br&gt;
+      background-color: #ff6a6a;&lt;br&gt;
+      float: left;&lt;br&gt;
+      &lt;span style=&quot;color:red&quot;&gt;position: relative;&lt;/span&gt;&lt;br&gt;
+      &lt;span style=&quot;color:red&quot;&gt;left: 30px;&lt;/span&gt;&lt;br&gt;
+      }&lt;br&gt;
     &lt;/code&gt;
 
     &lt;div class=&quot;relative1&quot;&gt;relative&lt;/div&gt;
     &lt;div class=&quot;middle&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+
 &lt;/div&gt;
 
 &lt;div class=&quot;content&quot;&gt;
@@ -191,20 +407,19 @@
   &lt;/p&gt;
 
   &lt;code&gt;
-    .block1&lt;br&gt;
-    {&lt;br&gt;
-    padding: 15px;&lt;br&gt;
-    background-color: red;&lt;br&gt;
-    height: 90px;&lt;br&gt;
-    &lt;span style=&quot;color:red&quot;&gt;position: fixed;&lt;/span&gt;&lt;br&gt;
-    &lt;span style=&quot;color:red&quot;&gt;bottom: 0;&lt;/span&gt;&lt;br&gt;
-    &lt;span style=&quot;color:red&quot;&gt;right: 0;&lt;/span&gt;&lt;br&gt;
-    }&lt;br&gt;
+    .fixed&lt;br&gt;
+      {&lt;br&gt;
+      width: 100px;&lt;br&gt;
+      height: 100px;&lt;br&gt;
+      background-color: #ff6a6a;&lt;br&gt;
+      &lt;span style=&quot;color:red&quot;&gt;position: fixed;&lt;/span&gt;&lt;br&gt;
+      &lt;span style=&quot;color:red&quot;&gt;bottom: 0;&lt;/span&gt;&lt;br&gt;
+      &lt;span style=&quot;color:red&quot;&gt;right: 0;&lt;/span&gt;&lt;br&gt;
+      }&lt;br&gt;
   &lt;/code&gt;
 
   &lt;div class=&quot;fixed1&quot;&gt;fixed&lt;/div&gt;
   &lt;div class=&quot;middle&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;content&quot;&gt;
@@ -216,19 +431,20 @@
   &lt;/p&gt;
 
   &lt;code&gt;
-    .box1&lt;br&gt;
+    .sticky&lt;br&gt;
     {&lt;br&gt;
-    width: 100px;&lt;br&gt;
-    height: 100px;&lt;br&gt;
+    width: 200px; &lt;br&gt;
+    height: 200px;&lt;br&gt;
+    background-color: #FFB9B9;&lt;br&gt;
     &lt;span style=&quot;color:red&quot;&gt;position: sticky;&lt;/span&gt;&lt;br&gt;
+    &lt;span style=&quot;color:red&quot;&gt;position: -webkit-sticky;&lt;/span&gt;&lt;br&gt;
     &lt;span style=&quot;color:red&quot;&gt;top: 0;&lt;/span&gt;&lt;br&gt;
-    &lt;span style=&quot;color:red&quot;&gt;border: 2px solid #4CAF50;&lt;/span&gt;&lt;br&gt;
     }&lt;br&gt;
   &lt;/code&gt;
 
-  &lt;div class=&quot;sticky&quot;&gt;sticky&lt;/div&gt;
-  &lt;div class=&quot;middle&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;sticky&quot;&gt;sticky
+    &lt;img src= &quot;/images/sticky.svg.png&quot; width=&quot;200&quot; alt=&quot;example of sticky css positioning&quot;
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;content&quot;&gt;
@@ -240,30 +456,31 @@
   &lt;/p&gt;
 
   &lt;code&gt;
-    .block1&lt;br&gt;
+    .absolute1&lt;br&gt;
     {&lt;br&gt;
-    padding: 15px;&lt;br&gt;
-    background-color: red;&lt;br&gt;
-    height: 90px;&lt;br&gt;
-    &lt;span style=&quot;color:red&quot;&gt;position: relative;&lt;/span&gt;&lt;br&gt;
+      width: 100px;&lt;br&gt;
+      height: 100px;&lt;br&gt;
+      background-color: #ff6a6a;&lt;br&gt;
+      float: left;&lt;br&gt;
+      &lt;span style=&quot;color:red&quot;&gt;position: relative;&lt;/span&gt;&lt;br&gt;
     }&lt;br&gt;
   &lt;/code&gt;
 
   &lt;code&gt;
-    .block2&lt;br&gt;
+    .absolute2&lt;br&gt;
     {&lt;br&gt;
-    padding: 15px;&lt;br&gt;
-    background-color: white;&lt;br&gt;
-    height: 90px;&lt;br&gt;
-    &lt;span style=&quot;color:red&quot;&gt;position: absolute;&lt;/span&gt;&lt;br&gt;
-    &lt;span style=&quot;color:red&quot;&gt;top: 80px;&lt;/span&gt;&lt;br&gt;
-    &lt;span style=&quot;color:red&quot;&gt;right: 0;&lt;/span&gt;&lt;br&gt;
+      width: 100px;&lt;br&gt;
+      height: 100px;&lt;br&gt;
+      background-color: #ff6a6a;&lt;br&gt;
+      &lt;span style=&quot;color:red&quot;&gt;position: absolute;&lt;/span&gt;&lt;br&gt;
+      &lt;span style=&quot;color:red&quot;&gt;top: 2300px;&lt;/span&gt;&lt;br&gt;
+      &lt;span style=&quot;color:red&quot;&gt;right: 300;&lt;/span&gt;&lt;br&gt;
     }&lt;br&gt;
   &lt;/code&gt;
 
   &lt;div class=&quot;absolute1&quot;&gt;relative&lt;/div&gt;
   &lt;div class=&quot;absolute2&quot;&gt;absolute&lt;/div&gt;
-  &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+
 &lt;/div&gt;
 
 &lt;div class=&quot;content&quot;&gt;
@@ -275,21 +492,22 @@
     &lt;/p&gt;
 
     &lt;code&gt;
-      .block1&lt;br&gt;
+      .zindex&lt;br&gt;
       {&lt;br&gt;
-      padding: 15px;&lt;br&gt;
-      background-color: pink;&lt;br&gt;
-      height: 90px;&lt;br&gt;
-      position: absolute;&lt;br&gt;
-      left: 50px;&lt;br&gt;
-      top: 2300px;&lt;br&gt;
-      z-index: 1;&lt;br&gt;
+        width: 100px;&lt;br&gt;
+        height: 100px;&lt;br&gt;
+        background-color: #ff6a6a;&lt;br&gt;
+        float: left;&lt;br&gt;
+        &lt;span style=&quot;color:red&quot;&gt;position: absolute;&lt;/span&gt;&lt;br&gt;
+        &lt;span style=&quot;color:red&quot;&gt;pleft: 50px;&lt;/span&gt;&lt;br&gt;
+        &lt;span style=&quot;color:red&quot;&gt;top: 2800px;&lt;/span&gt;&lt;br&gt;
+        &lt;span style=&quot;color:red&quot;&gt;z-index: 1;&lt;/span&gt;&lt;br&gt;
       }&lt;br&gt;
     &lt;/code&gt;
 
   &lt;div class=&quot;zindex1&quot;&gt;z-index&lt;/div&gt;
   &lt;div class=&quot;middle&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -305,9 +523,9 @@
       </item>
     
       <item>
-        <title>Post 1.2</title>
+        <title>HTML Elements</title>
         <description>&lt;header&gt;
-  &lt;h1&gt;css positioning&lt;/h1&gt;
+  &lt;h1&gt;HTML Elements&lt;/h1&gt;
 &lt;/header&gt;
 
 &lt;section&gt;
@@ -831,7 +1049,7 @@
       </item>
     
       <item>
-        <title>Post 1.1</title>
+        <title>Apprenticeship Goals</title>
         <description>&lt;header&gt;
   &lt;h1&gt;Apprenticeship Goals&lt;/h1&gt;
 &lt;/header&gt;

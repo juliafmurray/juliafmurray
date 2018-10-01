@@ -1,40 +1,60 @@
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Libre+Baskerville:400,400i,700');
+
+// Font Variables
+$libre-baskerville: 'Libre Baskerville', heading;
+$karla: 'Karla', body;
+$color-black: #000000;
+
+//Styles
 html {
-  font-family: $font-family;
+  font-family: $karla;
   font-weight: $font-weight-regular;
   line-height: $line-height-text;
+  color: $color-black;
+  font-size: $font-size-text-large;
 }
 
 h1 {
+  font-family: $libre-baskerville;
   color: $color-black;
-  font-size: $font-size-heading-small;
+  font-size: $font-size-heading-x-large;
   font-weight: $font-weight-bold;
   line-height: $line-height-heading;
 }
 
 h2 {
+  font-family: $libre-baskerville;
   color: $color-black;
-  font-size: $font-size-heading-x-small;
+  font-size: $font-size-heading-large;
   font-weight: $font-weight-bold;
   line-height: $line-height-heading;
 }
 
 h3 {
-  color: $color-primary;
-  font-family: $font-family-bold;
-  font-size: $font-size-text-small;
+  color: $color-black;
+  font-family: $libre-baskerville;
+  font-size: $font-size-heading-medium;
   font-weight: normal;
-  letter-spacing: 1px;
   margin: 0;
-  text-transform: uppercase;
+}
+
+h4 {
+  color: $color-black;
+  font-family: $libre-baskerville;
+  font-size: $font-size-heading-small;
+  font-weight: normal;
+  margin: 0;
 }
 
 p {
-  color: $color-primary;
-  font-size: $font-size-text-medium;
+  color: $color-black;
+  font-size: $font-size-text-x-large;
   margin: 0;
 }
 
-small {
-  color: $color-accent;
-  font-size: $font-size-heading-x-small;
-}
+// small {
+//   color: $color-accent;
+//   font-size: $font-size-heading-x-small;
+// }

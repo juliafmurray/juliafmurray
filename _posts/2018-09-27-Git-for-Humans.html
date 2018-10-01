@@ -1,0 +1,153 @@
+---
+layout: post
+title:  "Git for Humans"
+date:   2018-09-27
+categories: jekyll update
+---
+
+<header>
+  <h2>Git for Humans</h2>
+</header>
+
+<section>
+  <p>
+    I’m only about 2 weeks into my apprenticeship as well as my introduction to Git and Github. So far I'd like to say one thing:
+    Git makes me feel really dumb. Going through some of these concepts makes me feel like I am literally re-wiring my
+    brain, but some of the wires aren't connecting. One of my first steps of being not dumb at Git has been to read
+    <cite>Git for Humans</cite> by David Demaree. Overall it was a really helpful book, but mostly due to the subject matter,
+    it wasn't exactly a page turner. Next I'll go through the general concepts from the book, explain them with brief command
+    examples.
+  </p>
+<br>
+<h3>Version Control</h3>
+  <p>
+    Overall, I understand the need for version control software, especially for larger companies with multiple people working
+    on different design iterations of the same site or application. As a designer one of my pet peeves is to have a work folder
+    with 20 different files with no specificity or naming convention, especially when you find out the file names have nothing
+    to do with the actual content in the file.
+  </p>
+  <br>
+<h3>The Command Line</h3>
+  <p>
+    The command line makes me feel really dumb. As a designer, I think in terms of visually moving a thing to a things and
+    seeing that thing happen makes me feel like there is some order to this crazy world. The command line turns my brain inside
+    out and upside down and leaves me unsure about what reality really is. That being said, I feel like I am 20 times more
+    comfortable with the command line than I did my first day.
+  </p>
+  <p>
+    The command line is essentially a non-graphical way to navigate through directories both locally on your computer and (I think)
+    somehow, remotely find other directories other places, like Github. You as a user can type in commands into an program
+    called Terminal, those commands will run, and sometimes, you will get a confirmation about the result of those commands.
+    If you ever saw the 1995 movie Hackers, you may have a better understanding of what I'm talking about. If only we were
+    cool enough to have nicknames like "Zero Cool" or "Crash Override".
+    </head>
+  </p>
+<br>
+<h3>Start a New Project or Clone an Existing Project</h3>
+  <p>
+    After initializing Github, you'll either need to create a new project or start on an exisitng project. In
+    order to start a new project you first need to make a directory for it by sending the command:<br>
+    <code>$: mkdir new-project</code>.<br>
+    This will make a new directory with a folder called "new project". Next we need to change to that directory
+    in order to start working in it:<br>
+    <code>$: cd new:project</code><br>
+    The last step in this step is to initiaize the repository<br>
+    <code>$: git init</code><br>
+  </p>
+  <p>
+    More often than not, you'll be working on exisiting software that you need to make changes to. This means that
+    you'll need to clone off of an existing repo. Cloning means that what gets saved in your local directory is an
+    exact replica of the files on the server. You'll start out with the <code>git clone</code> command which a real
+    powerhouse command that does multiple things at once. It will create the new directory, initializes the new
+    repository, adds an <code>origin</code> remote while pulling changes from the it at the same time.
+  </p>
+  <br>
+<h3>Commiting to a Branch</h3>
+  <p>
+    After you have your project set up in your directory, and you've made the changes in your code, you need to commit.
+    A commit is essentially a stored version of the project with your changes in it, but separate because it hasnt been
+    merged with what is live. This book refers to it as an object, which is a strange and overly vague term that that isn't
+    really helpful. So I'll just call it an unmerged version. I'm not quite sure what the process is for 8th Light, but
+    I assume as a design crafter I would commit my changes, have a code review and then they would be merged with the master
+    branch.
+  </p>
+  <p>
+    Before you commit, you need to decide on a branch to commit it to. What is a branch exactly? To out it simple a branch
+    is merely a label, saying this code is different from what is live and we categorize it by "x" branch. When starting a
+    new project, Git creates a default branch and calls it master. In many cases master is what you will see live on the
+    site, but not always, it depends on the company and their front end development process.
+  <p>
+  <p>
+    In many cases you'll want to create a new branch. Git has separate commands for creating a new branch and checking
+    it our (which moves you to it) but thats annoying. Great thing is theres a combination command that does both things
+    at once:<br>
+    <code> git checkout -b new-project</code>. Once this is done you can confirm that you created and in the
+    branch that you want by passing:<br>
+    <code>$: git branch</code>
+    If everything is working correctly, you should recieve a message with a <code>*</code> and the branch name you just made.
+  </p>
+<br>
+<h3>Merging</h3>
+  <p>
+    So far you've created or modified a directory, made some changes to it and committed those changes to a branch within
+    the repository. After reviewing your code to make sure everything is good, the next step would be to merge it with
+    the masterbranch, or whichever branch you've decided the live site is pulling from. The first thing you do would be
+    to checkout the master branch with <code>$: git checkout master</code>. You'll then want to pull changes from the previous
+    branch you were working on and merge them with master, so you'll pass along <code>$: git merge new-project</code>.
+  </p>
+  <p>
+    There are two kinds of merges, fast forward and merge commits. Fast forwards are great, but only really work when one of the
+    two branches you're merging has a new commit (this is usually the non-master one). Here, git moves the head of the master
+    commit to the "other" one you just committed to. If you've got changes both in your master and your other branch, the
+    best thing to do is a merge commit. With this, Git needs to create a combined snapshot of the changes in both branches
+    and figure out what the new merge is going to look like. In order to do this it will find the first common ancestor
+    in order to figure out what has changed and what hasn't. As long as both branches don't have changes in the same line,
+    Git should be able to merge both branches successfully.
+  </p>
+<br>
+<h3>Remotes</h3>
+  <p>
+    So far, many of the topics I've discussed work perfectly for someone working on a project locally on their compputer.
+    One of the most powerful things about Git is that is allows multiple people from multiple locations in the world
+    to collaborate on a project. This is where remotes come in. A remote repository is how a single person can access
+    a directory that lives somewhere besides that persons local computer. Most of the itme, this is where Github comes
+    in. While Git is the version control system, Github is a hosting service for Git repositories. Going back to one of
+    the earier terms in this post, a remote is where you would clone your repository onto your local computer and make
+    changes that would then be commited and merged into a branch.
+  </p>
+  <p>
+    Something you may have to do with remotes is make a remote an origin for our project. To do this, you pass along
+    <code>
+      (master) $: git remote add origin https://new-project.com
+    </code> <br>
+    <code>git remote</code> is a command with several sub-commands. The sub-commands for <code>git remote</code>
+    are <code>add</code> and <code>rm</code> among others.
+  </p>
+  <p>
+    Related to remotes is <code>git fetch</code> whic allows you to work offline. It'll pull down a copy of every branch
+    of a remote and it will allow you to commit changes and merge to a branch without having to be online.
+  </p>
+<br>
+<h3>History</h3>
+  <p>
+    For every commit that's made theres a history of it, which is a really powerful feature. You can even view the commit
+    history even if you don't use Github as a hosting service. The first command you'll pass is <code>git log</code>
+    and in response you'll get a list of every commit for a project and will give you the commit id, author, date, and
+    what the change was.
+  </p>
+  <p>
+    Most of the time seeing every commit that ever happened isn't the most useful thing, but Git
+    has a solution for that. You can add on a format string, which is just an addition to the <code>git log</code>
+    command. The format string <code>--pretty=oneline</code> will only show the commit id and commit message in a single line.
+    Another helpful command is that you can choose to view your commit history in a range format. For this your
+    reference points are two commit references to see what happened between then in a start and end format:<br>
+    <code>$: git log --oneline master..new-homepage</code><br>
+    The <code>..</code>separates the start and end branch and returns with the history wihtin those ranges for you.
+  </p>
+  <p>
+    You can also filter your commit history by recency, date range, or by author. You can do this by passing along:<br>
+    <code>$: git log --author=Murray --grep=cats --oneline Gemfile</code><br>
+    This is telling Git that you want to see a commit history for something authored by me, containing the words cats
+    and changed the file called Gemfile.
+  </p>
+</section>

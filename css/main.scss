@@ -90,12 +90,11 @@ position: static;
 .sticky
 {
   position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  width: 100px;
-  height: 100px;
-  background-color: #ff6a6a;
-  float: left;
+  position: sticky;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #FFB9B9;
 }
 
 .absolute1
@@ -113,7 +112,7 @@ position: static;
   height: 100px;
   background-color: #870c63;
   position: absolute;
-  top: 2300px;
+  top: 2400px;
   right: 300px;
 }
 
@@ -125,6 +124,6 @@ position: static;
   float: left;
   position: absolute;
   left: 50px;
-  top: 2700px;
+  top: 2900px;
   z-index: 1;
 }

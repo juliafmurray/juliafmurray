@@ -1,15 +1,14 @@
 ---
 layout: post
-title:  "Post 2.2"
+title:  "Web Accessibility"
 date:   2018-09-26
 categories: blog post
 ---
 
 <header>
-  <h1>Web Accessibility</h1>
+  <h2>What is Web Accessibility</h2>
 </header>
 <br>
-    <h2>What is Web Accessibility</h2>
     <p>
       Web accessibility is the practice of building (design and developing) websites and other digital products so that users of
       all abilities can access them. The Web Content Accessibility Guidelines (WCAG) provides a standard on how to do this and
@@ -62,18 +61,18 @@ categories: blog post
       Up next well go through some very easy steps in order to start designing for accessibility and its benefits.
     </p>
 
-    <h2>Make sure your colors meet contrast ratios</h2>
+    <h3>1). Make sure your colors meet contrast ratios</h3>
       <p> One of the first things a designer can to to ensure for accessibility is to make sure their designs meet the
           correct color contrast ratio. The most recent guidelines just came out, 2.1 and with that comes some additional
           requirements from the previous 2.0.
       </p>
-      <h3>2.0: Text and Background Color:</h3>
+      <h4>2.0: Text and Background Color:</h4>
       <p>
         Previously, the only thing color contrast applied to was text and background color. Level AA requires a contrast
         ratio of at least 4.5:1 for normal text and 3:1 for large text. Level AAA requires a contrast ratio of at least
         7:1 for normal text and 4.5:1 for large text.
       </p>
-      <h3>2.1: Images and UI Elements:</h3>
+      <h4>2.1: Images and UI Elements:</h4>
       <p>
         In the case that a graphic is essential for understanding content or functionality on website, the contrast ratio
         of at least 4.5:1 against the surrounding colors. This isnt a hard and fast rule though, as there are some exceptions.
@@ -84,23 +83,78 @@ categories: blog post
         include elements with a minimum of 3px must meet a contrast ratio of 3:1. Disbaled or inactive UI elements are also
         exempt from this guideline.
       </p>
-      <p> Caluculating these contrast ratios seems like a really tedious task, but it's not!
-      <a href="http://www.getstark.co/">Stark sketch plugin</a>
-      <a href="http://contrast-finder.tanaguru.com/">Tanaguru contrast checker</a>
+      <p> Caluculating these contrast ratios seems like a really tedious task, but it's not! There are a lot of great resources out
+        there but here are the two main ones I use in my workflow:
+        <br>
+        <ul>
+          <li>
+              <a href="http://contrast-finder.tanaguru.com/">
+                Tanaguru contrast checker
+              </a>
+              is one of my favorite web-based tools for this. It not only allows you to choose between contrast ratios, it also
+              offers suggestions for similar colors if your combination doesn't meet the ratio you need.
+          </li>
+          <li>
+            <a href="http://www.getstark.co/">
+              Stark sketch plugin
+            </a>
+            is a way to check your contrast ratios right within Sketch. One of the cool things about this one is that
+            you can also test your color combinations against the many types of color blindess (yes, there are several types).
+          </li>
+        </ul>
 
-    <h2>Don’t use color alone to communicate</h2>
-    <a href="https://medium.com/intrepid-s-insights/designing-for-and-with-color-blindness-48392aab3d87">Stark sketch plugin</a>
 
-    <h2>Design focus states for all ui components and allow for keyboard navigation</h2>
-    <a href="https://designsystem.digital.gov/components/form-controls/">focus states</a>
 
-    <h2>Don't confuse placeholder text for form labels</h2>
-    <a href="https://material.io/design/components/text-fields.html">Googles material design forms</a>
+    <h3>2). Don’t use color alone to communicate</h3>
+    <p>
+      While we are on the subject of color blindness, we also need to make sure that color is not an essential communicator
+      of content or functionality. This mainly pertains to forms and error states. If an error is communicated to a color
+      blind user only by the use of red text, there really is no way for them to know where that error is in the page.
+      Many accessible websites will use the <span>&#9888;</span> warning symbol along with red text to communicate than
+      and error has occured.
+    </p>
+    <p>
+      One of my favorite games is Dots , a silly phone game that releases serotonin in your brain when you connect
+      colored dots together. The game does have a great color blind mode where each dot has a shape inside it that corresponds
+      to its color. A medium article written by <a href="https://medium.com/intrepid-s-insights/designing-for-and-with-color-blindness-48392aab3d87">color blind designer, Aaron Tenbuuren</a>
+      goes into detail about how Dots and other apps design for color blind users successfully.
+    </p>
 
-    <h2>Use alt text for non-text components</h2>
+    <h3>3.) Design focus states for all ui components and allow for keyboard navigation</h3>
+    <p>
+    As a someone who doesn't use accessibility features on devices, I definately have a bias towards navigating
+    with a mouse or trackpad over a keyboard or other assistive devices. Many different types of users will use
+    non-mouse devices including blind users who use screen readers. People with MS or arthritis will use the keyboard
+    because using a mouse is often painful and difficult. Power users of complex forms also use keyboard naviagtion
+    simply because its a more efficient than clicking into each and every element. Regardless of a users ability or
+    behavior, allowing for keyboard navigation requires considering what all the different states of a form element
+    will look like. States include disabled, deafult, active and focus. The focus state is especially helpful because
+    it communicates to users what part of the website they are currently on. One of my favorite resources for this
+    is the <a href="https://designsystem.digital.gov/components/form-controls/">U.S. Web Design Standards</a>,
+    which is an open source design system used by all U.S. federal websites.
+    </p>
 
-    <a href="https://www.microsoft.com/design/inclusive/">Microsoft voice-over all text</a>
+    <h3>4). Use alt text for non-text components</h3>
+      <p>
+        For people that use screen readers to read written conenet also need access to non-written content. This includes
+        maps, graphics, photos, animations and video. In order to do this alt tags are added in HTML to include a short
+        message of what the non-text content is about. Although this is something done mostly during front end development,
+        as designers we not only design the UI, but we also design and shape the content. It's important to craft image
+        descriptions to give the same context for both sighted and non sighted users.
+        <a href="https://www.microsoft.com/design/inclusive/">Microsoft design</a> has a series of videos
+        about the power of inclusive design that has great voice over descriptions of what is happening in the video. These
+        not only give context to the videos, but they add value for all users.
+      </p>
 
-    <h2>Use semantic markup for headings in your HTML</h2>
 
-    <a href="https://type-scale.com/">type scale</a>"
+    <h3>5). Use proper headings with HTML semantic markup</h3>
+    <p>
+      Another practice that makes sure users who with screen readers can easily navigate through a websites content is
+      by using proper HTML mark up for headings. Doing this the screen reader reads each header to the user as they
+      go through the content on the page from top to bottom. It will tell the user what is a header and what is paragraph
+      content. It also allows the user to easily and quickly jump through content, by listing out the headings from h1 to
+      h6 so they can be used as a table of contents. Although writing this code is a part of front end development, you need
+      to establish the type heirarchy first. An easy way to figure out your type sizes, I reccomend using
+      <a href="https://type-scale.com/">type scale</a>", a web based tools that sets heirarchy based on a different set of
+      ratios.
+    </p>

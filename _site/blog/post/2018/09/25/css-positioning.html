@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Post 2.1</title>
+  <title>CSS Positioning</title>
   <meta name="description" content="  CSS Positioning">
 
   <link rel="stylesheet" href="/css/main.css">
@@ -24,7 +24,7 @@
     <article class="post o-main" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Post 2.1</h1>
+    <h1 class="post-title" itemprop="name headline">CSS Positioning</h1>
     <p class="post-meta"><time datetime="2018-09-25T00:00:00-05:00" itemprop="datePublished">Sep 25, 2018</time></p>
   </header>
 
@@ -48,18 +48,19 @@
     not positioned in any special way; it is always positioned according to the normal flow of the page:
     </p>
       <code>
-        .block1<br>
+        .static<br>
         {<br>
-        padding: 15px;<br>
-        background-color: red;<br>
-        height: 90px;<br>
+        width: 100px;<br>
+        height: 100px;<br>
+        background-color: #ff6a6a;<br>
+        float: left;<br>
         <span style="color:red">position: static;</span><br>
         }<br>
       </code>
 
       <div class="static1">static</div>
       <div class="middle"></div>
-      <div class="right"></div>
+
 </div>
 
 <div class="content">
@@ -71,19 +72,20 @@
     </p>
 
     <code>
-    .block1<br>
-    {<br>
-    padding: 15px;<br>
-    background-color: red;<br>
-    height: 90px;<br>
-    <span style="color:red">position: relative;</span><br>
-    <span style="color:red">left: 30px;</span><br>
-    }<br>
+    .relative<br>
+      {<br>
+      width: 100px;<br>
+      height: 100px;<br>
+      background-color: #ff6a6a;<br>
+      float: left;<br>
+      <span style="color:red">position: relative;</span><br>
+      <span style="color:red">left: 30px;</span><br>
+      }<br>
     </code>
 
     <div class="relative1">relative</div>
     <div class="middle"></div>
-    <div class="right"></div>
+
 </div>
 
 <div class="content">
@@ -95,20 +97,19 @@
   </p>
 
   <code>
-    .block1<br>
-    {<br>
-    padding: 15px;<br>
-    background-color: red;<br>
-    height: 90px;<br>
-    <span style="color:red">position: fixed;</span><br>
-    <span style="color:red">bottom: 0;</span><br>
-    <span style="color:red">right: 0;</span><br>
-    }<br>
+    .fixed<br>
+      {<br>
+      width: 100px;<br>
+      height: 100px;<br>
+      background-color: #ff6a6a;<br>
+      <span style="color:red">position: fixed;</span><br>
+      <span style="color:red">bottom: 0;</span><br>
+      <span style="color:red">right: 0;</span><br>
+      }<br>
   </code>
 
   <div class="fixed1">fixed</div>
   <div class="middle"></div>
-  <div class="right"></div>
 </div>
 
 <div class="content">
@@ -120,19 +121,20 @@
   </p>
 
   <code>
-    .box1<br>
+    .sticky<br>
     {<br>
-    width: 100px;<br>
-    height: 100px;<br>
+    width: 200px; <br>
+    height: 200px;<br>
+    background-color: #FFB9B9;<br>
     <span style="color:red">position: sticky;</span><br>
+    <span style="color:red">position: -webkit-sticky;</span><br>
     <span style="color:red">top: 0;</span><br>
-    <span style="color:red">border: 2px solid #4CAF50;</span><br>
     }<br>
   </code>
 
-  <div class="sticky">sticky</div>
-  <div class="middle"></div>
-  <div class="right"></div>
+  <div class="sticky">sticky
+    <img src= "/images/sticky.svg.png" width="200" alt="example of sticky css positioning"
+  </div>
 </div>
 
 <div class="content">
@@ -144,30 +146,31 @@
   </p>
 
   <code>
-    .block1<br>
+    .absolute1<br>
     {<br>
-    padding: 15px;<br>
-    background-color: red;<br>
-    height: 90px;<br>
-    <span style="color:red">position: relative;</span><br>
+      width: 100px;<br>
+      height: 100px;<br>
+      background-color: #ff6a6a;<br>
+      float: left;<br>
+      <span style="color:red">position: relative;</span><br>
     }<br>
   </code>
 
   <code>
-    .block2<br>
+    .absolute2<br>
     {<br>
-    padding: 15px;<br>
-    background-color: white;<br>
-    height: 90px;<br>
-    <span style="color:red">position: absolute;</span><br>
-    <span style="color:red">top: 80px;</span><br>
-    <span style="color:red">right: 0;</span><br>
+      width: 100px;<br>
+      height: 100px;<br>
+      background-color: #ff6a6a;<br>
+      <span style="color:red">position: absolute;</span><br>
+      <span style="color:red">top: 2300px;</span><br>
+      <span style="color:red">right: 300;</span><br>
     }<br>
   </code>
 
   <div class="absolute1">relative</div>
   <div class="absolute2">absolute</div>
-  <div class="right"></div>
+
 </div>
 
 <div class="content">
@@ -179,21 +182,22 @@
     </p>
 
     <code>
-      .block1<br>
+      .zindex<br>
       {<br>
-      padding: 15px;<br>
-      background-color: pink;<br>
-      height: 90px;<br>
-      position: absolute;<br>
-      left: 50px;<br>
-      top: 2300px;<br>
-      z-index: 1;<br>
+        width: 100px;<br>
+        height: 100px;<br>
+        background-color: #ff6a6a;<br>
+        float: left;<br>
+        <span style="color:red">position: absolute;</span><br>
+        <span style="color:red">pleft: 50px;</span><br>
+        <span style="color:red">top: 2800px;</span><br>
+        <span style="color:red">z-index: 1;</span><br>
       }<br>
     </code>
 
   <div class="zindex1">z-index</div>
   <div class="middle"></div>
-  <div class="right"></div>
+
 </div>
 </div>
 
