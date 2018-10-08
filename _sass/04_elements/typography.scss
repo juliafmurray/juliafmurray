@@ -12,25 +12,27 @@ html {
   font-size: $font-size-text-small;
 }
 
-@media screen and (min-width: 320px) {
 h1 {
   font-family: $font-family-poppins;
-  color: $color-orange-dark;
-  font-size: $font-size-small-h1;
   font-weight: $font-weight-bold;
   line-height: $line-height-heading;
-  }
+
+  @media screen and (min-width: 320px) {
+    color: $color-orange-dark;
+    font-size: $font-size-small-h1;
+    }
+
+  @media screen and (min-width: 768px) {
+    color: $color-green-dark;
+    font-size: $font-size-large-h1;
+    }
 }
 
 @media screen and (min-width: 768px) {
-h1 {
   font-family: $font-family-poppins;
   color: $color-green-dark;
   font-size: $font-size-large-h1;
-  font-weight: $font-weight-bold;
-  line-height: $line-height-heading;
   }
-}
 
 @media screen and (min-width: 320px) {
 h2 {
