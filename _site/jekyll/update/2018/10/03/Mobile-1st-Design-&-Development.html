@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mobile 1st Design & Development</title>
+  <meta name="description" content="      Mobile first design & devopment is the process of building sites with a focused on the experience for users on mobile    devices. This is inclusive on ...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://juliafmurray.github.io//jekyll/update/2018/10/03/Mobile-1st-Design-&-Development.html">
+  <link rel="alternate" type="application/rss+xml" title="Julias Design Apprenticeship Blog" href="https://juliafmurray.github.io//feed.xml">
+
+</head>
+
+  <body>
+    <header class="c-header">
+  <div class="o-main">
+    <a class="nav-anchor" href="/">Julias Design Apprenticeship Blog</a>
+  </div>
+</header>
+
+    <article class="post o-main" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Mobile 1st Design & Development</h1>
+    <p class="post-meta"><time datetime="2018-10-03T00:00:00-05:00" itemprop="datePublished">Oct 3, 2018</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <section>
+  <p>
+    Mobile first design & devopment is the process of building sites with a focused on the experience for users on mobile
+    devices. This is inclusive on process for strategy, design and devlopment. There are many many reasons for working in
+    this way. I could list off a bunch of statistics about mobile web browsing surpassing desktop browsing years ago,
+    but mobile 1st design is more about market longevity than anything else. People use devices of all different sizes
+    any there is little to no chance that will change any time soon. We no longer live in a fixed width world so
+    it doesn't make sense to build digital products with that mindset either.
+  </p>
+<br>
+<h3>Mobile 1st Strategy</h3>
+  <p>
+    Before I start on how to design mobile 1st, we need to start with a strategy. Besides the obvious reason why for ourselves
+    and stakeholders, why do your users need a mobile site? What are they trying to do? What kind of constraints are they
+    under? Driving a car, sun glare, low battery, running late? Proabably all of the above. This is why it is so important to do
+    research before your design process. You can do this through quantitive methods like running google analytics or conducting
+    surveys as well as qualitive methods like conducting contextual inquiry interviews where you observe users using the website
+    in context to their everyday lives.
+  </p>
+  <br>
+<h3>Design Process</h3>
+  <p>
+    Once you have your strategy and user goals defined it's time to start designing. Before you start designing, here are a few
+    things to keep in mind:
+  </p>
+    <ul>
+      <li>Design for content, not retrofitting old desktop features</li>
+      <li>Use mobile features to drive the UX strategy for all devices</li>
+      <li>Don't forget about the nuances touch interactions on mobile vs. mouse interactions on desktop</li>
+      <li>Mobile 1st doesnt mean you have to wait to design other device widths until the end. I focus on mobile but design
+          all devices concurrently.</li>
+    </ul>
+    <p>
+      Heres a general step by step process as you start planning and ideating your design. This is absolutely not set in stone,
+      but this is what works for me:
+    </p>
+      <ol>
+        <li>Start with sketching out the content in a general layout</li>
+        <li>Based on your sketch, define your layout and grid in columns and gutters</li>
+        <li>Establish a responsive type scale that is structured semantically. Include h1-h6, paragraph, leading and
+            line length. Type Scale is one of my favorite ways of setting this up, and it even translates pixels into
+            ems and rems. (More on that below)</li>
+        <li>Plan out how all of your components are going to behave, but don’t be married to anything. You will tweak and
+            refine during development.</li>
+      </ol>
+<br>
+<h3>Development</h3>
+  <br>
+  <h4>Enabling Multiple Viewports</h4>
+  <p>
+    Now that you've got your design locked down it's time to translate it into code. One of the first things you need to
+    do is tell the browser to pay attention to the viewport width and change what renders based on that. To clarify a
+    viewport is visable area in a browser and usually contains a range of widths. Later in your css you can define that a
+    tablet viewport is when the browser width is between 960px and 768px. In order to tell the browser to do this, we
+    need to add a meta tag in the head of your html, which won't be code that renders in the browser:
+    <br>
+    <code>meta name="viewport" content="width=device-width, initial scale=1.0 maximum -scale-1.0, user scalable=0"/</code>
+    <br>
+    If you don't include this tag the browser will continue to re-adjust the desktop website on any viewport width.
+  </p>
+  <br>
+  <h4>Media Queries</h4>
+    <p>
+      Media queries are a CSS3 technique that define style changes according to an established set of viewport widths. Using
+      the <code>@media</code> rule to define various breakpoints. Below I'll break down some of the concepts with mobile first
+      development. Check out <a href="link.html">this</a> post for more information about media queries with code examples.
+    </p>
+    <br>
+    <h5>Min-Width vs Max-Width</h5>
+     <p>
+       There are two ways of establishing breakpoints for your design, with a <code>mid-width</code> rule or a <code>mid-width</code>.
+       A lot of times, people taking an existing desktop site will use <code>max-width</code> when creating a media query.
+       <code>max-width</code> will specify you want to apply styles up to viewports 768px. When creating a site from scratch
+       you you can where the mobile 1st mindset applies to <code>min-width</code>. When used with <code>@media</code>
+       this rule will specify that you want to apply style changes to viewports 768px and above. If you think back to elementry
+       math, the less than and more than symbols may be helpful.
+       <br>
+       <code>min-width</code> = greater than >
+       <br>
+       <code>max-width</code> = less than <
+     </p>
+     <br>
+  <h4>Using Responsive Units</h4>
+  <p>
+    Once you've defined the breakpoints you want your design to change at you'll need to define those style changes, specifically
+    in terms of your grid. Up this point as a designer, we've probably been working within fixed units such as pixels. Now that
+    we need our design to be flexible, so do our units. We need to now be working within relative units.
+  </p>
+  <h4>Typography</h4>
+  <p>
+    For typography we'll now be writing our css using <code>em</code> and <code>rem</code>. The main difference between the
+    two is how the browser determines the base px value that they are attached to. For the <code>rem</code> the base pixel the
+    browser draws from can be found in the <code>html</code> style. In the case of <code>em</code> the desired pixel value is
+    derived from the parent element that it is nested in. Using <code>em</code> is often discouraged because it will inherit any
+    other font styles of whatever element it is in. That way something with 1.25em in its own element will look different than
+    something with a 1.25 that is nested within another element.
+  </p>
+  <h4>Grid</h4>
+  <p>
+    In fixed width layouts we usually create a table with columns set in pixels. Now that we are moving into a more fluid layout
+    we'll be sizing things with percentages, and those percentages are relative to the width of the viewport which is 100%.
+    So if you have something that takes up 4 columns side by side we would convert those to perceptances. In this case each column
+    would not be 25% as you would think. You still need to consider the relative width of the gutters and margins around each column.
+    In this instance, you would want to make each column 21.25% leaving the outside margins and inside gutter to be alotted 5% each.
+  </p>
+</section>
+
+  </div>
+
+</article>
+
+    <footer class="c-footer">
+  <div class="o-main">
+    <p>&copy;2017 | 8th Light</p>
+  </div>
+</footer>
+
+  </body>
+</html>

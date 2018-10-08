@@ -6,17 +6,383 @@
 </description>
     <link>https://juliafmurray.github.io//</link>
     <atom:link href="https://juliafmurray.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Oct 2018 10:42:32 -0500</pubDate>
-    <lastBuildDate>Mon, 01 Oct 2018 10:42:32 -0500</lastBuildDate>
+    <pubDate>Mon, 08 Oct 2018 10:07:54 -0500</pubDate>
+    <lastBuildDate>Mon, 08 Oct 2018 10:07:54 -0500</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
-        <title>Git for Humans</title>
-        <description>&lt;header&gt;
-  &lt;h2&gt;Git for Humans&lt;/h2&gt;
-&lt;/header&gt;
+        <title>Color</title>
+        <description>&lt;p&gt;
+  Color is a tool used in nature, art, design and everyday life to draw attention to or away from something specific. In nature,
+  color is used to attract one being to another for procreation. On the other hand it is also used as camolflage to protect
+  prey from their predators. We've taken that cue from nature and applied it to our daily lives. This post outlines some
+  basic concepts of color theory and how to apply it to digital interfaces.
+&lt;/p&gt;
+&lt;h2&gt;Color Basics&lt;/h2&gt;
+&lt;p&gt;
+  The color wheel is a great way to start understanding basic color principles. Its an illustative tool used for organizing
+  and categorizing different groups of color hues. These groups are cagetgorized as follows:
+  &lt;ul&gt;
+    &lt;li&gt;Primary colors: These are colors at the most basic level. They cannot be created by mixing other colors. primary
+        colors are blue red and yellow.&lt;/li&gt;
+    &lt;li&gt;Secondary colors: These colors are achieved by mixing two primary colors together. Yellow+Blue=Green, Red+Yellow=Orange
+        Blue+Red=Violet.&lt;/li&gt;
+    &lt;li&gt;Tertiary colors: These colors are created by combining one primary and one secondary color. Yellow+Green=Green-Yellow,
+        Yellow+Orange=Yellow-Orange, Orange+Red=Orange-Red, Red+Violet=Red-Violet, Blue+Voilet=Violet-Blue and
+        Green+Blue=Blue-Green&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/p&gt;
 
-&lt;section&gt;
+&lt;h3&gt;Color Theory&lt;/h3&gt;
+&lt;p&gt;
+  The above are used as a guide for mixing colors, as tertiary colors are a result of mixing primary and secondary colors together.
+  If we would like to come up with a color scheme for a design we are working on, we can get into some basic color theory:
+  &lt;ul&gt;
+    &lt;li&gt;
+      Complimetary Colors: Colors located on opposite ends of the color wheel. For example, violet and yellow are complimentary
+      colors. This color scheme is often used to draw attenion to a focal point or make a bold statement.&lt;/li&gt;
+    &lt;li&gt;
+      Warm vs Cool: Warm colors are hues achieved by mixing red, yellow or orange together. Cool colors are created by mixing
+      blue, yellow or green together. Warm colors are used to envoke feelings of warmth, coziness or power while cool colors
+      create a sense of calmness, growth or lightness.
+    &lt;/li&gt;
+    &lt;li&gt;
+      Analagous: These colors are located next to eachother on the color wheel. Analagous color palettes create a composition
+      that is confortable and serene.
+    &lt;/li&gt;
+    &lt;li&gt;
+      Monochromatic: This color scheme is created with one color from the color wheel and adding varying amounts of shades, tones
+      or tints to it. Monochromatic colors will give a sense of space or depth to an object. It will also create a more
+      melancholoy mood.
+      &lt;/li&gt;
+    &lt;li&gt;
+      Tints, Tones and Shades: Tints are created by adding white to a hue, desaturating it in the process. Shades are when
+      you add black to a color, creating a richer and darker version of the orginal color. Tones are a combination of the two,
+      where you add black and white to a color. These colors will be more subdued, but are more true to what we see in the
+      real world.
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;h3&gt;Additive vs. Subtractive Colors&lt;/h3&gt;
+&lt;p&gt;
+  The difference between additive and subtractive colors is easy to remember as long as you know which medium you are
+  working in:
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;b&gt;Digital:&lt;/b&gt; Color that appears on a digital screen is created with &lt;b&gt;additive&lt;/b&gt; color processes. This process
+      starts with black and ends with white. As more color is incorportated into the mixture, the lighter it will get. When
+      working with digital color you'll be working in RGB (red green blue) color profiles.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;b&gt;Physical:&lt;/b&gt; Color that appears on a phsyical surface is created with &lt;b&gt;subtractive&lt;/b&gt; color processes. This
+      involves starting with white and progressing to black. As you mix more color into your mixture it becomes darker.
+      Subtractive color is used with anything that is printed or painted on a physical surface. When working in this way,
+      you'll be using CMYK (cyan magenta yellow black) color profiles.
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;h2&gt;Color Theory for UI Design&lt;/h2&gt;
+  &lt;p&gt;
+    An effective UI design really should do one thing: Help the user to identify the ui they to need to use in order to
+    achieve their goal or complete a desired task. A good UI should be clear, intuitive and uncomplicated. This is why
+    choosing a color scheme for a UI must be simple above all else. The formula of 60% + 30% + 10% creates a color balance
+    that aids in a good user experience and doesnt distract from it. Originally taken from the interior design industry,
+    this formula defines balance in the space and allows the eye to move smoothly from one area to another. It's also
+    easy to remember and to understand: 60% is the dominant color, 20% is secondary and 10% serves as and accent color.
+    Now this doesnt mean you can only have three colors, quiete the contrary. If you need a wider palette, take either
+    the dominant, secondary or accent colors and build up some shades and tints from them.
+  &lt;/p&gt;
+    &lt;h3&gt;Greys before Beauty&lt;/h3&gt;
+    &lt;p&gt;
+      Before selecting your colors, you need to first create a color heirarchy within your UI. If you go straight into
+      selection color combinations arbitarily, the day will be gone before you know it, and you most likely won't
+      have anything that you feel solid on. It's best to avoid this situation, so before that we'll start
+      by laying out our design in greyscale. This will allow up to pinpoint what we want our focal points to be, and
+      then we'll apply color to those focal points.
+    &lt;/p&gt;
+    &lt;h3&gt;Color Blindness and Accessibility&lt;/h3&gt;
+    &lt;p&gt;
+      Color can be a powerful tool in UI design, but we need to make sure your design choices don't limit access to
+      information to some users. What looks red to someone may infact look like a totally different color to another
+      person. There are several different types of color blindness, and effects 1 in 12 men and 1 in 200 women, which
+      is no small amount. Color blindness is an incredibly complex subject, but designing for it is pretty simple in
+      itself. The Web Content Accessibility Guidelines (WCAG 2.1) requires colors to meet a certain color contrast
+      for compliance. This applies to text and background as well as necessary ui elements and background. Starting
+      by designing in greyscale helps you give yourself a good idea of what your contrast level should be in terms of
+      your color heirarchy. The goal here is to make sure a color of a UI shouldn't keep someone from knowing how
+      to use it. For more information, check out my post on
+      &lt;a href=&quot;https://juliafmurray.github.io/blog/post/2018/09/26/accessibility.html&quot;&gt;accessibility&lt;/a&gt;.
+    &lt;/p&gt;
+</description>
+        <pubDate>Fri, 05 Oct 2018 00:00:00 -0500</pubDate>
+        <link>https://juliafmurray.github.io//jekyll/update/2018/10/05/Color.html</link>
+        <guid isPermaLink="true">https://juliafmurray.github.io//jekyll/update/2018/10/05/Color.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Media Queries with CSS3</title>
+        <description>&lt;section&gt;
+&lt;h3&gt;Syntax&lt;/h3&gt;
+  &lt;p&gt;
+    Media queries are broken down into media types and features. Types are requires and all features are optional. Media types
+    include:
+    &lt;/p&gt;
+  &lt;ul&gt;
+      &lt;li&gt;&lt;code&gt;all&lt;/code&gt; is used for paged content viewed for print preview mode&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;print&lt;/code&gt; allows users to print different versions the site for better readability.&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;screen&lt;/code&gt; used to change the style of a website by predefined screen widths&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;speech&lt;/code&gt; is used for screed readers that read the website to users&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;
+      There are several media features which can be found
+      &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features&quot;&gt;here&lt;/a&gt;
+      but some commons one are &lt;code&gt;width&lt;/code&gt;	&lt;code&gt;height&lt;/code&gt; &lt;code&gt;orientation&lt;/code&gt; and &lt;code&gt;aspect-ratio&lt;/code&gt;.
+      For the purposes responsive design, the &lt;code&gt;width&lt;/code&gt; feature is most commonly used since it defines various
+      viewport and device widths.
+    &lt;/p&gt;
+  &lt;br&gt;
+&lt;h3&gt;Setting the Viewport&lt;/h3&gt;
+  &lt;p&gt;
+    A viewport is essentially anything that is rendered within a broswer and is visable by the user. The first step is to tell
+    the browser to pay attention to the viewport width, to not squeeze the desktop site to any width and to apply the style
+    changes you define in your css. You start this within with the head of your html:
+    &lt;br&gt;
+    &lt;code&gt; &lt; meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; &gt; &lt;/code&gt;
+  &lt;/p&gt;
+  &lt;br&gt;
+&lt;h3&gt;Media Queries&lt;/h3&gt;
+  &lt;p&gt;
+    Now that the viewport is set, we can now define at what widths we want our design to change. There are some different
+    pratices about where to place media queries within css. One is where you put all of your media queries at the very bottom,
+    and organize them by width which I think is annoying to have to scroll an bunch to compare the same classes of different
+    widths together. The other way to do it, which I much prefer is to have all the media queries for the same class together
+    starting from smallest to largest width.
+  &lt;/p&gt;
+  &lt;br&gt;
+    &lt;h4&gt;min-width vs max width&lt;/h4&gt;
+    &lt;p&gt;
+      As mentioned in &lt; part one &gt; there are two ways of establishing breakpoints for your design, with a &lt;code&gt;mid-width&lt;/code&gt;
+      rule or a &lt;code&gt;mid-width&lt;/code&gt;.A lot of times, people taking an existing desktop site will use &lt;code&gt;max-width&lt;/code&gt;
+      when creating a media query. Often times when you are making an existing site reposnsive you'll use &lt;code&gt;max-width&lt;/code&gt;
+      since you have established code for larger desktop size and you're designing for screen sizes below that. In the
+      preferable case where you are writing code from scratch it's better to use &lt;code&gt;min-width&lt;/code&gt; since you're starting
+      with the smallest screen size and going up.
+    &lt;/p&gt;
+    &lt;p&gt;
+    Let's say you have two sentances that you want to be bigger in in mobile sizes and be smaller for tablet and desktop
+    screens. You also want them to be side by side on tablet and stacked on mobile and change colors between the
+    two screen sizes as well. Heres how you would define that in your css:
+    &lt;br&gt;
+    &lt;br&gt;
+      &lt;code&gt;
+        @media screen and (min-width: 320px) {&lt;br&gt;
+        .ex-one {&lt;br&gt;
+        background-color: $color-green;&lt;br&gt;
+        font-family: $font-family-poppins;&lt;br&gt;
+        font-size: $font-size-large-h3;&lt;br&gt;
+        padding-bottom: 15px;&lt;br&gt;
+        text-decoration-color: $color-black;&lt;br&gt;
+        width: 100%;&lt;br&gt;
+          }&lt;br&gt;
+        }&lt;br&gt;
+        @media screen and (min-width: 768px) {&lt;br&gt;
+        .ex-one {&lt;br&gt;
+        background-color: $color-alert;&lt;br&gt;
+        float: left;&lt;br&gt;
+        font-family: $font-family-poppins;&lt;br&gt;
+        font-size: $font-size-large-h5;&lt;br&gt;
+        padding-bottom: 15px;&lt;br&gt;
+        text-decoration-color: $color-black;&lt;br&gt;
+        width: 50%;&lt;br&gt;
+          }&lt;br&gt;
+          }&lt;br&gt;
+        @media screen and (min-width: 320px) {&lt;br&gt;
+        .ex-two {&lt;br&gt;
+        background-color: $color-alert;&lt;br&gt;
+        font-family: $font-family-poppins;&lt;br&gt;
+        font-size: $font-size-large-h3;&lt;br&gt;
+        padding-bottom: 15px;&lt;br&gt;
+        text-decoration-color: $color-black;&lt;br&gt;
+        width: 100%;&lt;br&gt;
+          }&lt;br&gt;
+        }&lt;br&gt;
+        &lt;br&gt;
+        @media screen and (min-width: 768px) {&lt;br&gt;
+        .ex-two {&lt;br&gt;
+        background-color: $color-green;&lt;br&gt;
+        float: left;&lt;br&gt;
+        font-family: $font-family-poppins;&lt;br&gt;
+        font-size: $font-size-large-h5;&lt;br&gt;
+        padding-bottom: 15px;&lt;br&gt;
+        text-decoration-color: $color-black;&lt;br&gt;
+        width: 50%;&lt;br&gt;
+          }&lt;br&gt;
+        }&lt;br&gt;
+      &lt;/code&gt;
+    &lt;/p&gt;
+    &lt;br&gt;
+    &lt;div class=&quot;ex-one&quot;&gt;Example: Resize the browser width to see this media querey in action&lt;/div&gt;
+    &lt;div class=&quot;ex-two&quot;&gt;Example: Resize the browser width to see this media querey in action&lt;/div&gt;
+    &lt;br&gt;
+  &lt;h3&gt;Responsive Units&lt;/h3&gt;
+    &lt;p&gt;
+      In my &lt; previous post &gt; I go into how the units for your grid and typography need to be flexible now that our canvas
+      is no longer fixed. With responsive typography our units go from &lt;code&gt;px&lt;/code&gt; to &lt;code&gt;em&lt;/code&gt; or &lt;code&gt;rem&lt;/code&gt;.
+      The only difference is that &lt;code&gt;rem&lt;/code&gt; unit derives the base font size from the &lt;code&gt;html&lt;/code&gt; class in your css.
+      This is a bit cleaner and easier to manage than &lt;code&gt;em&lt;/code&gt; which derives the base font from whatever element it's
+      nested in. You can easily understand how things can get out of hand if your class is nested within several elements that
+      have multiple font sizes.
+    &lt;/p&gt;
+    &lt;p&gt;
+      Like with typography, when setting up a responsive layout there will be a shift away from &lt;code&gt;px&lt;/code&gt; but this time,
+      we'll be changing to &lt;code&gt;%&lt;/code&gt;. We do this because we want to think of our columns and gutters and relative units
+      that resize proportionally to the browser width set at 100%.
+    &lt;/p&gt;
+&lt;/section&gt;
+</description>
+        <pubDate>Thu, 04 Oct 2018 00:00:00 -0500</pubDate>
+        <link>https://juliafmurray.github.io//jekyll/update/2018/10/04/Media-Queries.html</link>
+        <guid isPermaLink="true">https://juliafmurray.github.io//jekyll/update/2018/10/04/Media-Queries.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Mobile 1st Design &amp; Development</title>
+        <description>&lt;section&gt;
+  &lt;p&gt;
+    Mobile first design &amp; devopment is the process of building sites with a focused on the experience for users on mobile
+    devices. This is inclusive on process for strategy, design and devlopment. There are many many reasons for working in
+    this way. I could list off a bunch of statistics about mobile web browsing surpassing desktop browsing years ago,
+    but mobile 1st design is more about market longevity than anything else. People use devices of all different sizes
+    any there is little to no chance that will change any time soon. We no longer live in a fixed width world so
+    it doesn't make sense to build digital products with that mindset either.
+  &lt;/p&gt;
+&lt;br&gt;
+&lt;h3&gt;Mobile 1st Strategy&lt;/h3&gt;
+  &lt;p&gt;
+    Before I start on how to design mobile 1st, we need to start with a strategy. Besides the obvious reason why for ourselves
+    and stakeholders, why do your users need a mobile site? What are they trying to do? What kind of constraints are they
+    under? Driving a car, sun glare, low battery, running late? Proabably all of the above. This is why it is so important to do
+    research before your design process. You can do this through quantitive methods like running google analytics or conducting
+    surveys as well as qualitive methods like conducting contextual inquiry interviews where you observe users using the website
+    in context to their everyday lives.
+  &lt;/p&gt;
+  &lt;br&gt;
+&lt;h3&gt;Design Process&lt;/h3&gt;
+  &lt;p&gt;
+    Once you have your strategy and user goals defined it's time to start designing. Before you start designing, here are a few
+    things to keep in mind:
+  &lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Design for content, not retrofitting old desktop features&lt;/li&gt;
+      &lt;li&gt;Use mobile features to drive the UX strategy for all devices&lt;/li&gt;
+      &lt;li&gt;Don't forget about the nuances touch interactions on mobile vs. mouse interactions on desktop&lt;/li&gt;
+      &lt;li&gt;Mobile 1st doesnt mean you have to wait to design other device widths until the end. I focus on mobile but design
+          all devices concurrently.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;
+      Heres a general step by step process as you start planning and ideating your design. This is absolutely not set in stone,
+      but this is what works for me:
+    &lt;/p&gt;
+      &lt;ol&gt;
+        &lt;li&gt;Start with sketching out the content in a general layout&lt;/li&gt;
+        &lt;li&gt;Based on your sketch, define your layout and grid in columns and gutters&lt;/li&gt;
+        &lt;li&gt;Establish a responsive type scale that is structured semantically. Include h1-h6, paragraph, leading and
+            line length. Type Scale is one of my favorite ways of setting this up, and it even translates pixels into
+            ems and rems. (More on that below)&lt;/li&gt;
+        &lt;li&gt;Plan out how all of your components are going to behave, but don’t be married to anything. You will tweak and
+            refine during development.&lt;/li&gt;
+      &lt;/ol&gt;
+&lt;br&gt;
+&lt;h3&gt;Development&lt;/h3&gt;
+  &lt;br&gt;
+  &lt;h4&gt;Enabling Multiple Viewports&lt;/h4&gt;
+  &lt;p&gt;
+    Now that you've got your design locked down it's time to translate it into code. One of the first things you need to
+    do is tell the browser to pay attention to the viewport width and change what renders based on that. To clarify a
+    viewport is visable area in a browser and usually contains a range of widths. Later in your css you can define that a
+    tablet viewport is when the browser width is between 960px and 768px. In order to tell the browser to do this, we
+    need to add a meta tag in the head of your html, which won't be code that renders in the browser:
+    &lt;br&gt;
+    &lt;code&gt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial scale=1.0 maximum -scale-1.0, user scalable=0&quot;/&lt;/code&gt;
+    &lt;br&gt;
+    If you don't include this tag the browser will continue to re-adjust the desktop website on any viewport width.
+  &lt;/p&gt;
+  &lt;br&gt;
+  &lt;h4&gt;Media Queries&lt;/h4&gt;
+    &lt;p&gt;
+      Media queries are a CSS3 technique that define style changes according to an established set of viewport widths. Using
+      the &lt;code&gt;@media&lt;/code&gt; rule to define various breakpoints. Below I'll break down some of the concepts with mobile first
+      development. Check out &lt;a href=&quot;link.html&quot;&gt;this&lt;/a&gt; post for more information about media queries with code examples.
+    &lt;/p&gt;
+    &lt;br&gt;
+    &lt;h5&gt;Min-Width vs Max-Width&lt;/h5&gt;
+     &lt;p&gt;
+       There are two ways of establishing breakpoints for your design, with a &lt;code&gt;mid-width&lt;/code&gt; rule or a &lt;code&gt;mid-width&lt;/code&gt;.
+       A lot of times, people taking an existing desktop site will use &lt;code&gt;max-width&lt;/code&gt; when creating a media query.
+       &lt;code&gt;max-width&lt;/code&gt; will specify you want to apply styles up to viewports 768px. When creating a site from scratch
+       you you can where the mobile 1st mindset applies to &lt;code&gt;min-width&lt;/code&gt;. When used with &lt;code&gt;@media&lt;/code&gt;
+       this rule will specify that you want to apply style changes to viewports 768px and above. If you think back to elementry
+       math, the less than and more than symbols may be helpful.
+       &lt;br&gt;
+       &lt;code&gt;min-width&lt;/code&gt; = greater than &gt;
+       &lt;br&gt;
+       &lt;code&gt;max-width&lt;/code&gt; = less than &lt;
+     &lt;/p&gt;
+     &lt;br&gt;
+  &lt;h4&gt;Using Responsive Units&lt;/h4&gt;
+  &lt;p&gt;
+    Once you've defined the breakpoints you want your design to change at you'll need to define those style changes, specifically
+    in terms of your grid. Up this point as a designer, we've probably been working within fixed units such as pixels. Now that
+    we need our design to be flexible, so do our units. We need to now be working within relative units.
+  &lt;/p&gt;
+  &lt;h4&gt;Typography&lt;/h4&gt;
+  &lt;p&gt;
+    For typography we'll now be writing our css using &lt;code&gt;em&lt;/code&gt; and &lt;code&gt;rem&lt;/code&gt;. The main difference between the
+    two is how the browser determines the base px value that they are attached to. For the &lt;code&gt;rem&lt;/code&gt; the base pixel the
+    browser draws from can be found in the &lt;code&gt;html&lt;/code&gt; style. In the case of &lt;code&gt;em&lt;/code&gt; the desired pixel value is
+    derived from the parent element that it is nested in. Using &lt;code&gt;em&lt;/code&gt; is often discouraged because it will inherit any
+    other font styles of whatever element it is in. That way something with 1.25em in its own element will look different than
+    something with a 1.25 that is nested within another element.
+  &lt;/p&gt;
+  &lt;h4&gt;Grid&lt;/h4&gt;
+  &lt;p&gt;
+    In fixed width layouts we usually create a table with columns set in pixels. Now that we are moving into a more fluid layout
+    we'll be sizing things with percentages, and those percentages are relative to the width of the viewport which is 100%.
+    So if you have something that takes up 4 columns side by side we would convert those to perceptances. In this case each column
+    would not be 25% as you would think. You still need to consider the relative width of the gutters and margins around each column.
+    In this instance, you would want to make each column 21.25% leaving the outside margins and inside gutter to be alotted 5% each.
+  &lt;/p&gt;
+&lt;/section&gt;
+</description>
+        <pubDate>Wed, 03 Oct 2018 00:00:00 -0500</pubDate>
+        <link>https://juliafmurray.github.io//jekyll/update/2018/10/03/Mobile-1st-Design-&-Development.html</link>
+        <guid isPermaLink="true">https://juliafmurray.github.io//jekyll/update/2018/10/03/Mobile-1st-Design-&-Development.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Git for Humans</title>
+        <description>&lt;section&gt;
   &lt;p&gt;
     I’m only about 2 weeks into my apprenticeship as well as my introduction to Git and Github. So far I'd like to say one thing:
     Git makes me feel really dumb. Going through some of these concepts makes me feel like I am literally re-wiring my
