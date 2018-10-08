@@ -1,0 +1,128 @@
+---
+layout: post
+title:  "Media Queries with CSS3"
+date:   2018-10-4
+categories: jekyll update
+---
+
+
+
+<section>
+<h3>Syntax</h3>
+  <p>
+    Media queries are broken down into media types and features. Types are requires and all features are optional. Media types
+    include:
+    </p>
+  <ul>
+      <li><code>all</code> is used for paged content viewed for print preview mode</li>
+      <li><code>print</code> allows users to print different versions the site for better readability.</li>
+      <li><code>screen</code> used to change the style of a website by predefined screen widths</li>
+      <li><code>speech</code> is used for screed readers that read the website to users</li>
+    </ul>
+
+    <p>
+      There are several media features which can be found
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features">here</a>
+      but some commons one are <code>width</code>	<code>height</code> <code>orientation</code> and <code>aspect-ratio</code>.
+      For the purposes responsive design, the <code>width</code> feature is most commonly used since it defines various
+      viewport and device widths.
+    </p>
+  <br>
+<h3>Setting the Viewport</h3>
+  <p>
+    A viewport is essentially anything that is rendered within a broswer and is visable by the user. The first step is to tell
+    the browser to pay attention to the viewport width, to not squeeze the desktop site to any width and to apply the style
+    changes you define in your css. You start this within with the head of your html:
+    <br>
+    <code> < meta name="viewport" content="width=device-width, initial-scale=1.0" > </code>
+  </p>
+  <br>
+<h3>Media Queries</h3>
+  <p>
+    Now that the viewport is set, we can now define at what widths we want our design to change. There are some different
+    pratices about where to place media queries within css. One is where you put all of your media queries at the very bottom,
+    and organize them by width which I think is annoying to have to scroll an bunch to compare the same classes of different
+    widths together. The other way to do it, which I much prefer is to have all the media queries for the same class together
+    starting from smallest to largest width.
+  </p>
+  <br>
+    <h4>min-width vs max width</h4>
+    <p>
+      As mentioned in < part one > there are two ways of establishing breakpoints for your design, with a <code>mid-width</code>
+      rule or a <code>mid-width</code>.A lot of times, people taking an existing desktop site will use <code>max-width</code>
+      when creating a media query. Often times when you are making an existing site reposnsive you'll use <code>max-width</code>
+      since you have established code for larger desktop size and you're designing for screen sizes below that. In the
+      preferable case where you are writing code from scratch it's better to use <code>min-width</code> since you're starting
+      with the smallest screen size and going up.
+    </p>
+    <p>
+    Let's say you have two sentances that you want to be bigger in in mobile sizes and be smaller for tablet and desktop
+    screens. You also want them to be side by side on tablet and stacked on mobile and change colors between the
+    two screen sizes as well. Heres how you would define that in your css:
+    <br>
+    <br>
+      <code>
+        @media screen and (min-width: 320px) {<br>
+        .ex-one {<br>
+        background-color: $color-green;<br>
+        font-family: $font-family-poppins;<br>
+        font-size: $font-size-large-h3;<br>
+        padding-bottom: 15px;<br>
+        text-decoration-color: $color-black;<br>
+        width: 100%;<br>
+          }<br>
+        }<br>
+        @media screen and (min-width: 768px) {<br>
+        .ex-one {<br>
+        background-color: $color-alert;<br>
+        float: left;<br>
+        font-family: $font-family-poppins;<br>
+        font-size: $font-size-large-h5;<br>
+        padding-bottom: 15px;<br>
+        text-decoration-color: $color-black;<br>
+        width: 50%;<br>
+          }<br>
+          }<br>
+        @media screen and (min-width: 320px) {<br>
+        .ex-two {<br>
+        background-color: $color-alert;<br>
+        font-family: $font-family-poppins;<br>
+        font-size: $font-size-large-h3;<br>
+        padding-bottom: 15px;<br>
+        text-decoration-color: $color-black;<br>
+        width: 100%;<br>
+          }<br>
+        }<br>
+        <br>
+        @media screen and (min-width: 768px) {<br>
+        .ex-two {<br>
+        background-color: $color-green;<br>
+        float: left;<br>
+        font-family: $font-family-poppins;<br>
+        font-size: $font-size-large-h5;<br>
+        padding-bottom: 15px;<br>
+        text-decoration-color: $color-black;<br>
+        width: 50%;<br>
+          }<br>
+        }<br>
+      </code>
+    </p>
+    <br>
+    <div class="ex-one">Example: Resize the browser width to see this media querey in action</div>
+    <div class="ex-two">Example: Resize the browser width to see this media querey in action</div>
+    <br>
+  <h3>Responsive Units</h3>
+    <p>
+      In my < previous post > I go into how the units for your grid and typography need to be flexible now that our canvas
+      is no longer fixed. With responsive typography our units go from <code>px</code> to <code>em</code> or <code>rem</code>.
+      The only difference is that <code>rem</code> unit derives the base font size from the <code>html</code> class in your css.
+      This is a bit cleaner and easier to manage than <code>em</code> which derives the base font from whatever element it's
+      nested in. You can easily understand how things can get out of hand if your class is nested within several elements that
+      have multiple font sizes.
+    </p>
+    <p>
+      Like with typography, when setting up a responsive layout there will be a shift away from <code>px</code> but this time,
+      we'll be changing to <code>%</code>. We do this because we want to think of our columns and gutters and relative units
+      that resize proportionally to the browser width set at 100%.
+    </p>
+</section>

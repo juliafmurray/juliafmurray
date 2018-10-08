@@ -1,0 +1,46 @@
+
+@media screen and (min-width: 320px) {
+.ex-one {
+background-color: $color-green;
+font-family: $font-family-poppins;
+font-size: $font-size-large-h3;
+padding-bottom: 15px;
+text-decoration-color: $color-black;
+width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+.ex-one {
+background-color: $color-alert;
+float: left;
+font-family: $font-family-poppins;
+font-size: $font-size-large-h5;
+padding-bottom: 15px;
+text-decoration-color: $color-black;
+width: 50%;
+  }
+}
+
+@media screen and (min-width: 320px) {
+.ex-two {
+background-color: $color-alert;
+font-family: $font-family-poppins;
+font-size: $font-size-large-h3;
+padding-bottom: 15px;
+text-decoration-color: $color-black;
+width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+.ex-two {
+background-color: $color-green;
+float: left;
+font-family: $font-family-poppins;
+font-size: $font-size-large-h5;
+padding-bottom: 15px;
+text-decoration-color: $color-black;
+width: 50%;
+  }
+}

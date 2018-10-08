@@ -1,60 +1,144 @@
 
 // Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Libre+Baskerville:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,600,700|PT+Mono|PT+Serif:400,400i,700,700i');
 
-// Font Variables
-$libre-baskerville: 'Libre Baskerville', heading;
-$karla: 'Karla', body;
-$color-black: #000000;
 
 //Styles
 html {
-  font-family: $karla;
+  font-family: $font-family-pt;
   font-weight: $font-weight-regular;
-  line-height: $line-height-text;
+  line-height: $line-height-text-small;
   color: $color-black;
-  font-size: $font-size-text-large;
+  font-size: $font-size-text-small;
 }
 
 h1 {
-  font-family: $libre-baskerville;
-  color: $color-black;
-  font-size: $font-size-heading-x-large;
+  font-family: $font-family-poppins;
   font-weight: $font-weight-bold;
   line-height: $line-height-heading;
+
+  @media screen and (min-width: 320px) {
+    color: $color-orange-dark;
+    font-size: $font-size-small-h1;
+    }
+
+  @media screen and (min-width: 768px) {
+    color: $color-green-dark;
+    font-size: $font-size-large-h1;
+    }
 }
 
+@media screen and (min-width: 768px) {
+  font-family: $font-family-poppins;
+  color: $color-green-dark;
+  font-size: $font-size-large-h1;
+  }
+
+@media screen and (min-width: 320px) {
 h2 {
-  font-family: $libre-baskerville;
-  color: $color-black;
-  font-size: $font-size-heading-large;
-  font-weight: $font-weight-bold;
+  font-family: $font-family-poppins;
+  color: $color-green-dark;
+  font-size: $font-size-small-h2;
+  font-weight: $font-weight-semibold;
   line-height: $line-height-heading;
+  }
 }
 
+@media screen and (min-width: 768px) {
+h2 {
+  font-family: $font-family-poppins;
+  color: $color-orange-dark;
+  font-size: $font-size-large-h2;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-heading;
+  }
+}
+
+@media screen and (min-width: 320px) {
 h3 {
   color: $color-black;
-  font-family: $libre-baskerville;
-  font-size: $font-size-heading-medium;
+  font-family: $font-family-poppins;
+  font-size: $font-size-small-h3;
   font-weight: normal;
   margin: 0;
+  }
 }
 
-h4 {
+@media screen and (min-width: 768px) {
+h3 {
   color: $color-black;
-  font-family: $libre-baskerville;
-  font-size: $font-size-heading-small;
+  font-family: $font-family-poppins;
+  font-size: $font-size-large-h3;
   font-weight: normal;
   margin: 0;
+  }
 }
 
-p {
-  color: $color-black;
-  font-size: $font-size-text-x-large;
-  margin: 0;
+@media screen and (min-width: 320px) {
+  h4 {
+    color: $color-black;
+    font-family: $font-family-poppins;
+    font-size: $font-size-small-h4;
+    font-weight: normal;
+    margin: 0;
+  }
 }
 
-// small {
-//   color: $color-accent;
-//   font-size: $font-size-heading-x-small;
-// }
+@media screen and (min-width: 768px) {
+  h4 {
+    color: $color-black;
+    font-family: $font-family-poppins;
+    font-size: $font-size-large-h4;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+
+@media screen and (min-width: 320px) {
+  h5 {
+    color: $color-black;
+    font-family: $font-family-poppins;
+    font-size: $font-size-small-h5;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h5 {
+    color: $color-black;
+    font-family: $font-family-poppins;
+    font-size: $font-size-large-h5;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  p {
+    color: $color-black;
+    font-family: $font-family-pt;
+    font-size: $font-size-text-small;
+    line-height: $line-height-text-small;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    color: $color-black;
+    font-family: $font-family-pt;
+    font-size: $font-size-text-large;
+    line-height: $line-height-text-large;
+    margin: 0;
+  }
+}
+
+
+  code {
+    background-color: $color-silver;
+    font-family: $font-family-monospace;
+    color: $color-alert;
+    font-size: $font-size-text-large;
+  }
