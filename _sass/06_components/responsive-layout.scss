@@ -1,0 +1,227 @@
+.flexwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  text-align: center;
+  font-size: $font-size-heading-large;
+}
+
+.flexwrapper > div {
+  padding: $spacing-x-small;
+}
+
+.flexwrapper__one {
+  background-color: $color-black;
+
+  @media screen and (min-width: $width-small) {
+    width: 100%
+  }
+
+  @media screen and (min-width: $width-medium) {
+    width: 50%
+  }
+
+  @media screen and (min-width: $width-large) {
+    width: 25%
+  }
+}
+
+.flexwrapper__two {
+  background-color: $color-orange;
+
+  @media screen and (min-width: $width-small) {
+    width: 100%
+  }
+
+  @media screen and (min-width: $width-medium) {
+    width: 50%
+  }
+
+  @media screen and (min-width: $width-large) {
+    width: 25%
+  }
+}
+
+.flexwrapper__three {
+  background-color: $color-purple;
+
+  @media screen and (min-width: $width-small) {
+    width: 100%
+  }
+
+  @media screen and (min-width: $width-medium) {
+    width: 50%
+  }
+
+  @media screen and (min-width: $width-large) {
+    width: 25%
+  }
+
+}
+
+.flexwrapper__four {
+  background-color: $color-green;
+
+  @media screen and (min-width: $width-small) {
+    width: 100%
+  }
+
+  @media screen and (min-width: $width-medium) {
+    width: 50%
+  }
+
+  @media screen and (min-width: $width-large) {
+    width: 25%
+  }
+
+}
+
+.flexwrapper__five {
+  background-color: $color-orange;
+
+  @media screen and (min-width: $width-small) {
+    width: 100%
+  }
+
+  @media screen and (min-width: $width-medium) {
+    background-color: $color-green;
+    width: 50%
+  }
+
+  @media screen and (min-width: $width-large) {
+    width: 50%
+  }
+}
+
+.flexwrapper__six {
+  background-color: $color-black;
+
+  @media screen and (min-width: $width-small) {
+    width: 100%
+  }
+
+  @media screen and (min-width: $width-medium) {
+    width: 50%
+  }
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.wrapper > div {
+  font-size: $font-size-heading-large;
+  line-height: $line-height-text-small;
+  padding: $spacing-x-small;
+  text-align: center;
+}
+
+.wrapper__one {
+  background-color: $color-black;
+
+  @media screen and (min-width: $width-small) {
+    grid-column-end: 5;
+    grid-column-start: 1;
+  }
+
+  @media screen and (min-width: $width-medium) {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+
+  @media screen and (min-width: $width-large) {
+    grid-column-end: 2;
+    grid-column-start: 1;
+  }
+}
+
+.wrapper__two {
+ background-color: $color-orange;
+
+   @media screen and (min-width: $width-small) {
+     grid-column-end: 5;
+     grid-column-start: 1;
+   }
+
+    @media screen and (min-width: $width-medium) {
+      grid-column-end: 5;
+      grid-column-start: 3;
+   }
+
+    @media screen and (min-width: $width-large) {
+      grid-column-end: 3;
+      grid-column-start: 2;
+   }
+}
+
+.wrapper__three {
+ background-color: $color-purple;
+
+ @media screen and (min-width: $width-small) {
+   grid-column-end: 5;
+   grid-column-start: 1;
+ }
+
+ @media screen and (min-width: $width-medium) {
+   grid-column-end: 3;
+   grid-column-start: 1;
+ }
+
+ @media screen and (min-width: $width-large) {
+   grid-column-end: 4;
+   grid-column-start: 3;
+ }
+}
+
+.wrapper__four {
+  background-color: $color-green;
+
+  @media screen and (min-width: $width-small) {
+    grid-column-end: 5;
+    grid-column-start: 1;
+  }
+
+  @media screen and (min-width: $width-medium) {
+    grid-column-end: 5;
+    grid-column-start: 3;
+  }
+
+  @media screen and (min-width: $width-large) {
+    grid-column-end: 5;
+    grid-column-start: 4;
+  }
+}
+
+.wrapper__five {
+  background-color: $color-orange;
+
+  @media screen and (min-width: $width-small) {
+    grid-column-end: 5;
+    grid-column-start: 1;
+  }
+
+  @media screen and (min-width: $width-medium) {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+
+  @media screen and (min-width: $width-large) {
+    background-color: $color-green;
+  }
+}
+
+.wrapper__six {
+  background-color: $color-black;
+
+  @media screen and (min-width: $width-small) {
+    grid-column-end: 5;
+    grid-column-start: 1;
+  }
+
+  @media screen and (min-width: $width-medium) {
+    grid-column-end: 5;
+    grid-column-start: 3;
+}
+}

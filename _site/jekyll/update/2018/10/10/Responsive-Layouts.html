@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Responsive Layout</title>
+  <meta name="description" content="              The main goal for designing for the web, is to keep the user engaged with the content. If not designed well, content        can be complicated ...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/jekyll/update/2018/10/10/Responsive-Layouts.html">
+  <link rel="alternate" type="application/rss+xml" title="Julias Design Apprenticeship Blog" href="http://localhost:4000/feed.xml">
+
+</head>
+
+  <body>
+    <header class="c-header">
+  <div class="o-main">
+    <a class="nav-anchor" href="/">Julias Design Apprenticeship Blog</a>
+  </div>
+</header>
+
+    <article class="post o-main" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Responsive Layout</h1>
+    <p class="post-meta"><time datetime="2018-10-10T00:00:00-05:00" itemprop="datePublished">Oct 10, 2018</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="c-blog-post">
+      <p class="c-blog-post__paragraph">
+        The main goal for designing for the web, is to keep the user engaged with the content. If not designed well, content
+        can be complicated and important peices of information can be skipped over by the user. This is one of the biggest
+        challanges of creating a layout as a designer. You want it to simple and easy to consume the content, but break it up
+        in a way to keep the user interested and engaged. One of the first steps to designing a layout is to establish a grid
+        that elements will fall into within the layout. Below are some basic principles and anatomy of a grid.
+      </p>
+
+      <h3 class="c-blog-post__heading">Grid Design Principles</h3>
+        <ul class="c-blog-post__ul">
+          <li class="c-blog-post__li">
+            <b>Clarity/Order</b> makes it easier for users to find and navigate through content.
+          </li>
+          <li class="c-blog-post__li">
+            <b>Efficiency</b> allows designers change their design without having to start all over. When designing a grid structure, various
+            elements and layouts are addressed to avoid re-work.
+            while building the grid structure.
+          </li>
+          <li class="c-blog-post__li">
+            <b>Economy</b> makes it easier for multiple designers to work on the same design. An established grid structure is like a building
+            plan that lets everyone know where to go depending on the situation.
+          </li>
+          <li class="c-blog-post__li">
+            <b>Consistency/Harmony</b> allows for different layouts across a site to feel as though they fit within a single design
+            sytem.
+          </li>
+        </ul>
+
+        <h3 class="c-blog-post__heading">Grid Anatomy</h3>
+          <ul class="c-blog-post__ul">
+            <li class="c-blog-post__li">
+              A <b>grid container</b> contains all elements of a grid.
+            </li>
+            <li class="c-blog-post__li">
+              <b>Grid Lines</b> are referred to by grid line numbers. They are used when specifing where to place elements within a grid.
+              For example, an element can placed at a particular grid line, or between two grid lines.
+            </li>
+            <li class="c-blog-post__li">
+             A <b>grid column</b> is the space between two adjacent vertical grid lines. The size of a grid column is determined by
+             the grid-template-columns property.
+            </li>
+            <li class="c-blog-post__li">
+              <b>Grid rows</b> are the space between two adjacent horizontal grid lines. It's size is determined by the
+              grid-template-rows property. Both grid columns and rows can be referred to as a grid track.
+            </li>
+            <li class="c-blog-post__li">
+              <b>Grid cells</b> exist between grid columns and rows. Cells are defined as any space inside of four grid
+              lines. A single grid cell or collection of multiple cells as a grid area.
+            </li>
+          </ul>
+      </p>
+
+      <h3 class="c-blog-post__heading">CSS Grids, Flexbox & Media Queries</h3>
+        <p class="c-blog-post__paragraph">
+          There are two approaches you can take when implementing your design into code, flexbox and css grids. Flexbox is great
+          if you don't need to change your design much for different screen sizes. This works great if you're designing things
+          that are text heavy and don't have a bunch of different components. So if your design is limited to columns and rows
+          with basic line wrapping, Flexbox is the way to go. You can use flexbox with media queries to make your flexbox elements
+          responsive.
+        </p>
+        <p class="c-blog-post__paragraph">
+          Because of item simplicity, flexbox is considered one-dimensional while css grids are two-dimensional.
+          CSS works great for design that require a variety of columns per row. It's also the way to go for any layout that
+          needs to be responsive.
+        </p>
+        <h4 class="c-blog-post__heading">Flexbox</h4>
+
+          <p class="c-blog-post__paragraph">
+            The first thing to do here is to nest all the elements within the <code class="c-blog-post__markup">
+            div class="flex-container"</code>. Once you've do that in your css you can define some flexbox properties:
+          </p>
+            <code class="c-blog-post__markup">
+            display: flex;<br>
+            flex-wrap: wrap;<br>
+            justify-content: center;<br>
+            </code><br>
+            <p class="c-blog-post__paragraph">
+              Although flexbox is normally used for designs that don't need to change much for different device widths,
+              I just wanted to see how media queries worked with it, and it turned out pretty good I think.
+            </p>
+            <code class="c-blog-post__markup">
+              @media screen and (min-width: $width-small) {<br>
+                background-color: $color-black;<br>
+                margin: 1.14% 0;<br>
+                width: 22%; }<br>
+                <br>
+              @media screen and (min-width: $width-large) {<br>
+                background-color: $color-purple;<br>
+                margin: .44% 0;<br>
+                width: 12%; }<br>
+            </code><br>
+
+            <div class="flexwrapper">
+                <div class="flexwrapper__one">🧛‍</div>
+                <div class="flexwrapper__two">🎃</div>
+                <div class="flexwrapper__three">🦇</div>
+                <div class="flexwrapper__four">🧙</div>
+                <div class="flexwrapper__five">🔮</div>
+                <div class="flexwrapper__six">🧟‍</div>
+            </div>
+
+            <caption class="c-blog-post__caption">Above: Responsive design using flexbox</caption>
+            <br><br>
+      <h4 class="c-blog-post__heading">CSS Grids</h4>
+        <p class="c-blog-post__paragraph">
+          I found CSS grids to work much better working within BEM. After nesting elements within
+          <code class="c-blog-post__markup">div class="wrapper"</code> you can define your columns
+          in percentages within the stylesheet.<br>
+        </p>
+        <code class="c-blog-post__markup">
+          .wrapper {<br>
+          display: grid;<br>
+          grid-template-columns: 25% 25% 25% 25%; }<br>
+        </code>
+
+        <p class="c-blog-post__paragraph">
+          Although I only defined four columns for this excercise, many websites use a base of 12 since
+          it can easily be divded by both 3 and 4, and provides more layout flexibility. If I left this as is,
+          each emoji by default on here would take up a single cell, from one gridline to the next. CSS grids
+          allow us to make up bigger columns out of our 12 columns, so I thought I'd try it out. For example,
+          I used the <code class="c-blog-post__markup">grid-column-start</code> and
+          <code class="c-blog-post__markup">grid-column-end</code> to define where my emojiis would start and end.
+        </p>
+
+          <code class="c-blog-post__markup">
+            .wrapper__one {<br>
+              background-color: $color-black;<br>
+              <br>
+              @media screen and (min-width: $width-small) {<br>
+                grid-column-end: 5;<br>
+                grid-column-start: 1; }<br>
+                <br>
+              @media screen and (min-width: $width-medium) {<br>
+                grid-column-end: 3;<br>
+                grid-column-start: 1; }<br>
+                <br>
+              @media screen and (min-width: $width-large) {<br>
+                grid-column-end: 2;<br>
+                grid-column-start: 1; }<br>
+                }
+          </code>
+
+            <div class="wrapper">
+              <div class="wrapper__one">🧛‍</div>
+              <div class="wrapper__two">🎃</div>
+              <div class="wrapper__three">🦇</div>
+              <div class="wrapper__four">🧙</div>
+              <div class="wrapper__five">🔮</div>
+              <div class="wrapper__six">🧟‍</div>
+            </div>
+          <caption class="c-blog-post__caption">Above: Responsive design using css grids</caption>
+
+          <p class="c-blog-post__paragraph">
+            I much prefer this method of creating reponsive layouts because I works within the current BEM methodology,
+            and it allows for much more flexibility of grid layouts with your designs.
+          </p>
+
+  </div>
+
+</article>
+
+    <footer class="c-footer">
+  <div class="o-main">
+    <p>&copy;2017 | 8th Light</p>
+  </div>
+</footer>
+
+  </body>
+</html>
