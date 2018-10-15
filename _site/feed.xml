@@ -6,15 +6,15 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Oct 2018 13:20:43 -0500</pubDate>
-    <lastBuildDate>Mon, 15 Oct 2018 13:20:43 -0500</lastBuildDate>
+    <pubDate>Mon, 15 Oct 2018 13:23:25 -0500</pubDate>
+    <lastBuildDate>Mon, 15 Oct 2018 13:23:25 -0500</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
-        <title>Responsive Layout</title>
+        <title>Responsive Layouts</title>
         <description>&lt;div class=&quot;c-blog-post&quot;&gt;
       &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
-        The main goal for designing for the web, is to keep the user engaged with the content. If not designed well, content
+        The main goal when designing for the web, is to keep the user engaged with the content. If not designed well, content
         can be complicated and important peices of information can be skipped over by the user. This is one of the biggest
         challanges of creating a layout as a designer. You want it to simple and easy to consume the content, but break it up
         in a way to keep the user interested and engaged. One of the first steps to designing a layout is to establish a grid
