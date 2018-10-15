@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Julias Design Apprenticeship Blog</title>
@@ -6,10 +6,372 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Oct 2018 13:56:51 -0500</pubDate>
-    <lastBuildDate>Mon, 15 Oct 2018 13:56:51 -0500</lastBuildDate>
+    <pubDate>Mon, 15 Oct 2018 13:59:36 -0500</pubDate>
+    <lastBuildDate>Mon, 15 Oct 2018 13:59:36 -0500</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
-    
+
+      <item>
+        <title>Responsive Layouts</title>
+        <description>&lt;div class=&quot;c-blog-post&quot;&gt;
+      &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+        The main goal when designing for the web, is to keep the user engaged with the content. If not designed well, content
+        can be complicated and important peices of information can be skipped over by the user. This is one of the biggest
+        challanges of creating a layout as a designer. You want it to simple and easy to consume the content, but break it up
+        in a way to keep the user interested and engaged. One of the first steps to designing a layout is to establish a grid
+        that elements will fall into within the layout. Below are some basic principles and anatomy of a grid.
+      &lt;/p&gt;
+
+      &lt;h3 class=&quot;c-blog-post__heading&quot;&gt;Grid Design Principles&lt;/h3&gt;
+        &lt;ul class=&quot;c-blog-post__ul&quot;&gt;
+          &lt;li class=&quot;c-blog-post__li&quot;&gt;
+            &lt;b&gt;Clarity/Order&lt;/b&gt; makes it easier for users to find and navigate through content.
+          &lt;/li&gt;
+          &lt;li class=&quot;c-blog-post__li&quot;&gt;
+            &lt;b&gt;Efficiency&lt;/b&gt; allows designers change their design without having to start all over. When designing a grid structure, various
+            elements and layouts are addressed to avoid re-work.
+            while building the grid structure.
+          &lt;/li&gt;
+          &lt;li class=&quot;c-blog-post__li&quot;&gt;
+            &lt;b&gt;Economy&lt;/b&gt; makes it easier for multiple designers to work on the same design. An established grid structure is like a building
+            plan that lets everyone know where to go depending on the situation.
+          &lt;/li&gt;
+          &lt;li class=&quot;c-blog-post__li&quot;&gt;
+            &lt;b&gt;Consistency/Harmony&lt;/b&gt; allows for different layouts across a site to feel as though they fit within a single design
+            sytem.
+          &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;h3 class=&quot;c-blog-post__heading&quot;&gt;Grid Anatomy&lt;/h3&gt;
+          &lt;ul class=&quot;c-blog-post__ul&quot;&gt;
+            &lt;li class=&quot;c-blog-post__li&quot;&gt;
+              A &lt;b&gt;grid container&lt;/b&gt; contains all elements of a grid.
+            &lt;/li&gt;
+            &lt;li class=&quot;c-blog-post__li&quot;&gt;
+              &lt;b&gt;Grid Lines&lt;/b&gt; are referred to by grid line numbers. They are used when specifing where to place elements within a grid.
+              For example, an element can placed at a particular grid line, or between two grid lines.
+            &lt;/li&gt;
+            &lt;li class=&quot;c-blog-post__li&quot;&gt;
+             A &lt;b&gt;grid column&lt;/b&gt; is the space between two adjacent vertical grid lines. The size of a grid column is determined by
+             the grid-template-columns property.
+            &lt;/li&gt;
+            &lt;li class=&quot;c-blog-post__li&quot;&gt;
+              &lt;b&gt;Grid rows&lt;/b&gt; are the space between two adjacent horizontal grid lines. It's size is determined by the
+              grid-template-rows property. Both grid columns and rows can be referred to as a grid track.
+            &lt;/li&gt;
+            &lt;li class=&quot;c-blog-post__li&quot;&gt;
+              &lt;b&gt;Grid cells&lt;/b&gt; exist between grid columns and rows. Cells are defined as any space inside of four grid
+              lines. A single grid cell or collection of multiple cells as a grid area.
+            &lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/p&gt;
+
+      &lt;h3 class=&quot;c-blog-post__heading&quot;&gt;CSS Grids, Flexbox &amp; Media Queries&lt;/h3&gt;
+        &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+          There are two approaches you can take when implementing your design into code, flexbox and css grids. Flexbox is great
+          if you don't need to change your design much for different screen sizes. This works great if you're designing things
+          that are text heavy and don't have a bunch of different components. So if your design is limited to columns and rows
+          with basic line wrapping, Flexbox is the way to go. You can use flexbox with media queries to make your flexbox elements
+          responsive.
+        &lt;/p&gt;
+        &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+          Because of item simplicity, flexbox is considered one-dimensional while css grids are two-dimensional.
+          CSS works great for design that require a variety of columns per row. It's also the way to go for any layout that
+          needs to be responsive.
+        &lt;/p&gt;
+        &lt;h4 class=&quot;c-blog-post__heading&quot;&gt;Flexbox&lt;/h4&gt;
+
+          &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+            The first thing to do here is to nest all the elements within the &lt;code class=&quot;c-blog-post__markup&quot;&gt;
+            div class=&quot;flex-container&quot;&lt;/code&gt;. Once you've do that in your css you can define some flexbox properties:
+          &lt;/p&gt;
+            &lt;code class=&quot;c-blog-post__markup&quot;&gt;
+            display: flex;&lt;br&gt;
+            flex-wrap: wrap;&lt;br&gt;
+            justify-content: center;&lt;br&gt;
+            &lt;/code&gt;&lt;br&gt;
+            &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+              Although flexbox is normally used for designs that don't need to change much for different device widths,
+              I just wanted to see how media queries worked with it, and it turned out pretty good I think.
+            &lt;/p&gt;
+            &lt;code class=&quot;c-blog-post__markup&quot;&gt;
+              @media screen and (min-width: $width-small) {&lt;br&gt;
+                background-color: $color-black;&lt;br&gt;
+                margin: 1.14% 0;&lt;br&gt;
+                width: 22%; }&lt;br&gt;
+                &lt;br&gt;
+              @media screen and (min-width: $width-large) {&lt;br&gt;
+                background-color: $color-purple;&lt;br&gt;
+                margin: .44% 0;&lt;br&gt;
+                width: 12%; }&lt;br&gt;
+            &lt;/code&gt;&lt;br&gt;
+
+            &lt;div class=&quot;flexwrapper&quot;&gt;
+                &lt;div class=&quot;flexwrapper__one&quot;&gt;🧛‍&lt;/div&gt;
+                &lt;div class=&quot;flexwrapper__two&quot;&gt;🎃&lt;/div&gt;
+                &lt;div class=&quot;flexwrapper__three&quot;&gt;🦇&lt;/div&gt;
+                &lt;div class=&quot;flexwrapper__four&quot;&gt;🧙&lt;/div&gt;
+                &lt;div class=&quot;flexwrapper__five&quot;&gt;🔮&lt;/div&gt;
+                &lt;div class=&quot;flexwrapper__six&quot;&gt;🧟‍&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;caption class=&quot;c-blog-post__caption&quot;&gt;Above: Responsive design using flexbox&lt;/caption&gt;
+            &lt;br&gt;&lt;br&gt;
+      &lt;h4 class=&quot;c-blog-post__heading&quot;&gt;CSS Grids&lt;/h4&gt;
+        &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+          I found CSS grids to work much better working within BEM. After nesting elements within
+          &lt;code class=&quot;c-blog-post__markup&quot;&gt;div class=&quot;wrapper&quot;&lt;/code&gt; you can define your columns
+          in percentages within the stylesheet.&lt;br&gt;
+        &lt;/p&gt;
+        &lt;code class=&quot;c-blog-post__markup&quot;&gt;
+          .wrapper {&lt;br&gt;
+          display: grid;&lt;br&gt;
+          grid-template-columns: 25% 25% 25% 25%; }&lt;br&gt;
+        &lt;/code&gt;
+
+        &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+          Although I only defined four columns for this excercise, many websites use a base of 12 since
+          it can easily be divded by both 3 and 4, and provides more layout flexibility. If I left this as is,
+          each emoji by default on here would take up a single cell, from one gridline to the next. CSS grids
+          allow us to make up bigger columns out of our 12 columns, so I thought I'd try it out. For example,
+          I used the &lt;code class=&quot;c-blog-post__markup&quot;&gt;grid-column-start&lt;/code&gt; and
+          &lt;code class=&quot;c-blog-post__markup&quot;&gt;grid-column-end&lt;/code&gt; to define where my emojiis would start and end.
+        &lt;/p&gt;
+
+          &lt;code class=&quot;c-blog-post__markup&quot;&gt;
+            .wrapper__one {&lt;br&gt;
+              background-color: $color-black;&lt;br&gt;
+              &lt;br&gt;
+              @media screen and (min-width: $width-small) {&lt;br&gt;
+                grid-column-end: 5;&lt;br&gt;
+                grid-column-start: 1; }&lt;br&gt;
+                &lt;br&gt;
+              @media screen and (min-width: $width-medium) {&lt;br&gt;
+                grid-column-end: 3;&lt;br&gt;
+                grid-column-start: 1; }&lt;br&gt;
+                &lt;br&gt;
+              @media screen and (min-width: $width-large) {&lt;br&gt;
+                grid-column-end: 2;&lt;br&gt;
+                grid-column-start: 1; }&lt;br&gt;
+                }
+          &lt;/code&gt;
+
+            &lt;div class=&quot;wrapper&quot;&gt;
+              &lt;div class=&quot;wrapper__one&quot;&gt;🧛‍&lt;/div&gt;
+              &lt;div class=&quot;wrapper__two&quot;&gt;🎃&lt;/div&gt;
+              &lt;div class=&quot;wrapper__three&quot;&gt;🦇&lt;/div&gt;
+              &lt;div class=&quot;wrapper__four&quot;&gt;🧙&lt;/div&gt;
+              &lt;div class=&quot;wrapper__five&quot;&gt;🔮&lt;/div&gt;
+              &lt;div class=&quot;wrapper__six&quot;&gt;🧟‍&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;caption class=&quot;c-blog-post__caption&quot;&gt;Above: Responsive design using css grids&lt;/caption&gt;
+
+          &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+            I much prefer this method of creating reponsive layouts because I works within the current BEM methodology,
+            and it allows for much more flexibility of grid layouts with your designs.
+          &lt;/p&gt;
+</description>
+        <pubDate>Wed, 10 Oct 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/jekyll/update/2018/10/10/Responsive-Layouts.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/10/10/Responsive-Layouts.html</guid>
+
+
+        <category>jekyll</category>
+
+        <category>update</category>
+
+      </item>
+
+      <item>
+        <title>CSS Architecture</title>
+        <description>&lt;div class=&quot;c-blog-post&quot;&gt;
+
+  &lt;div class=&quot;c-blog-post__intro&quot;&gt;
+      &lt;h2 class=&quot;c-blog-post__heading&quot;&gt;CSS Architecture&lt;/h2&gt;
+      &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+        There are a lot of different kinds of CSS architecture frameworks and it's difficult
+        to differentiate between some of them. I'll be discussing the following CSS architecture frameworks and
+        how they relate to one another. We'll go through a brief overview of each one except BEM, which will be more
+        in depth since it is the 8th Light convention.
+      &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;c-blog-post__main&quot;&gt;
+      &lt;h3 class=&quot;c-blog-post__heading&quot;&gt;SASS/SCSS&lt;/h3&gt;
+        &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+          SASS is a meta language on top of css that describes the stylesheet more structurally and cleanly with reusable code.
+          Through a simplified syntax and various features for setting styles, style sheets are much more managable than
+          regular CSS. It's a common practice to create SASS based design systems since its so easy to update style sheets since
+          the styles are reused and not repeated. These are the various features within SASS:
+        &lt;/p&gt;
+        &lt;h5 class=&quot;c-blog-post__heading&quot;&gt;Variables&lt;/h5&gt;
+        &lt;p class=&quot;c-blog-post_paragraph&quot;&gt;
+          Variables are a way to create values and reuse them throughout your styles. You can
+          define a set style starting with with something easy to remember. For example, in &lt;code&gt;tokens.scss&lt;/code&gt;
+          you can define a font size with a variable as &lt;code&gt;$font-size-small: 1em;&lt;/code&gt;. Later in your
+          &lt;code&gt;main.scss&lt;/code&gt; you could define &lt;code&gt;p { $font-size-small; }&lt;/code&gt;. If you decide to change that
+          font size from &lt;code&gt;1em&lt;/code&gt; to &lt;code&gt;1.125em&lt;/code&gt; you only have to update one line of code in your
+          &lt;code&gt;tokens.scss&lt;/code&gt;. SASS will go in and update every instance of &lt;code&gt;$font-size-small&lt;/code&gt; for you.
+        &lt;/p&gt;
+
+        &lt;h5 class=&quot;c-blog-post__heading&quot;&gt;Mixins&lt;/h5&gt;
+        &lt;p class=&quot;c-blog-post_paragraph&quot;&gt;
+          Mixins are similar to variables, but they allow you to establish styles in blocks. You can define mixin styles inside
+          a separates mixin.scss file with &lt;code&gt;@mixin title-style&lt;/code&gt;. Once you're in your style sheet you can declare it
+          you by nesting it in any class.
+        &lt;/p&gt;
+
+      &lt;h3 class=&quot;c-blog-post__heading&quot;&gt;ITCSS&lt;/h3&gt;
+        &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+          ITCSS stands for Inverted Triangle CSS. Its a CSS structure that allows you to structure files in a way that will
+          you work more efficiently with global namespace, cascade and selectors specificity. It's divided into layers that
+          start with the most broad and get more specific as you progress.
+        &lt;/p&gt;
+          &lt;ul class-&quot;c-blog-post__list&quot;&gt;
+            &lt;li class-&quot;c-blog-post__listitem&quot;&gt;
+              Settings: Used with preprocessors and contain font, colors definitions, etc.
+            &lt;/li&gt;
+            &lt;li class-&quot;c-blog-post__listitem&quot;&gt;
+              Tools: Globally used mixins and functions. It’s important not to output any CSS
+              in the first 2 layers.
+            &lt;/li&gt;
+            &lt;li class-&quot;c-blog-post__listitem&quot;&gt;
+              Generic: reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates
+              actual CSS.
+            &lt;/li&gt;
+            &lt;li class-&quot;c-blog-post__listitem&quot;&gt;
+              Elements: styling for HTML elements like &lt;code&gt;h1&lt;/code&gt;, &lt;code&gt;p&lt;/code&gt; etc. These come with default styling
+              from the browser so we can redefine them here.
+            &lt;/li&gt;
+            &lt;li class-&quot;c-blog-post__listitem&quot;&gt;
+              Objects: class-based selectors which define undecorated design patterns, for example media object known
+              from OOCSS.
+            &lt;/li&gt;
+            &lt;li class-&quot;c-blog-post__listitem&quot;&gt;
+              Components: This is where the majority of CSS and UI components are stored. It can consist of components
+              and objects togther.
+            &lt;/li&gt;
+            &lt;li class-&quot;c-blog-post__listitem&quot;&gt;
+              Utilities: utilities and helper classes with ability to override anything which goes before in the triangle,
+              eg. hide helper class
+            &lt;/li&gt;
+          &lt;/ul&gt;
+
+      &lt;h3 class=&quot;c-blog-post__heading&quot;&gt;OOCSS&lt;/h3&gt;
+        &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+          The purpose of OOCSS is to encourage code reuse and, ultimately, faster and more efficient stylesheets that are
+          easier to add to and maintain. OOCSS is based on two principles:
+        &lt;/p&gt;
+          &lt;h5 class=&quot;c-blog-post__heading&quot;&gt;Principle One: Separation of structure from the skin&lt;/h5&gt;
+            &lt;p class =&quot;c-blog-post__paragraph&quot;&gt;
+              Web page elements have several visual features or skins that are repeated in different contexts. After being
+              converted into class based modules, skins can be applied to any element and have the same basic result.
+              By applying a “skin” class to all the elements, you can style multiple elements while using very little code.
+            &lt;/p&gt;
+          &lt;h5 class =&quot;c-blog-post__subtitle&quot;&gt;Principle Two: Separation of containers and content&lt;/h5&gt;
+          &lt;p class =&quot;c-blog-post__paragraph&quot;&gt;
+            In order to avoid unnecessary repeating styles, OOCSS takes what is common among different elements and separates
+            the commonalities into modules, or objects. The goal here is to ensure that styles are not dependent on any
+            containing element. This means they can then be reused anywhere in the document, regardless of structural context.
+          &lt;/p&gt;
+
+      &lt;h3 class=&quot;c-blog-post__heading&quot;&gt;SMACSS&lt;/h3&gt;
+      &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+        SMACSS stands for Scalable and Modular Architecture for CSS. It is more style guide than it is a rigid framework.
+        The main goal is to identify design patterns and to determine better practices for using them. Again like the other
+        frameworks we've gone through, the point here is to re-use code and not repeat it. The are five main categories
+        are below:
+      &lt;/p&gt;
+        &lt;ul class=&quot;c-blog-post__list&quot;&gt;
+            &lt;li class=&quot;c-blog-post__listitem&quot;&gt;
+              Base consists of single element selectors such as heading sizes, default link styles,
+              default font styles, and body backgrounds. It will specify styles for whatever elements are
+              indicated on a page.
+            &lt;/li&gt;
+            &lt;li class=&quot;c-blog-post__listitem&quot;&gt;
+              Layouts will divide the page into sections. Examples are navigation, header, footer, sidebar, etc.
+              Layouts hold one or more modules together.
+            &lt;/li&gt;
+            &lt;li class=&quot;c-blog-post__listitem&quot;&gt;
+              Modules are reusable, segmented parts of a design. This would be typography, buttons, components, etc.
+            &lt;/li&gt;
+            &lt;li class=&quot;c-blog-post__listitem&quot;&gt;
+                States define how a module or layout behaves. Different states could be what something looks like when
+                it is responsive, or how it will change from the homepage to an interior page.
+              &lt;/li&gt;
+            &lt;li class=&quot;c-blog-post__listitem&quot;&gt;Themes are very like like states, although they are not always used.&lt;/li&gt;
+        &lt;/ul&gt;
+
+      &lt;h3 class=&quot;c-blog-post__heading&quot;&gt;BEM&lt;/h3&gt;
+      &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+        BEM is a component-based approach to web development and stands for block element modifier . The idea behind it is to
+        divide the user interface of a design into independent blocks. This makes development easy and fast and works well even
+        with a complicated UI. The goal here with other CSS architecture methods is to reuse code, not repeat it.
+      &lt;/p&gt;
+
+      &lt;h5 class=&quot;c-blog-post__heading&quot;&gt;Block&lt;/h5&gt;
+      &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+        A block is defined as functionally independent page component that can be reused. Blocks are essentially any HTML element
+        that can take a class attribute. A block is a defining term, and not a descriptive one.&lt;br&gt;
+        Example: &lt;code&gt;div class=”nav”&lt;/code&gt;
+      &lt;/p&gt;
+
+      &lt;h5 class=&quot;c-blog-post__heading&quot;&gt;Element&lt;/h5&gt;
+      &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+        An element is nested within a block and can't be used without it. An element is a defining term, not a descriptive one.
+        In HTML, the class is structured &lt;code&gt;block-name__element-name&lt;/code&gt;. The element name is separated from the block
+        name with a double underscore &lt;code&gt;__&lt;/code&gt;. You can nest multiple elements as long as they are nested inside the block,
+        not inside each other.&lt;br&gt;
+        Example: &lt;code&gt;div class=”nav__navitem”&lt;/code&gt;
+      &lt;/p&gt;
+
+      &lt;h5 class=&quot;c-blog-post__heading&quot;&gt;Modifiers&lt;/h5&gt;
+      &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+        Modifiers describe a style of a block and/or element. They are declared in a class following the block and/or elements
+        with a double dash &lt;code&gt;--&lt;/code&gt;. Its important to name modifiers in a way to describe what they are doing, not what
+        the actual style is. For example its better to name a modifier as &lt;code&gt;alert&lt;/code&gt; and not &lt;code&gt;red&lt;/code&gt;.&lt;br&gt;
+        Example: &lt;code&gt;div class=”nav__navitem--alert”&lt;/code&gt;
+      &lt;/p&gt;
+
+      &lt;h5 class=&quot;c-blog-post__heading&quot;&gt;Nesting Rules&lt;/h5&gt;
+      &lt;p class=&quot;c-blog-post__paragraph&quot;&gt;
+        BEM is great because of its flexibility with its nesting rules, while still maintaining some guardrails. Below are some
+        general rules to keep in mind with nesting:&lt;br&gt;
+      &lt;/p&gt;
+
+      &lt;ul class=&quot;c-blog-post__list&quot;&gt;
+          &lt;li class=&quot;c-blog-post__listitem&quot;&gt;
+            BEM is structered in order of reach from broad to specific. Modifiers are children of elements, and elements are
+            children of blocks. Blocks are the highest and most broad level. You could never nest an element in a modifier.
+          &lt;/li&gt;
+          &lt;li class=&quot;c-blog-post__listitem&quot;&gt;
+            Blocks and modifiers are required, but elements are optional. If there is no element, the modifier would be the
+            direct child of thier block.
+          &lt;/li&gt;
+          &lt;li class=&quot;c-blog-post__listitem&quot;&gt;
+            You can nest a block within a block
+          &lt;/li&gt;
+          &lt;li class=&quot;c-blog-post__listitem&quot;&gt;
+            You can nest multiple elements or modifiers in a block. If you have two elements, they would be nested within
+            that block. Meaning, you cannot nest an element within another element. The same goes for a modifier. In addition,
+            you can have an element with two modifiers as long as both modifiers are nested within the element and not within
+            eachother.
+          &lt;/li&gt;
+      &lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 09 Oct 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/jekyll/update/2018/10/09/CSS-Architecture.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/10/09/CSS-Architecture.html</guid>
+
+
+        <category>jekyll</category>
+
+        <category>update</category>
+
+      </item>
+
       <item>
         <title>Color</title>
         <description>&lt;p&gt;
@@ -119,14 +481,14 @@
         <pubDate>Fri, 05 Oct 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/jekyll/update/2018/10/05/Color.html</link>
         <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/10/05/Color.html</guid>
-        
-        
+
+
         <category>jekyll</category>
-        
+
         <category>update</category>
-        
+
       </item>
-    
+
       <item>
         <title>Media Queries with CSS3</title>
         <description>&lt;section&gt;
@@ -188,7 +550,7 @@
         .ex-one {&lt;br&gt;
         background-color: $color-green;&lt;br&gt;
         font-family: $font-family-poppins;&lt;br&gt;
-        font-size: $font-size-large-h3;&lt;br&gt;
+        font-size: $font-size-heading-medium;&lt;br&gt;
         padding-bottom: 15px;&lt;br&gt;
         text-decoration-color: $color-black;&lt;br&gt;
         width: 100%;&lt;br&gt;
@@ -199,7 +561,7 @@
         background-color: $color-alert;&lt;br&gt;
         float: left;&lt;br&gt;
         font-family: $font-family-poppins;&lt;br&gt;
-        font-size: $font-size-large-h5;&lt;br&gt;
+        font-size: $font-size-heading-xxxx-small;&lt;br&gt;
         padding-bottom: 15px;&lt;br&gt;
         text-decoration-color: $color-black;&lt;br&gt;
         width: 50%;&lt;br&gt;
@@ -209,7 +571,7 @@
         .ex-two {&lt;br&gt;
         background-color: $color-alert;&lt;br&gt;
         font-family: $font-family-poppins;&lt;br&gt;
-        font-size: $font-size-large-h3;&lt;br&gt;
+        font-size: $font-size-heading-medium;&lt;br&gt;
         padding-bottom: 15px;&lt;br&gt;
         text-decoration-color: $color-black;&lt;br&gt;
         width: 100%;&lt;br&gt;
@@ -221,7 +583,7 @@
         background-color: $color-green;&lt;br&gt;
         float: left;&lt;br&gt;
         font-family: $font-family-poppins;&lt;br&gt;
-        font-size: $font-size-large-h5;&lt;br&gt;
+        font-size: $font-size-heading-xxxx-small;&lt;br&gt;
         padding-bottom: 15px;&lt;br&gt;
         text-decoration-color: $color-black;&lt;br&gt;
         width: 50%;&lt;br&gt;
@@ -252,14 +614,14 @@
         <pubDate>Thu, 04 Oct 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/jekyll/update/2018/10/04/Media-Queries.html</link>
         <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/10/04/Media-Queries.html</guid>
-        
-        
+
+
         <category>jekyll</category>
-        
+
         <category>update</category>
-        
+
       </item>
-    
+
       <item>
         <title>Mobile 1st Design &amp; Development</title>
         <description>&lt;section&gt;
@@ -372,14 +734,14 @@
         <pubDate>Wed, 03 Oct 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/jekyll/update/2018/10/03/Mobile-1st-Design-&-Development.html</link>
         <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/10/03/Mobile-1st-Design-&-Development.html</guid>
-        
-        
+
+
         <category>jekyll</category>
-        
+
         <category>update</category>
-        
+
       </item>
-    
+
       <item>
         <title>Git for Humans</title>
         <description>&lt;section&gt;
@@ -528,14 +890,14 @@
         <pubDate>Thu, 27 Sep 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/jekyll/update/2018/09/27/Git-for-Humans.html</link>
         <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/09/27/Git-for-Humans.html</guid>
-        
-        
+
+
         <category>jekyll</category>
-        
+
         <category>update</category>
-        
+
       </item>
-    
+
       <item>
         <title>Web Accessibility</title>
         <description>&lt;header&gt;
@@ -695,14 +1057,14 @@
         <pubDate>Wed, 26 Sep 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/post/2018/09/26/accessibility.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/post/2018/09/26/accessibility.html</guid>
-        
-        
+
+
         <category>blog</category>
-        
+
         <category>post</category>
-        
+
       </item>
-    
+
       <item>
         <title>CSS Positioning</title>
         <description>&lt;header&gt;
@@ -880,14 +1242,14 @@
         <pubDate>Tue, 25 Sep 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/post/2018/09/25/css-positioning.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/post/2018/09/25/css-positioning.html</guid>
-        
-        
+
+
         <category>blog</category>
-        
+
         <category>post</category>
-        
+
       </item>
-    
+
       <item>
         <title>HTML Elements</title>
         <description>&lt;header&gt;
@@ -1406,14 +1768,14 @@
         <pubDate>Fri, 21 Sep 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/post/2018/09/21/htmlelements.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/post/2018/09/21/htmlelements.html</guid>
-        
-        
+
+
         <category>blog</category>
-        
+
         <category>post</category>
-        
+
       </item>
-    
+
       <item>
         <title>Apprenticeship Goals</title>
         <description>&lt;header&gt;
@@ -1456,13 +1818,13 @@
         <pubDate>Fri, 21 Sep 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/jekyll/update/2018/09/21/apprenticeship-goals.html</link>
         <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/09/21/apprenticeship-goals.html</guid>
-        
-        
+
+
         <category>jekyll</category>
-        
+
         <category>update</category>
-        
+
       </item>
-    
+
   </channel>
 </rss>

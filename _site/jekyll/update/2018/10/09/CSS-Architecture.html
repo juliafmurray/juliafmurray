@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CSS Architecture</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/jekyll/update/2018/10/09/CSS-Architecture.html">
+  <link rel="alternate" type="application/rss+xml" title="Julias Design Apprenticeship Blog" href="http://localhost:4000/feed.xml">
+
+</head>
+
+  <body>
+    <header class="c-header">
+  <div class="o-main">
+    <a class="nav-anchor" href="/">Julias Design Apprenticeship Blog</a>
+  </div>
+</header>
+
+    <article class="post o-main" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">CSS Architecture</h1>
+    <p class="post-meta"><time datetime="2018-10-09T00:00:00-05:00" itemprop="datePublished">Oct 9, 2018</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="c-blog-post">
+
+  <div class="c-blog-post__intro">
+      <h2 class="c-blog-post__heading">CSS Architecture</h2>
+      <p class="c-blog-post__paragraph">
+        There are a lot of different kinds of CSS architecture frameworks and it's difficult
+        to differentiate between some of them. I'll be discussing the following CSS architecture frameworks and
+        how they relate to one another. We'll go through a brief overview of each one except BEM, which will be more
+        in depth since it is the 8th Light convention.
+      </p>
+  </div>
+
+  <div class="c-blog-post__main">
+      <h3 class="c-blog-post__heading">SASS/SCSS</h3>
+        <p class="c-blog-post__paragraph">
+          SASS is a meta language on top of css that describes the stylesheet more structurally and cleanly with reusable code.
+          Through a simplified syntax and various features for setting styles, style sheets are much more managable than
+          regular CSS. It's a common practice to create SASS based design systems since its so easy to update style sheets since
+          the styles are reused and not repeated. These are the various features within SASS:
+        </p>
+        <h5 class="c-blog-post__heading">Variables</h5>
+        <p class="c-blog-post_paragraph">
+          Variables are a way to create values and reuse them throughout your styles. You can
+          define a set style starting with with something easy to remember. For example, in <code>tokens.scss</code>
+          you can define a font size with a variable as <code>$font-size-small: 1em;</code>. Later in your
+          <code>main.scss</code> you could define <code>p { $font-size-small; }</code>. If you decide to change that
+          font size from <code>1em</code> to <code>1.125em</code> you only have to update one line of code in your
+          <code>tokens.scss</code>. SASS will go in and update every instance of <code>$font-size-small</code> for you.
+        </p>
+
+        <h5 class="c-blog-post__heading">Mixins</h5>
+        <p class="c-blog-post_paragraph">
+          Mixins are similar to variables, but they allow you to establish styles in blocks. You can define mixin styles inside
+          a separates mixin.scss file with <code>@mixin title-style</code>. Once you're in your style sheet you can declare it
+          you by nesting it in any class.
+        </p>
+
+      <h3 class="c-blog-post__heading">ITCSS</h3>
+        <p class="c-blog-post__paragraph">
+          ITCSS stands for Inverted Triangle CSS. Its a CSS structure that allows you to structure files in a way that will
+          you work more efficiently with global namespace, cascade and selectors specificity. It's divided into layers that
+          start with the most broad and get more specific as you progress.
+        </p>
+          <ul class-"c-blog-post__list">
+            <li class-"c-blog-post__listitem">
+              Settings: Used with preprocessors and contain font, colors definitions, etc.
+            </li>
+            <li class-"c-blog-post__listitem">
+              Tools: Globally used mixins and functions. It’s important not to output any CSS
+              in the first 2 layers.
+            </li>
+            <li class-"c-blog-post__listitem">
+              Generic: reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates
+              actual CSS.
+            </li>
+            <li class-"c-blog-post__listitem">
+              Elements: styling for HTML elements like <code>h1</code>, <code>p</code> etc. These come with default styling
+              from the browser so we can redefine them here.
+            </li>
+            <li class-"c-blog-post__listitem">
+              Objects: class-based selectors which define undecorated design patterns, for example media object known
+              from OOCSS.
+            </li>
+            <li class-"c-blog-post__listitem">
+              Components: This is where the majority of CSS and UI components are stored. It can consist of components
+              and objects togther.
+            </li>
+            <li class-"c-blog-post__listitem">
+              Utilities: utilities and helper classes with ability to override anything which goes before in the triangle,
+              eg. hide helper class
+            </li>
+          </ul>
+
+      <h3 class="c-blog-post__heading">OOCSS</h3>
+        <p class="c-blog-post__paragraph">
+          The purpose of OOCSS is to encourage code reuse and, ultimately, faster and more efficient stylesheets that are
+          easier to add to and maintain. OOCSS is based on two principles:
+        </p>
+          <h5 class="c-blog-post__heading">Principle One: Separation of structure from the skin</h5>
+            <p class ="c-blog-post__paragraph">
+              Web page elements have several visual features or skins that are repeated in different contexts. After being
+              converted into class based modules, skins can be applied to any element and have the same basic result.
+              By applying a “skin” class to all the elements, you can style multiple elements while using very little code.
+            </p>
+          <h5 class ="c-blog-post__subtitle">Principle Two: Separation of containers and content</h5>
+          <p class ="c-blog-post__paragraph">
+            In order to avoid unnecessary repeating styles, OOCSS takes what is common among different elements and separates
+            the commonalities into modules, or objects. The goal here is to ensure that styles are not dependent on any
+            containing element. This means they can then be reused anywhere in the document, regardless of structural context.
+          </p>
+
+      <h3 class="c-blog-post__heading">SMACSS</h3>
+      <p class="c-blog-post__paragraph">
+        SMACSS stands for Scalable and Modular Architecture for CSS. It is more style guide than it is a rigid framework.
+        The main goal is to identify design patterns and to determine better practices for using them. Again like the other
+        frameworks we've gone through, the point here is to re-use code and not repeat it. The are five main categories
+        are below:
+      </p>
+        <ul class="c-blog-post__list">
+            <li class="c-blog-post__listitem">
+              Base consists of single element selectors such as heading sizes, default link styles,
+              default font styles, and body backgrounds. It will specify styles for whatever elements are
+              indicated on a page.
+            </li>
+            <li class="c-blog-post__listitem">
+              Layouts will divide the page into sections. Examples are navigation, header, footer, sidebar, etc.
+              Layouts hold one or more modules together.
+            </li>
+            <li class="c-blog-post__listitem">
+              Modules are reusable, segmented parts of a design. This would be typography, buttons, components, etc.
+            </li>
+            <li class="c-blog-post__listitem">
+                States define how a module or layout behaves. Different states could be what something looks like when
+                it is responsive, or how it will change from the homepage to an interior page.
+              </li>
+            <li class="c-blog-post__listitem">Themes are very like like states, although they are not always used.</li>
+        </ul>
+
+      <h3 class="c-blog-post__heading">BEM</h3>
+      <p class="c-blog-post__paragraph">
+        BEM is a component-based approach to web development and stands for block element modifier . The idea behind it is to
+        divide the user interface of a design into independent blocks. This makes development easy and fast and works well even
+        with a complicated UI. The goal here with other CSS architecture methods is to reuse code, not repeat it.
+      </p>
+
+      <h5 class="c-blog-post__heading">Block</h5>
+      <p class="c-blog-post__paragraph">
+        A block is defined as functionally independent page component that can be reused. Blocks are essentially any HTML element
+        that can take a class attribute. A block is a defining term, and not a descriptive one.<br>
+        Example: <code>div class=”nav”</code>
+      </p>
+
+      <h5 class="c-blog-post__heading">Element</h5>
+      <p class="c-blog-post__paragraph">
+        An element is nested within a block and can't be used without it. An element is a defining term, not a descriptive one.
+        In HTML, the class is structured <code>block-name__element-name</code>. The element name is separated from the block
+        name with a double underscore <code>__</code>. You can nest multiple elements as long as they are nested inside the block,
+        not inside each other.<br>
+        Example: <code>div class=”nav__navitem”</code>
+      </p>
+
+      <h5 class="c-blog-post__heading">Modifiers</h5>
+      <p class="c-blog-post__paragraph">
+        Modifiers describe a style of a block and/or element. They are declared in a class following the block and/or elements
+        with a double dash <code>--</code>. Its important to name modifiers in a way to describe what they are doing, not what
+        the actual style is. For example its better to name a modifier as <code>alert</code> and not <code>red</code>.<br>
+        Example: <code>div class=”nav__navitem--alert”</code>
+      </p>
+
+      <h5 class="c-blog-post__heading">Nesting Rules</h5>
+      <p class="c-blog-post__paragraph">
+        BEM is great because of its flexibility with its nesting rules, while still maintaining some guardrails. Below are some
+        general rules to keep in mind with nesting:<br>
+      </p>
+
+      <ul class="c-blog-post__list">
+          <li class="c-blog-post__listitem">
+            BEM is structered in order of reach from broad to specific. Modifiers are children of elements, and elements are
+            children of blocks. Blocks are the highest and most broad level. You could never nest an element in a modifier.
+          </li>
+          <li class="c-blog-post__listitem">
+            Blocks and modifiers are required, but elements are optional. If there is no element, the modifier would be the
+            direct child of thier block.
+          </li>
+          <li class="c-blog-post__listitem">
+            You can nest a block within a block
+          </li>
+          <li class="c-blog-post__listitem">
+            You can nest multiple elements or modifiers in a block. If you have two elements, they would be nested within
+            that block. Meaning, you cannot nest an element within another element. The same goes for a modifier. In addition,
+            you can have an element with two modifiers as long as both modifiers are nested within the element and not within
+            eachother.
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+  </div>
+
+</article>
+
+    <footer class="c-footer">
+  <div class="o-main">
+    <p>&copy;2017 | 8th Light</p>
+  </div>
+</footer>
+
+  </body>
+</html>
