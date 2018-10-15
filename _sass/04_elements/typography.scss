@@ -15,32 +15,32 @@ html {
 h1 {
   font-family: $font-family-poppins;
   font-weight: $font-weight-bold;
-  line-height: $line-height-heading;
+
 
   @media screen and (min-width: 320px) {
     color: $color-orange-dark;
-    font-size: $font-size-small-h1;
+    font-size: $font-size-heading-xx-large;
     }
 
   @media screen and (min-width: 768px) {
     color: $color-green-dark;
-    font-size: $font-size-large-h1;
+    font-size: $font-size-heading-xxx-large;
     }
 }
 
 @media screen and (min-width: 768px) {
   font-family: $font-family-poppins;
   color: $color-green-dark;
-  font-size: $font-size-large-h1;
+  font-size: $font-size-heading-xxx-large;
   }
 
 @media screen and (min-width: 320px) {
 h2 {
   font-family: $font-family-poppins;
   color: $color-green-dark;
-  font-size: $font-size-small-h2;
+  font-size: $font-size-heading-large;
   font-weight: $font-weight-semibold;
-  line-height: $line-height-heading;
+
   }
 }
 
@@ -48,9 +48,9 @@ h2 {
 h2 {
   font-family: $font-family-poppins;
   color: $color-orange-dark;
-  font-size: $font-size-large-h2;
+  font-size: $font-size-heading-x-large;
   font-weight: $font-weight-semibold;
-  line-height: $line-height-heading;
+
   }
 }
 
@@ -58,7 +58,7 @@ h2 {
 h3 {
   color: $color-black;
   font-family: $font-family-poppins;
-  font-size: $font-size-small-h3;
+  font-size: $font-size-heading-small;
   font-weight: normal;
   margin: 0;
   }
@@ -68,7 +68,7 @@ h3 {
 h3 {
   color: $color-black;
   font-family: $font-family-poppins;
-  font-size: $font-size-large-h3;
+  font-size: $font-size-heading-medium;
   font-weight: normal;
   margin: 0;
   }
@@ -78,7 +78,7 @@ h3 {
   h4 {
     color: $color-black;
     font-family: $font-family-poppins;
-    font-size: $font-size-small-h4;
+    font-size: $font-size-heading-xxx-small;
     font-weight: normal;
     margin: 0;
   }
@@ -88,7 +88,7 @@ h3 {
   h4 {
     color: $color-black;
     font-family: $font-family-poppins;
-    font-size: $font-size-large-h4;
+    font-size: $font-size-heading-x-small;
     font-weight: normal;
     margin: 0;
   }
@@ -99,7 +99,7 @@ h3 {
   h5 {
     color: $color-black;
     font-family: $font-family-poppins;
-    font-size: $font-size-small-h5;
+    font-size: $font-size-heading-xx-small;
     font-weight: normal;
     margin: 0;
   }
@@ -109,7 +109,7 @@ h3 {
   h5 {
     color: $color-black;
     font-family: $font-family-poppins;
-    font-size: $font-size-large-h5;
+    font-size: $font-size-heading-xxxx-small;
     font-weight: normal;
     margin: 0;
   }
