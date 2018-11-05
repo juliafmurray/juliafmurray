@@ -15,7 +15,7 @@ html {
 h1 {
   font-family: $font-family-poppins;
   font-weight: $font-weight-bold;
-
+  line-height: $line-height-text-small;
 
   @media screen and (min-width: 320px) {
     color: $color-orange-dark;
@@ -29,8 +29,8 @@ h1 {
 }
 
 h2 {
-  font-family: $font-family-poppins;
   color: $color-green-dark;
+  font-family: $font-family-poppins;
 
   @media screen and (min-width: 768px) {
     font-size: $font-size-heading-xxx-large;
@@ -52,79 +52,60 @@ h3 {
     font-size: $font-size-heading-small;
     }
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: $font-size-heading-medium;
     }
 }
 
+h4 {
+  color: $color-black;
+  font-family: $font-family-poppins;
+  font-weight: normal;
+  margin: 0;
 
-
-
-@media screen and (min-width: 320px) {
-  h4 {
-    color: $color-black;
-    font-family: $font-family-poppins;
+  @media screen and (min-width: 320px) {
     font-size: $font-size-heading-xxx-small;
-    font-weight: normal;
-    margin: 0;
-  }
+    }
+
+  @media screen and (min-width: 768px) {
+    font-size: $font-size-heading-x-small
+    }
 }
 
-@media screen and (min-width: 768px) {
-  h4 {
-    color: $color-black;
-    font-family: $font-family-poppins;
-    font-size: $font-size-heading-x-small;
-    font-weight: normal;
-    margin: 0;
-  }
-}
+h5 {
+  color: $color-black;
+  font-family: $font-family-poppins;
+  font-weight: normal;
+  margin: 0;
 
-
-@media screen and (min-width: 320px) {
-  h5 {
-    color: $color-black;
-    font-family: $font-family-poppins;
+  @media screen and (min-width: 320px) {
     font-size: $font-size-heading-xx-small;
-    font-weight: normal;
-    margin: 0;
-  }
-}
+    }
 
-@media screen and (min-width: 768px) {
-  h5 {
-    color: $color-black;
-    font-family: $font-family-poppins;
+  @media screen and (min-width: 768px) {
     font-size: $font-size-heading-xxxx-small;
-    font-weight: normal;
-    margin: 0;
-  }
+    }
 }
 
-@media screen and (min-width: 320px) {
-  p {
-    color: $color-black;
-    font-family: $font-family-pt;
+p {
+  color: $color-black;
+  font-family: $font-family-pt;
+  margin: 0;
+
+  @media screen and (min-width: 320px) {
     font-size: $font-size-text-small;
     line-height: $line-height-text-small;
-    margin: 0;
-  }
-}
+    }
 
-@media screen and (min-width: 768px) {
-  p {
-    color: $color-black;
-    font-family: $font-family-pt;
+  @media screen and (min-width: 768px) {
     font-size: $font-size-text-large;
     line-height: $line-height-text-large;
-    margin: 0;
-  }
+    }
 }
-
 
   code {
     background-color: $color-silver;
-    font-family: $font-family-monospace;
     color: $color-alert;
+    font-family: $font-family-monospace;
     font-size: $font-size-text-large;
   }

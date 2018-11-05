@@ -596,13 +596,14 @@ a {
 html {
   font-family: "PT Serif";
   font-weight: 400;
-  line-height: 1.75em;
+  line-height: 1.5em;
   color: #000000;
   font-size: 1.125em; }
 
 h1 {
   font-family: "Poppins", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: 1.5em; }
   @media screen and (min-width: 320px) {
     h1 {
       color: #C23313;
@@ -613,8 +614,8 @@ h1 {
       font-size: 2.441em; } }
 
 h2 {
-  font-family: "Poppins", sans-serif;
-  color: #066068; }
+  color: #066068;
+  font-family: "Poppins", sans-serif; }
   @media screen and (min-width: 768px) {
     h2 {
       font-size: 2.441em; } }
@@ -635,52 +636,47 @@ h3 {
     h3 {
       font-size: 1.563em; } }
 
-@media screen and (min-width: 320px) {
-  h4 {
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    font-weight: normal;
-    margin: 0; } }
-@media screen and (min-width: 768px) {
-  h4 {
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.25em;
-    font-weight: normal;
-    margin: 0; } }
-@media screen and (min-width: 320px) {
-  h5 {
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.125em;
-    font-weight: normal;
-    margin: 0; } }
-@media screen and (min-width: 768px) {
-  h5 {
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-size: 1em;
-    font-weight: normal;
-    margin: 0; } }
-@media screen and (min-width: 320px) {
-  p {
-    color: #000000;
-    font-family: "PT Serif";
-    font-size: 1.125em;
-    line-height: 1.75em;
-    margin: 0; } }
-@media screen and (min-width: 768px) {
-  p {
-    color: #000000;
-    font-family: "PT Serif";
-    font-size: 1em;
-    line-height: 1.5em;
-    margin: 0; } }
+h4 {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  margin: 0; }
+  @media screen and (min-width: 320px) {
+    h4 {
+      font-size: 1.2em; } }
+  @media screen and (min-width: 768px) {
+    h4 {
+      font-size: 1.25em; } }
+
+h5 {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  margin: 0; }
+  @media screen and (min-width: 320px) {
+    h5 {
+      font-size: 1.125em; } }
+  @media screen and (min-width: 768px) {
+    h5 {
+      font-size: 1em; } }
+
+p {
+  color: #000000;
+  font-family: "PT Serif";
+  margin: 0; }
+  @media screen and (min-width: 320px) {
+    p {
+      font-size: 1.125em;
+      line-height: 1.5em; } }
+  @media screen and (min-width: 768px) {
+    p {
+      font-size: 1em;
+      line-height: 1.75em; } }
+
 code {
   background-color: #F2F2F2;
-  font-family: "PT Mono", monospace;
   color: #EA4F5E;
+  font-family: "PT Mono", monospace;
   font-size: 1em; }
 
 .o-main {
@@ -926,7 +922,7 @@ body {
 
 .wrapper > div {
   font-size: 1.728em;
-  line-height: 1.75em;
+  line-height: 1.5em;
   padding: 0.5rem;
   text-align: center; }
 
