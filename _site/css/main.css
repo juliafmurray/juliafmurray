@@ -601,7 +601,7 @@ html {
   font-size: 1.125em; }
 
 h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 700;
   line-height: 1.5em; }
   @media screen and (min-width: 320px) {
@@ -615,7 +615,8 @@ h1 {
 
 h2 {
   color: #066068;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5em; }
   @media screen and (min-width: 768px) {
     h2 {
       font-size: 2.441em; } }
@@ -626,9 +627,9 @@ h2 {
 
 h3 {
   color: #000000;
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  margin: 0; }
+  font-family: "Work Sans", sans-serif;
+  padding-top: 1rem;
+  line-height: 1.5em; }
   @media screen and (min-width: 320px) {
     h3 {
       font-size: 1.44em; } }
@@ -638,9 +639,7 @@ h3 {
 
 h4 {
   color: #000000;
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  margin: 0; }
+  font-family: "Work Sans", sans-serif; }
   @media screen and (min-width: 320px) {
     h4 {
       font-size: 1.2em; } }
@@ -650,9 +649,7 @@ h4 {
 
 h5 {
   color: #000000;
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  margin: 0; }
+  font-family: "Work Sans", sans-serif; }
   @media screen and (min-width: 320px) {
     h5 {
       font-size: 1.125em; } }
@@ -662,8 +659,7 @@ h5 {
 
 p {
   color: #000000;
-  font-family: "PT Serif";
-  margin: 0; }
+  font-family: "PT Serif"; }
   @media screen and (min-width: 320px) {
     p {
       font-size: 1.125em;
@@ -805,7 +801,7 @@ body {
 @media screen and (min-width: 320px) {
   .ex-one {
     background-color: #007f00;
-    font-family: "Poppins", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 1.563em;
     padding-bottom: 15px;
     text-decoration-color: #000000;
@@ -814,7 +810,7 @@ body {
   .ex-one {
     background-color: #EA4F5E;
     float: left;
-    font-family: "Poppins", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 1em;
     padding-bottom: 15px;
     text-decoration-color: #000000;
@@ -822,7 +818,7 @@ body {
 @media screen and (min-width: 320px) {
   .ex-two {
     background-color: #EA4F5E;
-    font-family: "Poppins", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 1.563em;
     padding-bottom: 15px;
     text-decoration-color: #000000;
@@ -831,7 +827,7 @@ body {
   .ex-two {
     background-color: #007f00;
     float: left;
-    font-family: "Poppins", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 1em;
     padding-bottom: 15px;
     text-decoration-color: #000000;

@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Nov 2018 16:20:20 -0600</pubDate>
-    <lastBuildDate>Mon, 05 Nov 2018 16:20:20 -0600</lastBuildDate>
+    <pubDate>Mon, 05 Nov 2018 16:29:47 -0600</pubDate>
+    <lastBuildDate>Mon, 05 Nov 2018 16:29:47 -0600</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -549,7 +549,7 @@
         @media screen and (min-width: 320px) {&lt;br&gt;
         .ex-one {&lt;br&gt;
         background-color: $color-green;&lt;br&gt;
-        font-family: $font-family-poppins;&lt;br&gt;
+        font-family: $font-family-heading;&lt;br&gt;
         font-size: $font-size-heading-medium;&lt;br&gt;
         padding-bottom: 15px;&lt;br&gt;
         text-decoration-color: $color-black;&lt;br&gt;
@@ -560,7 +560,7 @@
         .ex-one {&lt;br&gt;
         background-color: $color-alert;&lt;br&gt;
         float: left;&lt;br&gt;
-        font-family: $font-family-poppins;&lt;br&gt;
+        font-family: $font-family-heading;&lt;br&gt;
         font-size: $font-size-heading-xxxx-small;&lt;br&gt;
         padding-bottom: 15px;&lt;br&gt;
         text-decoration-color: $color-black;&lt;br&gt;
@@ -570,7 +570,7 @@
         @media screen and (min-width: 320px) {&lt;br&gt;
         .ex-two {&lt;br&gt;
         background-color: $color-alert;&lt;br&gt;
-        font-family: $font-family-poppins;&lt;br&gt;
+        font-family: $font-family-heading;&lt;br&gt;
         font-size: $font-size-heading-medium;&lt;br&gt;
         padding-bottom: 15px;&lt;br&gt;
         text-decoration-color: $color-black;&lt;br&gt;
@@ -582,7 +582,7 @@
         .ex-two {&lt;br&gt;
         background-color: $color-green;&lt;br&gt;
         float: left;&lt;br&gt;
-        font-family: $font-family-poppins;&lt;br&gt;
+        font-family: $font-family-heading;&lt;br&gt;
         font-size: $font-size-heading-xxxx-small;&lt;br&gt;
         padding-bottom: 15px;&lt;br&gt;
         text-decoration-color: $color-black;&lt;br&gt;
