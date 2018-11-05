@@ -1,4 +1,4 @@
-<xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Julias Design Apprenticeship Blog</title>
@@ -6,10 +6,10 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Oct 2018 13:59:36 -0500</pubDate>
-    <lastBuildDate>Mon, 15 Oct 2018 13:59:36 -0500</lastBuildDate>
+    <pubDate>Mon, 05 Nov 2018 16:04:21 -0600</pubDate>
+    <lastBuildDate>Mon, 05 Nov 2018 16:04:21 -0600</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
-
+    
       <item>
         <title>Responsive Layouts</title>
         <description>&lt;div class=&quot;c-blog-post&quot;&gt;
@@ -173,14 +173,14 @@
         <pubDate>Wed, 10 Oct 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/jekyll/update/2018/10/10/Responsive-Layouts.html</link>
         <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/10/10/Responsive-Layouts.html</guid>
-
-
+        
+        
         <category>jekyll</category>
-
+        
         <category>update</category>
-
+        
       </item>
-
+    
       <item>
         <title>CSS Architecture</title>
         <description>&lt;div class=&quot;c-blog-post&quot;&gt;
@@ -364,14 +364,14 @@
         <pubDate>Tue, 09 Oct 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/jekyll/update/2018/10/09/CSS-Architecture.html</link>
         <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/10/09/CSS-Architecture.html</guid>
-
-
+        
+        
         <category>jekyll</category>
-
+        
         <category>update</category>
-
+        
       </item>
-
+    
       <item>
         <title>Color</title>
         <description>&lt;p&gt;
@@ -481,14 +481,14 @@
         <pubDate>Fri, 05 Oct 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/jekyll/update/2018/10/05/Color.html</link>
         <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/10/05/Color.html</guid>
-
-
+        
+        
         <category>jekyll</category>
-
+        
         <category>update</category>
-
+        
       </item>
-
+    
       <item>
         <title>Media Queries with CSS3</title>
         <description>&lt;section&gt;
@@ -614,14 +614,14 @@
         <pubDate>Thu, 04 Oct 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/jekyll/update/2018/10/04/Media-Queries.html</link>
         <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/10/04/Media-Queries.html</guid>
-
-
+        
+        
         <category>jekyll</category>
-
+        
         <category>update</category>
-
+        
       </item>
-
+    
       <item>
         <title>Mobile 1st Design &amp; Development</title>
         <description>&lt;section&gt;
@@ -734,14 +734,14 @@
         <pubDate>Wed, 03 Oct 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/jekyll/update/2018/10/03/Mobile-1st-Design-&-Development.html</link>
         <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/10/03/Mobile-1st-Design-&-Development.html</guid>
-
-
+        
+        
         <category>jekyll</category>
-
+        
         <category>update</category>
-
+        
       </item>
-
+    
       <item>
         <title>Git for Humans</title>
         <description>&lt;section&gt;
@@ -890,20 +890,20 @@
         <pubDate>Thu, 27 Sep 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/jekyll/update/2018/09/27/Git-for-Humans.html</link>
         <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/09/27/Git-for-Humans.html</guid>
-
-
+        
+        
         <category>jekyll</category>
-
+        
         <category>update</category>
-
+        
       </item>
-
+    
       <item>
         <title>Web Accessibility</title>
         <description>&lt;header&gt;
   &lt;h2&gt;What is Web Accessibility&lt;/h2&gt;
 &lt;/header&gt;
-&lt;br&gt;
+
     &lt;p&gt;
       Web accessibility is the practice of building (design and developing) websites and other digital products so that users of
       all abilities can access them. The Web Content Accessibility Guidelines (WCAG) provides a standard on how to do this and
@@ -1057,14 +1057,14 @@
         <pubDate>Wed, 26 Sep 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/post/2018/09/26/accessibility.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/post/2018/09/26/accessibility.html</guid>
-
-
+        
+        
         <category>blog</category>
-
+        
         <category>post</category>
-
+        
       </item>
-
+    
       <item>
         <title>CSS Positioning</title>
         <description>&lt;header&gt;
@@ -1242,14 +1242,14 @@
         <pubDate>Tue, 25 Sep 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/post/2018/09/25/css-positioning.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/post/2018/09/25/css-positioning.html</guid>
-
-
+        
+        
         <category>blog</category>
-
+        
         <category>post</category>
-
+        
       </item>
-
+    
       <item>
         <title>HTML Elements</title>
         <description>&lt;header&gt;
@@ -1768,14 +1768,14 @@
         <pubDate>Fri, 21 Sep 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/post/2018/09/21/htmlelements.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/post/2018/09/21/htmlelements.html</guid>
-
-
+        
+        
         <category>blog</category>
-
+        
         <category>post</category>
-
+        
       </item>
-
+    
       <item>
         <title>Apprenticeship Goals</title>
         <description>&lt;header&gt;
@@ -1818,13 +1818,13 @@
         <pubDate>Fri, 21 Sep 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/jekyll/update/2018/09/21/apprenticeship-goals.html</link>
         <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/09/21/apprenticeship-goals.html</guid>
-
-
+        
+        
         <category>jekyll</category>
-
+        
         <category>update</category>
-
+        
       </item>
-
+    
   </channel>
 </rss>

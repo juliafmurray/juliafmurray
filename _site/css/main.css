@@ -612,36 +612,29 @@ h1 {
       color: #066068;
       font-size: 2.441em; } }
 
-@media screen and (min-width: 768px) {
+h2 {
   font-family: "Poppins", sans-serif;
-  color: #066068;
-  font-size: 2.441em; }
-@media screen and (min-width: 320px) {
-  h2 {
-    font-family: "Poppins", sans-serif;
-    color: #066068;
-    font-size: 1.728em;
-    font-weight: 600; } }
-@media screen and (min-width: 768px) {
-  h2 {
-    font-family: "Poppins", sans-serif;
-    color: #C23313;
-    font-size: 1.953em;
-    font-weight: 600; } }
-@media screen and (min-width: 320px) {
-  h3 {
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.44em;
-    font-weight: normal;
-    margin: 0; } }
-@media screen and (min-width: 768px) {
-  h3 {
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.563em;
-    font-weight: normal;
-    margin: 0; } }
+  color: #066068; }
+  @media screen and (min-width: 768px) {
+    h2 {
+      font-size: 2.441em; } }
+  @media screen and (min-width: 320px) {
+    h2 {
+      font-size: 1.728em;
+      font-weight: 600; } }
+
+h3 {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  margin: 0; }
+  @media screen and (min-width: 320px) {
+    h3 {
+      font-size: 1.44em; } }
+  @media screen and (min-width: 768px) {
+    h3 {
+      font-size: 1.563em; } }
+
 @media screen and (min-width: 320px) {
   h4 {
     color: #000000;
@@ -740,16 +733,16 @@ body {
   display: inline-block; }
 
 .middle {
-  width: 100px;
+  background-color: #066068;
+  float: left;
   height: 100px;
-  background-color: #870c63;
-  float: left; }
+  width: 100px; }
 
 .right {
-  width: 100px;
+  background-color: #01508D;
+  float: left;
   height: 100px;
-  background-color: #41c4eb;
-  float: left; }
+  width: 100px; }
 
 .positions {
   padding-bottom: 125px; }
@@ -759,59 +752,58 @@ body {
   padding-bottom: 125px; }
 
 .static1 {
-  width: 100px;
-  height: 100px;
-  background-color: #ff6a6a;
+  background-color: #EA4F5E;
   float: left;
-  position: static; }
+  height: 100px;
+  position: static;
+  width: 100px; }
 
 .relative1 {
-  width: 100px;
-  height: 100px;
-  background-color: #ff6a6a;
+  background-color: #EA4F5E;
   float: left;
+  height: 100px;
+  left: 30px;
   position: relative;
-  left: 30px; }
+  width: 100px; }
 
 .fixed1 {
-  width: 100px;
-  height: 100px;
-  background-color: #ff6a6a;
-  position: fixed;
+  background-color: #EA4F5E;
   bottom: 0;
-  right: 0; }
+  height: 100px;
+  position: fixed;
+  right: 0;
+  width: 100px; }
 
 .sticky {
-  position: -webkit-sticky;
+  background-color: #EA4F5E;
+  height: 200px;
   position: sticky;
   top: 0;
-  width: 200px;
-  height: 200px;
-  background-color: #FFB9B9; }
+  width: 200px; }
 
 .absolute1 {
-  width: 100px;
-  height: 100px;
-  background-color: #ff6a6a;
+  background-color: #EA4F5E;
   float: left;
-  position: relative; }
+  height: 100px;
+  position: relative;
+  width: 100px; }
 
 .absolute2 {
-  width: 100px;
+  background-color: #066068;
   height: 100px;
-  background-color: #870c63;
   position: absolute;
+  right: 300px;
   top: 2400px;
-  right: 300px; }
+  width: 100px; }
 
 .zindex1 {
-  width: 100px;
-  height: 100px;
-  background-color: #ff6a6a;
+  background-color: #EA4F5E;
   float: left;
-  position: absolute;
+  height: 100px;
   left: 50px;
+  position: absolute;
   top: 2900px;
+  width: 100px;
   z-index: 1; }
 
 @media screen and (min-width: 320px) {
