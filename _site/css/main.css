@@ -14,7 +14,9 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+  margin: 0 auto;
+  width: 100%; }
 
 *,
 *:before,
@@ -28,7 +30,8 @@ html {
  */
 body {
   background-color: #FFFFFF;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%; }
 
 /**
  * Add the correct display in IE 9-.
@@ -49,8 +52,11 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
+h1,
 h2,
 h3,
+h4,
+h5,
 p {
   margin-block-start: 0;
   margin-block-end: 0; }
@@ -603,38 +609,37 @@ html {
   font-family: "PT Serif";
   font-weight: 400;
   line-height: 1.5em;
-  color: #000000;
+  color: #333333;
   font-size: 1.125em; }
 
 h1 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 700;
+  font-family: "PT Serif";
+  font-weight: 900;
   line-height: 1.5em; }
   @media screen and (min-width: 320px) {
     h1 {
-      color: #C23313;
       font-size: 2.074em; } }
   @media screen and (min-width: 768px) {
     h1 {
-      color: #066068;
       font-size: 2.441em; } }
 
 h2 {
-  color: #066068;
-  font-family: "Work Sans", sans-serif;
+  font-family: "PT Serif";
+  font-weight: 600;
   line-height: 1.5em; }
   @media screen and (min-width: 768px) {
     h2 {
       font-size: 2.441em; } }
   @media screen and (min-width: 320px) {
     h2 {
-      font-size: 1.728em;
-      font-weight: 600; } }
+      font-size: 1.728em; } }
 
 h3 {
   color: #000000;
-  font-family: "Work Sans", sans-serif;
-  line-height: 1.5em; }
+  font-family: "PT Serif";
+  font-weight: 600;
+  line-height: 1.5em;
+  padding: 1rem 0; }
   @media screen and (min-width: 320px) {
     h3 {
       font-size: 1.44em; } }
@@ -644,7 +649,8 @@ h3 {
 
 h4 {
   color: #000000;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "PT Serif";
+  padding-bottom: 0.75rem; }
   @media screen and (min-width: 320px) {
     h4 {
       font-size: 1.2em; } }
@@ -654,7 +660,7 @@ h4 {
 
 h5 {
   color: #000000;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "PT Serif"; }
   @media screen and (min-width: 320px) {
     h5 {
       font-size: 1.125em; } }
@@ -663,11 +669,11 @@ h5 {
       font-size: 1em; } }
 
 p {
-  color: #000000;
-  font-family: "PT Serif"; }
+  color: #333333;
+  font-family: "Work Sans", sans-serif; }
   @media screen and (min-width: 320px) {
     p {
-      font-size: 1.125em;
+      font-size: 1em;
       line-height: 1.5em; } }
   @media screen and (min-width: 768px) {
     p {
@@ -686,17 +692,15 @@ code {
   max-width: 90em; }
 
 .c-header {
-  background-color: #E8BD76; }
+  background-color: #F6E9E9;
+  margin-bottom: 30px; }
 
 .nav-anchor {
   display: flex;
-  width: 100%; }
-  @media screen and (min-width: 320px) {
-    .nav-anchor {
-      justify-content: flex-start; } }
-  @media screen and (min-width: 768px) {
-    .nav-anchor {
-      justify-content: center; } }
+  margin: 0 auto;
+  width: 95%;
+  justify-content: center;
+  padding: 0.75rem; }
 
 .c-footer {
   background: #FFFFFF;
@@ -707,7 +711,9 @@ code {
 
 article.post {
   padding: 0.75rem;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  width: 95%; }
 
 header.post-header {
   margin-bottom: 0.75rem; }
@@ -718,7 +724,9 @@ body {
 .c-blog-post-list {
   list-style: none;
   margin: 0;
-  padding-left: 0; }
+  padding-left: 0;
+  margin: 0 auto;
+  width: 95%; }
 
 .c-blog-post-list__post {
   margin-bottom: 0.75rem; }
@@ -734,9 +742,6 @@ body {
 
 .c-blog-post-list__post--title {
   display: inline-block; }
-
-.logo {
-  background: url("images/logo.png"); }
 
 .middle {
   background-color: #066068;

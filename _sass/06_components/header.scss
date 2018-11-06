@@ -1,16 +1,12 @@
 .c-header {
-  background-color: $color-orange-fade;
+  background-color: $color-header;
+  margin-bottom: 30px;
 }
 
 .nav-anchor {
   display: flex;
-  width: 100%;
-
-  @media screen and (min-width: 320px) {
-    justify-content: flex-start;
-    }
-
-    @media screen and (min-width: 768px) {
-      justify-content: center;
-      }
+  margin: 0 auto;
+  width: 95%;
+  justify-content: center;
+  padding: $spacing-small;
 }

@@ -1,8 +1,11 @@
 body {
   background-color: $color-white;
+
 }
 .c-blog-post-list {
   @include no-bullet;
+  margin: 0 auto;
+  width: 95%;
 }
 
 .c-blog-post-list__post {
@@ -16,13 +19,10 @@ body {
     border-radius: 10px;
     text-decoration: none;
     transition: all $duration-quickly  ease-in;
+
   }
 }
 
 .c-blog-post-list__post--title {
   display: inline-block;
-}
-
-.logo {
-  background: url('images/logo.png');
 }
