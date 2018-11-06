@@ -11,8 +11,8 @@ layout: default
 
          <a href="{{post.url}}">
           <h2 class="c-blog-post-list__post--title">{{ post.title }}</h2>
-          <h3>{{ post.date | date: '%b %d %Y' }}</h2>
-          <p>{{ post.content | strip_html | truncatewords: 25 }}</p>
+          <p><b>{{ post.date | date: '%b %d %Y' }}</b></p>
+        
         </a>
 
       </li>
