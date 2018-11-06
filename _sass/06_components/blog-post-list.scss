@@ -1,5 +1,5 @@
 body {
-  background-color: $color-primary-secondary;
+  background-color: $color-white;
 }
 .c-blog-post-list {
   @include no-bullet;
@@ -16,14 +16,13 @@ body {
     border-radius: 10px;
     text-decoration: none;
     transition: all $duration-quickly  ease-in;
-    &:hover {
-      background-color: $color-white;
-      border: $color-primary solid 1.5px;
-
-    }
   }
 }
 
 .c-blog-post-list__post--title {
   display: inline-block;
+}
+
+.logo {
+  background: url('images/logo.png');
 }

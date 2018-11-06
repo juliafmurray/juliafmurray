@@ -1,3 +1,16 @@
 .c-header {
-  border: 1px solid $color-border-dark;
+  background-color: $color-orange-fade;
+}
+
+.nav-anchor {
+  display: flex;
+  width: 100%;
+
+  @media screen and (min-width: 320px) {
+    justify-content: flex-start;
+    }
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      }
 }

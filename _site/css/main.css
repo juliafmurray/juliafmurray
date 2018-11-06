@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Poppins:500,600,700|PT+Mono|PT+Serif:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=PT+Mono|PT+Serif:400,400i,700,700i|Work+Sans:400,500,600,700,900");
 html {
   box-sizing: border-box;
   line-height: 1.15;
@@ -28,7 +28,7 @@ html {
  */
 body {
   background-color: #FFFFFF;
-  margin: 0; }
+  margin: 0 auto; }
 
 /**
  * Add the correct display in IE 9-.
@@ -48,6 +48,12 @@ section {
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
+
+h2,
+h3,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0; }
 
 /* Grouping content
    ========================================================================== */
@@ -435,7 +441,7 @@ select {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.04) 0 1px 0 0 inset;
   display: block;
-  font-family: "PT Serif";
+  font-family: "Work Sans", sans-serif;
   font-size: 1em;
   outline: 0;
   padding: 0.75rem;
@@ -628,7 +634,6 @@ h2 {
 h3 {
   color: #000000;
   font-family: "Work Sans", sans-serif;
-  padding-top: 1rem;
   line-height: 1.5em; }
   @media screen and (min-width: 320px) {
     h3 {
@@ -678,11 +683,20 @@ code {
 .o-main {
   margin: 0 auto;
   padding: 0.75rem;
-  max-width: 90em;
-  width: 100%; }
+  max-width: 90em; }
 
 .c-header {
-  border: 1px solid #C5C5C5; }
+  background-color: #E8BD76; }
+
+.nav-anchor {
+  display: flex;
+  width: 100%; }
+  @media screen and (min-width: 320px) {
+    .nav-anchor {
+      justify-content: flex-start; } }
+  @media screen and (min-width: 768px) {
+    .nav-anchor {
+      justify-content: center; } }
 
 .c-footer {
   background: #FFFFFF;
@@ -699,7 +713,7 @@ header.post-header {
   margin-bottom: 0.75rem; }
 
 body {
-  background-color: #E2E6FF; }
+  background-color: #FFFFFF; }
 
 .c-blog-post-list {
   list-style: none;
@@ -717,12 +731,12 @@ body {
     border-radius: 10px;
     text-decoration: none;
     transition: all 0.1s ease-in; }
-    .c-blog-post-list__post a:hover {
-      background-color: #FFFFFF;
-      border: #01508D solid 1.5px; }
 
 .c-blog-post-list__post--title {
   display: inline-block; }
+
+.logo {
+  background: url("images/logo.png"); }
 
 .middle {
   background-color: #066068;
