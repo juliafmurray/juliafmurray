@@ -9,12 +9,22 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .c-blog-post-list__post {
   margin-bottom: $spacing-small;
-  width: 32%;
+
+  @media screen and (min-width: 320px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 600px) {
+    width: 49%;
+  }
+
+  @media screen and (min-width: 915px) {
+    width: 32%;
+  }
 
 
   a {
@@ -27,8 +37,9 @@ body {
     text-decoration: none;
     transition: all $duration-quickly  ease-in;
     height: 150px;
-
   }
+
+
 }
 
 .c-blog-post-list__post--title {
