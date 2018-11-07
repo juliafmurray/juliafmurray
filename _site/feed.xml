@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Nov 2018 16:18:31 -0600</pubDate>
-    <lastBuildDate>Wed, 07 Nov 2018 16:18:31 -0600</lastBuildDate>
+    <pubDate>Wed, 07 Nov 2018 16:51:03 -0600</pubDate>
+    <lastBuildDate>Wed, 07 Nov 2018 16:51:03 -0600</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -1253,28 +1253,45 @@
     
       <item>
         <title>HTML Elements</title>
-        <description>&lt;section&gt;
-&lt;h3&gt;Metadata Content&lt;/h3&gt;
-  &lt;code&gt;base&lt;/code&gt;
-    Determines the base url for all links. When a link goes off to an external site this element has to appear before it.&lt;br&gt;
-  &lt;code&gt;link&lt;/code&gt;
-    Used to connect a document to an external resource such as external stylesheets.&lt;br&gt;
-  &lt;code&gt;meta&lt;/code&gt;
-    Specifies all the metadata within the html document, like author, description or keywords.
-    This information is not visible on the page.&lt;br&gt;
-  &lt;code&gt;noscript&lt;/code&gt;
-    If there are disabled scripts or issues with browser support &lt;code&gt;noscript&lt;/code&gt; allows for alternate content.
-    It can be used in the &lt;code&gt;body&lt;/code&gt; and the &lt;code&gt;head&lt;/code&gt;. If in the &lt;code&gt;head&lt;/code&gt;
-    elements are limited to &lt;code&gt;link&lt;/code&gt; &lt;code&gt;style&lt;/code&gt; and &lt;code&gt;meta&lt;/code&gt;.&lt;br&gt;
-  &lt;code&gt;script&lt;/code&gt;
-    Where scripts instructions are kept or link to external ones. Used to dynamically create block and/or
-    inline content&lt;br&gt;
-  &lt;code&gt;style&lt;/code&gt;
-    Defines style info in the document and specifies how different elements should be styled.&lt;br&gt;
-  &lt;code&gt;title&lt;/code&gt;
-    title of a document, specified in the &lt;code&gt;head&lt;/code&gt; section in an html document. The content entered
-    here appears in the browser toolbar, creates a title when the page is added to favorites and displays a title
-    in search engine results. &lt;br&gt;
+        <description>&lt;h3 class=&quot;c-blog-header&quot;&gt;
+  Metadata Content
+&lt;/h3&gt;
+&lt;ul class=&quot;c-blog-list&quot;&gt;
+  &lt;li class=&quot;c-blog-list__item&quot;&gt;
+    &lt;code&gt;base&lt;/code&gt;
+      Determines the base url for all links. When a link goes off to an external site this element has to appear before it.
+  &lt;/li&gt;
+  &lt;li class=&quot;c-blog-list__item&quot;&gt;
+    &lt;code&gt;link&lt;/code&gt;
+      Used to connect a document to an external resource such as external stylesheets.
+  &lt;/li&gt;
+  &lt;li class=&quot;c-blog-list__item&quot;&gt;
+    &lt;code&gt;meta&lt;/code&gt;
+      Specifies all the metadata within the html document, like author, description or keywords. This information is not
+      visible on the page.
+  &lt;/li&gt;
+  &lt;li class=&quot;c-blog-list__item&quot;&gt;
+    &lt;code&gt;noscript&lt;/code&gt;
+      If there are disabled scripts or issues with browser support &lt;code&gt;noscript&lt;/code&gt; allows for alternate content.
+      It can be used in the &lt;code&gt;body&lt;/code&gt; and the &lt;code&gt;head&lt;/code&gt;. If in the &lt;code&gt;head&lt;/code&gt;
+      elements are limited to &lt;code&gt;link&lt;/code&gt; &lt;code&gt;style&lt;/code&gt; and &lt;code&gt;meta&lt;/code&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;c-blog-list__item&quot;&gt;
+    &lt;code&gt;script&lt;/code&gt;
+      Where scripts instructions are kept or link to external ones. Used to dynamically create block and/or
+      inline content.
+  &lt;/li&gt;
+  &lt;li class=&quot;c-blog-list__item&quot;&gt;
+    &lt;code&gt;style&lt;/code&gt;
+      Defines style info in the document and specifies how different elements should be styled.
+  &lt;/li&gt;
+  &lt;li class=&quot;c-blog-list__item&quot;&gt;
+    &lt;code&gt;title&lt;/code&gt;
+      title of a document, specified in the &lt;code&gt;head&lt;/code&gt; section in an html document. The content entered
+      here appears in the browser toolbar, creates a title when the page is added to favorites and displays a title
+      in search engine results.
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3&gt;Flow Content&lt;/h3&gt;
   &lt;code&gt;a&lt;/code&gt;
@@ -1760,7 +1777,6 @@
 &lt;code&gt;var&lt;/code&gt; phrase tage used to define a variable.&lt;br&gt;
 &lt;code&gt;video&lt;/code&gt; defines a video like a movie clip or video streaming. Files supported are .mp4, .ogg, .webm
 &lt;/details&gt;
-&lt;/section&gt;
 </description>
         <pubDate>Fri, 21 Sep 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/post/2018/09/21/htmlelements.html</link>
