@@ -408,6 +408,9 @@ template {
 [hidden] {
   display: none; }
 
+li {
+  font-family: "PT Serif"; }
+
 fieldset {
   border: 0;
   margin: 0;
@@ -601,8 +604,7 @@ select {
     border-color: #FFFFFF; }
 
 a {
-  color: #01508D;
-  text-decoration: underline; }
+  color: #01508D; }
 
 html {
   font-family: "PT Serif";
@@ -671,7 +673,6 @@ h5 {
 p {
   color: #333333;
   font-family: "Work Sans", sans-serif;
-  padding-bottom: 1rem;
   line-height: 1.75em; }
   @media screen and (min-width: 320px) {
     p {
@@ -685,6 +686,9 @@ code {
   color: #EA4F5E;
   font-family: "PT Mono", monospace;
   font-size: 1em; }
+
+ul {
+  font-family: "PT Serif"; }
 
 .o-main {
   margin: 0 auto;
