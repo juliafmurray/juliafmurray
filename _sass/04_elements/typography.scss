@@ -1,52 +1,50 @@
 
 // Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Poppins:500,600,700|PT+Mono|PT+Serif:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono|PT+Serif:400,400i,700,700i|Work+Sans:400,500,600,700,900');
 
-
-//Styles
 html {
-  font-family: $font-family-pt;
+  font-family: $font-family-body;
   font-weight: $font-weight-regular;
   line-height: $line-height-text-small;
-  color: $color-black;
+  color: #333333;
   font-size: $font-size-text-small;
 }
 
 h1 {
-  font-family: $font-family-poppins;
-  font-weight: $font-weight-bold;
+  font-family: $font-family-body;
+  font-weight: $font-weight-x-bold;
   line-height: $line-height-text-small;
+  color: $color-primary;
 
   @media screen and (min-width: 320px) {
-    color: $color-orange-dark;
     font-size: $font-size-heading-xx-large;
     }
 
   @media screen and (min-width: 768px) {
-    color: $color-green-dark;
     font-size: $font-size-heading-xxx-large;
     }
 }
 
 h2 {
-  color: $color-green-dark;
-  font-family: $font-family-poppins;
+  font-family: $font-family-body;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-text-small;
 
   @media screen and (min-width: 768px) {
-    font-size: $font-size-heading-xxx-large;
+    font-size: $font-size-heading-medium;
     }
 
   @media screen and (min-width: 320px) {
-    font-size: $font-size-heading-large;
-    font-weight: $font-weight-semibold;
+    font-size: $font-size-heading-medium;
     }
 }
 
 h3 {
   color: $color-black;
-  font-family: $font-family-poppins;
-  font-weight: normal;
-  margin: 0;
+  font-family: $font-family-body;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-text-small;
+  padding: $spacing-medium 0;
 
   @media screen and (min-width: 320px) {
     font-size: $font-size-heading-small;
@@ -59,9 +57,8 @@ h3 {
 
 h4 {
   color: $color-black;
-  font-family: $font-family-poppins;
-  font-weight: normal;
-  margin: 0;
+  font-family: $font-family-body;
+  padding-bottom: $spacing-small;
 
   @media screen and (min-width: 320px) {
     font-size: $font-size-heading-xxx-small;
@@ -74,9 +71,7 @@ h4 {
 
 h5 {
   color: $color-black;
-  font-family: $font-family-poppins;
-  font-weight: normal;
-  margin: 0;
+  font-family: $font-family-body;
 
   @media screen and (min-width: 320px) {
     font-size: $font-size-heading-xx-small;
@@ -88,18 +83,16 @@ h5 {
 }
 
 p {
-  color: $color-black;
-  font-family: $font-family-pt;
-  margin: 0;
+  color: #333333;
+  font-family: $font-family-heading;
+  line-height: $line-height-text-large;
 
   @media screen and (min-width: 320px) {
-    font-size: $font-size-text-small;
-    line-height: $line-height-text-small;
+    font-size: $font-size-text-large;
     }
 
   @media screen and (min-width: 768px) {
     font-size: $font-size-text-large;
-    line-height: $line-height-text-large;
     }
 }
 

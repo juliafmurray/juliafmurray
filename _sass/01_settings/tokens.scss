@@ -37,6 +37,7 @@ $color-orange-dark: #C23313;
 $color-silver: #F2F2F2;
 $color-gold: #EABF1D;
 $color-purple: #8019c0;
+$color-header: #F6E9E9;
 
 $color-border-light: #ECECEC;
 $color-border: #E7E7E7;
@@ -50,10 +51,11 @@ $color-shadow: #EFEFEF;
 
 // Fonts
 
-$font-family-poppins: "Poppins", sans-serif;
-$font-family-pt: "PT Serif";
+$font-family-heading: "Work Sans", sans-serif;
+$font-family-body: "PT Serif";
 $font-family-monospace: "PT Mono", monospace;
 $font-weight-bold: 700;
+$font-weight-x-bold: 900;
 $font-weight-medium: 500;
 $font-weight-regular: 400;
 $font-weight-semibold: 600;
