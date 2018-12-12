@@ -1,27 +1,45 @@
 body {
-  background-color: $color-primary-secondary;
+  background-color: $color-header;
+
 }
 .c-blog-post-list {
   @include no-bullet;
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .c-blog-post-list__post {
   margin-bottom: $spacing-small;
+
+  @media screen and (min-width: 320px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 600px) {
+    width: 49%;
+  }
+
+  @media screen and (min-width: 915px) {
+    width: 32%;
+  }
+
+
   a {
     background-color: $color-white;
     display: block;
-    padding-bottom: $spacing-small;
+    padding-top: $spacing-small;
     padding-left: $spacing-small;
     padding-right: $spacing-small;
     border-radius: 10px;
     text-decoration: none;
     transition: all $duration-quickly  ease-in;
-    &:hover {
-      background-color: $color-white;
-      border: $color-primary solid 1.5px;
-
-    }
+    height: 150px;
   }
+
+
 }
 
 .c-blog-post-list__post--title {

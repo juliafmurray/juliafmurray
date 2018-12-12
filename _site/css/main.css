@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Poppins:500,600,700|PT+Mono|PT+Serif:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=PT+Mono|PT+Serif:400,400i,700,700i|Work+Sans:400,500,600,700,900");
 html {
   box-sizing: border-box;
   line-height: 1.15;
@@ -14,7 +14,9 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+  margin: 0 auto;
+  width: 100%; }
 
 *,
 *:before,
@@ -27,8 +29,8 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  background-color: #FFFFFF;
-  margin: 0; }
+  margin: 0 auto;
+  width: 100%; }
 
 /**
  * Add the correct display in IE 9-.
@@ -48,6 +50,15 @@ section {
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0; }
 
 /* Grouping content
    ========================================================================== */
@@ -435,7 +446,7 @@ select {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.04) 0 1px 0 0 inset;
   display: block;
-  font-family: "PT Serif";
+  font-family: "Work Sans", sans-serif;
   font-size: 1em;
   outline: 0;
   padding: 0.75rem;
@@ -590,45 +601,44 @@ select {
     border-color: #FFFFFF; }
 
 a {
-  color: #01508D;
-  text-decoration: underline; }
+  color: #01508D; }
 
 html {
   font-family: "PT Serif";
   font-weight: 400;
   line-height: 1.5em;
-  color: #000000;
+  color: #333333;
   font-size: 1.125em; }
 
 h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  line-height: 1.5em; }
+  font-family: "PT Serif";
+  font-weight: 900;
+  line-height: 1.5em;
+  color: #01508D; }
   @media screen and (min-width: 320px) {
     h1 {
-      color: #C23313;
       font-size: 2.074em; } }
   @media screen and (min-width: 768px) {
     h1 {
-      color: #066068;
       font-size: 2.441em; } }
 
 h2 {
-  color: #066068;
-  font-family: "Poppins", sans-serif; }
+  font-family: "PT Serif";
+  font-weight: 600;
+  line-height: 1.5em; }
   @media screen and (min-width: 768px) {
     h2 {
-      font-size: 2.441em; } }
+      font-size: 1.563em; } }
   @media screen and (min-width: 320px) {
     h2 {
-      font-size: 1.728em;
-      font-weight: 600; } }
+      font-size: 1.563em; } }
 
 h3 {
   color: #000000;
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  margin: 0; }
+  font-family: "PT Serif";
+  font-weight: 600;
+  line-height: 1.5em;
+  padding: 1rem 0; }
   @media screen and (min-width: 320px) {
     h3 {
       font-size: 1.44em; } }
@@ -638,9 +648,8 @@ h3 {
 
 h4 {
   color: #000000;
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  margin: 0; }
+  font-family: "PT Serif";
+  padding-bottom: 0.75rem; }
   @media screen and (min-width: 320px) {
     h4 {
       font-size: 1.2em; } }
@@ -650,9 +659,7 @@ h4 {
 
 h5 {
   color: #000000;
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  margin: 0; }
+  font-family: "PT Serif"; }
   @media screen and (min-width: 320px) {
     h5 {
       font-size: 1.125em; } }
@@ -661,17 +668,15 @@ h5 {
       font-size: 1em; } }
 
 p {
-  color: #000000;
-  font-family: "PT Serif";
-  margin: 0; }
+  color: #333333;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.75em; }
   @media screen and (min-width: 320px) {
     p {
-      font-size: 1.125em;
-      line-height: 1.5em; } }
+      font-size: 1em; } }
   @media screen and (min-width: 768px) {
     p {
-      font-size: 1em;
-      line-height: 1.75em; } }
+      font-size: 1em; } }
 
 code {
   background-color: #F2F2F2;
@@ -682,11 +687,18 @@ code {
 .o-main {
   margin: 0 auto;
   padding: 0.75rem;
-  max-width: 90em;
-  width: 100%; }
+  max-width: 90em; }
 
 .c-header {
-  border: 1px solid #C5C5C5; }
+  background-color: #F6E9E9;
+  margin-bottom: 30px; }
+
+.nav-anchor {
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+  justify-content: center;
+  padding: 0.75rem; }
 
 .c-footer {
   background: #FFFFFF;
@@ -697,33 +709,47 @@ code {
 
 article.post {
   padding: 0.75rem;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  width: 95%; }
 
 header.post-header {
   margin-bottom: 0.75rem; }
 
 body {
-  background-color: #E2E6FF; }
+  background-color: #F6E9E9; }
 
 .c-blog-post-list {
   list-style: none;
   margin: 0;
-  padding-left: 0; }
+  padding-left: 0;
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 .c-blog-post-list__post {
   margin-bottom: 0.75rem; }
+  @media screen and (min-width: 320px) {
+    .c-blog-post-list__post {
+      width: 100%; } }
+  @media screen and (min-width: 600px) {
+    .c-blog-post-list__post {
+      width: 49%; } }
+  @media screen and (min-width: 915px) {
+    .c-blog-post-list__post {
+      width: 32%; } }
   .c-blog-post-list__post a {
     background-color: #FFFFFF;
     display: block;
-    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     border-radius: 10px;
     text-decoration: none;
-    transition: all 0.1s ease-in; }
-    .c-blog-post-list__post a:hover {
-      background-color: #FFFFFF;
-      border: #01508D solid 1.5px; }
+    transition: all 0.1s ease-in;
+    height: 150px; }
 
 .c-blog-post-list__post--title {
   display: inline-block; }
@@ -805,7 +831,7 @@ body {
 @media screen and (min-width: 320px) {
   .ex-one {
     background-color: #007f00;
-    font-family: "Poppins", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 1.563em;
     padding-bottom: 15px;
     text-decoration-color: #000000;
@@ -814,7 +840,7 @@ body {
   .ex-one {
     background-color: #EA4F5E;
     float: left;
-    font-family: "Poppins", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 1em;
     padding-bottom: 15px;
     text-decoration-color: #000000;
@@ -822,7 +848,7 @@ body {
 @media screen and (min-width: 320px) {
   .ex-two {
     background-color: #EA4F5E;
-    font-family: "Poppins", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 1.563em;
     padding-bottom: 15px;
     text-decoration-color: #000000;
@@ -831,7 +857,7 @@ body {
   .ex-two {
     background-color: #007f00;
     float: left;
-    font-family: "Poppins", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 1em;
     padding-bottom: 15px;
     text-decoration-color: #000000;

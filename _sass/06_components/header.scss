@@ -1,3 +1,12 @@
 .c-header {
-  border: 1px solid $color-border-dark;
+  background-color: $color-header;
+  margin-bottom: 30px;
+}
+
+.nav-anchor {
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+  justify-content: center;
+  padding: $spacing-small;
 }
