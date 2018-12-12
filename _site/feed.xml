@@ -6,9 +6,216 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Nov 2018 16:51:03 -0600</pubDate>
-    <lastBuildDate>Wed, 07 Nov 2018 16:51:03 -0600</lastBuildDate>
+    <pubDate>Wed, 12 Dec 2018 12:34:35 -0600</pubDate>
+    <lastBuildDate>Wed, 12 Dec 2018 12:34:35 -0600</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Web Accessibility &amp; the Law</title>
+        <description>&lt;p class=&quot;c-post__content&quot;&gt;
+  As software crafters we have a lot to keep in mind when we are designing and building for our clients. First of all we have to make the client happy,and that above all else, our solutions helps stakeholders meet their business goals. We’ve also got to ensure that we’re always adhering to our own 8th Light standard of what building quality software means. As designers, one of our main standards is to ensure that software is usable for everyone. On the surface we’re talking about any non-happy path scenario. What if they’re on mobile? What if they’re not familiar with a certain type of software? What if the cafes wi-fi goes out?
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  Beyond the basic level of usability there’s accessibility. The gist of it is all users need to have equal access to content on the web no matter what their abilities are. Just think about how you would do a basic google search if you can’t see the screen. What happens if you can’t use a mouse? What if you need to watch a video, but can’t hear the words?
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  It’s a common misconception that the intersection of disabled people and internet usage is pretty low. You may think that designing and developing for that situation seems like a real edge case. You’ve got bigger fish to fry. There’s that whole blockchain thing you’re working on.
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  Here are some numbers: There are roughly 7.5 billion people that are alive on this planet. 3.2 billion, or half of them, use the internet. One billion people have a some form of disability, world wide.
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  That seems pretty overwhelming, but fortunately we have a set of very wordy, confusing guidelines that seem to have been written by some miswired lawyer robot. This is called WCAG or the Web Content Accessibility Guidelines. There are different standards for these guidelines. These are success criteria with multiple levels of A, AA or AAA.
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  WCAG defines these guidelines for building accessible web content, but also the people it applies to. This included users who are or have:
+&lt;/p&gt;
+&lt;ul class=&quot;c-post__list&quot;&gt;
+  &lt;li class=&quot;c-post__item&quot;&gt;
+    Blind or low vision
+  &lt;/li&gt;
+  &lt;li class=&quot;c-post__item&quot;&gt;
+    Deaf or Hearing Impaired
+  &lt;/li&gt;
+  &lt;li class=&quot;c-post__item&quot;&gt;
+    Cognitative disabilities
+  &lt;/li&gt;
+  &lt;li class=&quot;c-post__item&quot;&gt;
+    Limited motor skills
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 class=&quot;c-post__heading&quot;&gt;
+  Why should we care?
+&lt;/h3&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  Often times companies brush of accessibility as unnecessary. Remarks such as &quot;Those aren't our users&quot; and &quot;We've always done it this way&quot; are common rationale for keeping up with the status quo. In a perfect world we should all genuinely care about all users, including those with disabilities. Fortunately, there are several benefits to accessibility besides that fuzzy feeling you get when you're a decent human being.
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  To put it simply: accessibility means good business. For example, if a site uses proper things like image alt attributes, title and header tags and html semantic markup, it returns better SEO results. Another factor is that most people at some point in their lives experience become disabled, even temporarily. People who have had lasik surgery, or broken a hand will experience barriers to information that they may have never thought of before.
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  It’s no small task for an organization to make that leap and change their practices to include accessibility. Human empathy is almost never the influencing factor in this decision. Companies without established accessibility practices are at risk for legal ramifications, including lawsuits, settlements and huge fines. In some industries there are even federal mandates which require WCAG compliance. In 2013 the DOT passed a
+    &lt;a class=&quot;c-post__link&quot; href=&quot;https://www.transportation.gov/briefing-room/new-dot-rules-make-flying-easier-passengers-disabilities&quot;&gt;
+      mandate
+    &lt;/a&gt;
+  that all airline websites and kiosks have to adhere to these standards.
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  In the early aughts, most defendants involved in accessibility cases were either government entities or worked with the government. Usually this was areas of financial, education or healthcare. Starting in the early ‘10s, we are starting to see more businesses in the consumer space coming under attack for non-compliance. Next, we’ll go through some recent accessibility legal battles and then provide practices that we can adopt at 8th Light to protect our clients and ourselves from legal risk.
+&lt;/p&gt;
+&lt;h4 class=&quot;c-post__heading&quot;&gt;Walmart&lt;/h4&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  Just this year, a lawsuit with between Walmart and three blind Maryland residents has gone underway, alleging an ADA violation because the self-service checkout is not accessible for blind users.
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  One of the plaintiffs was at a Walmart self-service checkout, which as a blind person they could not use because there were no audio prompts at the kiosk. The plaintiff has an employee assist her. Unfortunately, without the plaintiff's consent, the Walmart employee charged the card with an extra $40 cash back.
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  The plaintiffs are requesting that Walmart take action to make all it’s kiosks accessible for blind customers, to make a statement that they are violating the ADA as well as court costs and attorney fees.  A spokesperson for Walmart claimed that they believe that their checkout procedures violate any discrimination laws. The only action they have taken is to fire the employee who stole from the plaintiff and plan to fight the lawsuit in court.
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  It is unfortunate that Walmart has decided not to face these charges and would rather waste time and money fighting the charges rather than implementing these changes. If they had been paying attention, they would know that several other companies in the retail/grocery space that have faced similar lawsuits and lost. These include Winn Dixie, Safeway and Peapod, which we will get into later in this post.
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  So what could Walmart do with their kiosks to make them accessible for blind people? The direct answer would be to implement some sort of audio prompting, but it gets more complicated than that. Is that a software or a hardware problem? Do you just attach a screen reader or just enable a VoiceOver iOS like feature?
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  There are several ways you could solve for this, but I’ve seen one that is particularly interesting, an assistive device called Storm Audio-Nav. This device allows users to navigate an interface through audio direction. In many cases this device is used for people who are blind, but it also allows users with reading difficulties like dyslexia to use kiosks. In addition people with motor impairments like muscular dystrophy or rheumatoid arthritis can use kiosks paired with Storm Audio-Nav. The device is can be illuminated at multiple levels of brightness and has tactile keys. Lastly the device can be used with newly implemented designs or existing terminals. You can check out the manufacturer here.
+&lt;/p&gt;
+&lt;h4 class=&quot;c-post__heading&quot;&gt;Winn Dixie&lt;/h4&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  As mentioned earlier, in the past 5 years there has been a trend of retail and grocery store lawsuits targeting web acccesibility. The trend has been specific to a conflict with screen readers and websites. One of the most recent ones is a grocery chain, Winn Dixie. A local blind customer sued the company claiming that they could not access online coupons with their screen reader.
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  The judge ruled in order of the plaintiff, which was historical as far as accessibility cases go. In order for an accessibility case to win with private companies, the judge needs to rule that the companies website is covered by the ADA. This time the judge claimed the he did not even have to make that decision because Winn Dixies website is “heavily integrated with Winn-Dixie’s physical store locations and operates as a gateway to the physical store locations.”
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  As a designer I find this facinating because it creates this intersection I had never thought of, which is the cross section of acessibility and service design. Service design is the practice of creating a holistic customer experience both in physical and digital experiences. You can look at accessibility in this same holistic manner. Businesses must accomondate for customers in physical spaces by doing things like installing wheelchair ramps and handrails. If this is the standard, then business must also ensure that their customers also have access to digital content. Here we see these two intertecting beautifully. A user who does not have full access to digital content does not have full access to a physical, public space, which is a cut and dry violation of ADA.
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  If you do some searching about web accessibility cases you would see that the majority of them happen because blind users cannot access information with their screenr readers. Screen readers are software that allow blind and visually impaired people to read digital content through synthesized speech or braille display. A screen reader can read the whole page, a peice of text, spell a word, identify different states of things on a page like if a button is active, on focus or disabled. Most major operating systems have available screen reader software. Some of the most common ones are JAWS for desktop computers and VoiceOver for iOS which can be used with iPads and iPhones.
+&lt;/p&gt;
+&lt;h4 class=&quot;c-post__heading&quot;&gt;How can I build software that works with screen readers?&lt;/h4&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  A good first step to understanding screen readers is to start thinking in the mindset of content liniarization. When a sighted user goes to a website they don't start with reading the first word on the page. They take a minute and scan through the whole page. Users will always have a goal in mind when going to a website. For example, if you are on a restaurant website you may have the goal of looking for their address and hours. By convention, most users know that information might be in the header, or maybe the footer of the page. They'll look in those parts of the layout first and then navigate to other areas if they can't find it there. Non-sighted users will demonstrate that same behavior, and they should'nt be limited by the technology they use to do so. These macro aspects of a content are similar to a phone menu that only give you a handful of options that allow the user to deep dive into one to get what they are looking for. The linarized content is translated into an audio interface. This is a great mindset to guide designers and developers as they are building web content. This is also in line with our ITCSS and BEM standard at 8th Light where code has specifc components nested within larger, reusable layouts.
+&lt;/p&gt;
+&lt;p class=&quot;c-post__content&quot;&gt;
+  Another practice that ensures users with screen readers can easily navigate through a websites content is by using proper HTML markup for headings, paragraph, lists and forms. Essentially if you can use any html element besides a div, use it. This allows the screen reader to read each element to the user as they go through the content on the page from top to bottom. Users can easily and quickly jump through content. Specific to your headings and paragraph content, establishing a type heirarchy during the design phase will save you time with this. A tool I recommend for establishing a heirarchy with consistent type sizes is
+&lt;a class=&quot;c-post__link&quot; href=&quot;https://type-scale.com/&quot;&gt;
+  type scale
+&lt;/a&gt;
+, a web based tool that sets heirarchy based on a different set of ratios.
+&lt;/p&gt;
+
+&lt;h3&gt;1). Make sure your colors meet contrast ratios&lt;/h3&gt;
+&lt;p&gt; One of the first things a designer can to to ensure for accessibility is to make sure their designs meet the
+correct color contrast ratio. The most recent guidelines just came out, 2.1 and with that comes some additional
+requirements from the previous 2.0.
+&lt;/p&gt;
+&lt;h4&gt;2.0: Text and Background Color:&lt;/h4&gt;
+&lt;p&gt;
+Previously, the only thing color contrast applied to was text and background color. Level AA requires a contrast
+ratio of at least 4.5:1 for normal text and 3:1 for large text. Level AAA requires a contrast ratio of at least
+7:1 for normal text and 4.5:1 for large text.
+&lt;/p&gt;
+&lt;h4&gt;2.1: Images and UI Elements:&lt;/h4&gt;
+&lt;p&gt;
+In the case that a graphic is essential for understanding content or functionality on website, the contrast ratio
+of at least 4.5:1 against the surrounding colors. This isnt a hard and fast rule though, as there are some exceptions.
+Any graphic that has a minimum height and width of 3px as well as logo types or anything that is non-essential is excluded.
+&lt;/p&gt;
+&lt;p&gt;UI elements are also required to meet contrast standards in 2.1. Any UI elemenet deemed essential
+to understand content functionality must meet a contrast ratio of 4.5:1 against the surrounding colors. Exceptions for This
+include elements with a minimum of 3px must meet a contrast ratio of 3:1. Disbaled or inactive UI elements are also
+exempt from this guideline.
+&lt;/p&gt;
+&lt;p&gt; Caluculating these contrast ratios seems like a really tedious task, but it's not! There are a lot of great resources out
+there but here are the two main ones I use in my workflow:
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;
+  &lt;a href=&quot;http://contrast-finder.tanaguru.com/&quot;&gt;
+    Tanaguru contrast checker
+  &lt;/a&gt;
+  is one of my favorite web-based tools for this. It not only allows you to choose between contrast ratios, it also
+  offers suggestions for similar colors if your combination doesn't meet the ratio you need.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.getstark.co/&quot;&gt;
+  Stark sketch plugin
+&lt;/a&gt;
+is a way to check your contrast ratios right within Sketch. One of the cool things about this one is that
+you can also test your color combinations against the many types of color blindess (yes, there are several types).
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3&gt;2). Don’t use color alone to communicate&lt;/h3&gt;
+&lt;p&gt;
+While we are on the subject of color blindness, we also need to make sure that color is not an essential communicator
+of content or functionality. This mainly pertains to forms and error states. If an error is communicated to a color
+blind user only by the use of red text, there really is no way for them to know where that error is in the page.
+Many accessible websites will use the &lt;span&gt;&amp;#9888;&lt;/span&gt; warning symbol along with red text to communicate than
+and error has occured.
+&lt;/p&gt;
+&lt;p&gt;
+One of my favorite games is Dots , a silly phone game that releases serotonin in your brain when you connect
+colored dots together. The game does have a great color blind mode where each dot has a shape inside it that corresponds
+to its color. A medium article written by &lt;a href=&quot;https://medium.com/intrepid-s-insights/designing-for-and-with-color-blindness-48392aab3d87&quot;&gt;color blind designer, Aaron Tenbuuren&lt;/a&gt;
+goes into detail about how Dots and other apps design for color blind users successfully.
+&lt;/p&gt;
+
+&lt;h3&gt;3.) Design focus states for all ui components and allow for keyboard navigation&lt;/h3&gt;
+&lt;p&gt;
+As a someone who doesn't use accessibility features on devices, I definately have a bias towards navigating
+with a mouse or trackpad over a keyboard or other assistive devices. Many different types of users will use
+non-mouse devices including blind users who use screen readers. People with MS or arthritis will use the keyboard
+because using a mouse is often painful and difficult. Power users of complex forms also use keyboard naviagtion
+simply because its a more efficient than clicking into each and every element. Regardless of a users ability or
+behavior, allowing for keyboard navigation requires considering what all the different states of a form element
+will look like. States include disabled, deafult, active and focus. The focus state is especially helpful because
+it communicates to users what part of the website they are currently on. One of my favorite resources for this
+is the &lt;a href=&quot;https://designsystem.digital.gov/components/form-controls/&quot;&gt;U.S. Web Design Standards&lt;/a&gt;,
+which is an open source design system used by all U.S. federal websites.
+&lt;/p&gt;
+
+&lt;h3&gt;4). Use alt text for non-text components&lt;/h3&gt;
+&lt;p&gt;
+For people that use screen readers to read written conenet also need access to non-written content. This includes
+maps, graphics, photos, animations and video. In order to do this alt tags are added in HTML to include a short
+message of what the non-text content is about. Although this is something done mostly during front end development,
+as designers we not only design the UI, but we also design and shape the content. It's important to craft image
+descriptions to give the same context for both sighted and non sighted users.
+&lt;a href=&quot;https://www.microsoft.com/design/inclusive/&quot;&gt;Microsoft design&lt;/a&gt; has a series of videos
+about the power of inclusive design that has great voice over descriptions of what is happening in the video. These
+not only give context to the videos, but they add value for all users.
+&lt;/p&gt;
+
+
+&lt;h3&gt;5). Use proper headings with HTML semantic markup&lt;/h3&gt;
+&lt;p&gt;
+Another practice that makes sure users who with screen readers can easily navigate through a websites content is
+by using proper HTML mark up for headings. Doing this the screen reader reads each header to the user as they
+go through the content on the page from top to bottom. It will tell the user what is a header and what is paragraph
+content. It also allows the user to easily and quickly jump through content, by listing out the headings from h1 to
+h6 so they can be used as a table of contents. Although writing this code is a part of front end development, you need
+to establish the type heirarchy first. An easy way to figure out your type sizes, I reccomend using
+&lt;a href=&quot;https://type-scale.com/&quot;&gt;type scale&lt;/a&gt;&quot;, a web based tools that sets heirarchy based on a different set of
+ratios.
+&lt;/p&gt;
+</description>
+        <pubDate>Tue, 11 Dec 2018 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/blog/post/2018/12/11/accessibility-law.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/post/2018/12/11/accessibility-law.html</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>post</category>
+        
+      </item>
     
       <item>
         <title>Responsive Layouts</title>
@@ -1293,156 +1500,317 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3&gt;Flow Content&lt;/h3&gt;
-  &lt;code&gt;a&lt;/code&gt;
-    Defines something as a hyperlink; an interactive element that will take the user to another page.&lt;br&gt;
-  &lt;code&gt;abbr&lt;/code&gt;
-    Defines something as an abbreviation or an acronym&lt;br&gt;
-  &lt;code&gt;address&lt;/code&gt;
-    Contact info for the owner of a document&lt;br&gt;
-  &lt;code&gt;article&lt;/code&gt;
-    Defines an article in the document which could be a blog post, news story, comment, etc.&lt;br&gt;
-  &lt;code&gt;aside&lt;/code&gt;
-    Defines content aside from main content. Aside content should still be related to the main content.&lt;br&gt;
-  &lt;code&gt;audio&lt;/code&gt;
-    Defines audio content in the document. It accepts .mp3, .wav and .ogg&lt;br&gt;
-  &lt;code&gt;b&lt;/code&gt;
-    Styles text within the html to be bold.&lt;br&gt;
-  &lt;code&gt;bdi&lt;/code&gt;
-    Stands for bidirectional isolation. This is to take specific text and change the directionality from the direction of the text around it.&lt;br&gt;
-  &lt;code&gt;bdo&lt;/code&gt;
-    Overrides the text direction of the entire document.&lt;br&gt;
-  &lt;code&gt;blockquote&lt;/code&gt;
-    Will define content quoted from another source, and is usually indented.&lt;br&gt;
-  &lt;code&gt;br&lt;/code&gt;
-    Creates a break in a line of text. It’s an empty tag, so there is no closing tag.&lt;br&gt;
-  &lt;code&gt;button&lt;/code&gt;
-    Defines a clickable button. This can contain text or an image.&lt;br&gt;
-  &lt;code&gt;canvas&lt;/code&gt;
-    Is used as a container to draw graphics via a script in javascript. This is just a container, the ability to draw is in the javascript.&lt;br&gt;
-  &lt;code&gt;cite&lt;/code&gt;
-    Defines the title of work in art, literature, film, theater, etc.&lt;br&gt;
-  &lt;code&gt;code&lt;/code&gt;
-    Defines a piece of computer code.&lt;br&gt;
-  &lt;code&gt;data&gt;&lt;/code&gt;
-    This allows content to be translated to a machine readable value and also provides for a browser rendering that can be consumed by users.&lt;br&gt;
-  &lt;code&gt;datalist&lt;/code&gt;
-    Provides a list of predefined for an &lt;code&gt;input&lt;/code&gt; element. This allows for autocomplete via a dropdown.&lt;br&gt;
-  &lt;code&gt;del&lt;/code&gt;
-    Text that has been deleted from a document.&lt;br&gt;
-  &lt;code&gt;details&lt;/code&gt;
-    Allows user to show/hide details about something. The default of &lt;code&gt;details&lt;/code&gt; should be hidden unless the attribute is set to open.&lt;br&gt;
-  &lt;code&gt;dfm&lt;/code&gt;
-    Defines an instance of a term and is usually the first time the term is used in the document.&lt;br&gt;
-  &lt;code&gt;div&lt;/code&gt;
-    Creates a division within the html. Divs are used in css to style html or to do certain things in javascript.&lt;br&gt;
-  &lt;code&gt;dl&lt;/code&gt;
-    Description list, is used with &lt;code&gt;dd&lt;/code&gt; and &lt;code&gt;dt&lt;/code&gt;.&lt;br&gt;
-  &lt;code&gt;dt&lt;/code&gt;
-    Term/name description in a description list. Used with &lt;code&gt;dd&lt;/code&gt; and &lt;code&gt;dl&lt;/code&gt;.&lt;br&gt;
-  &lt;code&gt;em&lt;/code&gt;
-    Emphasized text.&lt;br&gt;
-  &lt;code&gt;embed&lt;/code&gt;
-    container for an external application or a plugin.&lt;br&gt;
-  &lt;code&gt;fieldset&lt;/code&gt;
-    used to group information within a form and creates a box around it.&lt;br&gt;
-  &lt;code&gt;figure&lt;/code&gt;
-    Specifies self contained content like an illustration, diagram, photos, etc.&lt;br&gt;
-  &lt;code&gt;footer&lt;/code&gt;
-    Footer of a document, has information it’s containing content like author, related links, site map, contact info, etc.&lt;br&gt;
-  &lt;code&gt;form&lt;/code&gt;
-    creates an html form that the user can interact with and enter an input. &lt;code&gt;input&lt;/code&gt; &lt;code&gt;textarea&lt;/code&gt; &lt;code&gt;button&lt;/code&gt; &lt;code&gt;select&lt;/code&gt; &lt;code&gt;option&lt;/code&gt; &lt;code&gt;optgroup&lt;/code&gt; &lt;code&gt;fieldset&lt;/code&gt; &lt;code&gt;label&lt;/code&gt; can all be contained in a form. &lt;code&gt;h1&lt;/code&gt;  to &lt;code&gt;h6&lt;/code&gt; Define html headings. H1 has the most importance, H6 has the least importance.&lt;br&gt;
-  &lt;code&gt;header&lt;/code&gt;
-    Has introductory content and/or navigation. It can contain &lt;code&gt;h1&lt;/code&gt; to &lt;code&gt;h6&lt;/code&gt;, logo or authorship info.&lt;br&gt;
-  &lt;code&gt;hr&lt;/code&gt;
-    defines a thematic break in content and is often used to visually separate content.&lt;br&gt;
-  &lt;code&gt;i&lt;/code&gt;
-    Identifies a shift in mood or tone within a set of text. Indicates a technical term, ship name, thought in a foreign language, etc. This should be rarely used, other options are &lt;code&gt;em&lt;/code&gt; &lt;code&gt;strong&lt;/code&gt; &lt;code&gt;mark&lt;/code&gt; &lt;code&gt;cite&lt;/code&gt; &lt;code&gt;dfn&lt;/code&gt;&lt;br&gt;
-  &lt;code&gt;iframe&lt;/code&gt;
-    defines an inline frame and embeds another document within the html.&lt;br&gt;
-  &lt;code&gt;img&lt;/code&gt;
-    Defines an image within the document. Has 2 required attributes, src and alt.
-    &lt;code&gt;img&lt;/code&gt; holds a space for the image. The actual image is linked to the document within
-    &lt;code&gt;a&lt;/code&gt; tag.&lt;br&gt;
-  &lt;code&gt;input&lt;/code&gt;
-    Used within the &lt;code&gt;form&lt;/code&gt; element, this allows user to input data into the form.&lt;br&gt;
-  &lt;code&gt;ins&lt;/code&gt;
-    Defines text that has been inserted into a document.&lt;br&gt;
-  &lt;code&gt;kpd&lt;/code&gt;
-    defines a keyboard input and is a phrase tag. Can be achieved with CSS.&lt;br&gt;
-  &lt;code&gt;label&lt;/code&gt;
-    Defines a label for an input field.&lt;br&gt;
-  &lt;code&gt;main&lt;/code&gt;
-    Specifies the main content of a document. There can only be one &lt;code&gt;main&lt;/code&gt; element per document.&lt;br&gt;
-  &lt;code&gt;map&lt;/code&gt;
-    Creates an image map, which is an image with clickable areas. Contains multiple &lt;code&gt;area&lt;/code&gt; elements.&lt;br&gt;
-  &lt;code&gt;mark&lt;/code&gt;
-    Will define a section of text you want to mark and highlights it.&lt;br&gt;
-  &lt;code&gt;math&lt;/code&gt;
-    The top element in MathML, a mathematical markup language, used as an XML application.
-  &lt;code&gt;meter&lt;/code&gt;
-    Defines a scaled measurement like a gauge or fractional value. Examples are disk usage, query result, etc.&lt;br&gt;
-  &lt;code&gt;nav&lt;/code&gt;
-    defines a set of navigation links.&lt;br&gt;
-  &lt;code&gt;noscript&lt;/code&gt;
-    If there are disabled scripts or issues with browser support &lt;code&gt;noscript&lt;/code&gt; allows for alternate content. It can be used in the &lt;code&gt;body&lt;/code&gt; and the &lt;code&gt;head&lt;/code&gt;. If in the &lt;code&gt;head&lt;/code&gt; elements are limited to &lt;code&gt;link&lt;/code&gt; &lt;code&gt;style&lt;/code&gt; and &lt;code&gt;meta&lt;/code&gt;.&lt;br&gt;
-  &lt;code&gt;object&lt;/code&gt;
-    Identifies embedded objects in the document such as audio, video, javascript, pdf, other web pages, etc.&lt;br&gt;
-  &lt;code&gt;ol&lt;/code&gt;
-    specifies an ordered list and can be either numeric or alphabetical. Used with &lt;code&gt;li&lt;/code&gt;&lt;br&gt;
-  &lt;code&gt;optgroup&lt;/code&gt;
-    used to create groups of data in a dropdown list, each group with its own label.&lt;br&gt;
-  &lt;code&gt;output&lt;/code&gt;
-    Shows the result of a calculation that is run by a script.&lt;br&gt;
-  &lt;code&gt;p&lt;/code&gt;
-    Paragraph&lt;br&gt;
-  &lt;code&gt;pre&lt;/code&gt;
-    Preformatted text that preserved line breaks and spaces within the html.&lt;br&gt;
-  &lt;code&gt;progress&lt;/code&gt;
-    Shows the progress as a task.&lt;br&gt;
-  &lt;code&gt;q&lt;/code&gt;
-    Short quotation.&lt;br&gt;
-  &lt;code&gt;ruby&lt;/code&gt;
-    specifies a ruby annotation. It’s attached to the main text to indicate the pronunciation or meaning on the text. Used with east asian typography.&lt;br&gt;
-  &lt;code&gt;s&lt;/code&gt;
-    Indicates content is not longer accurate.&lt;br&gt;
-  &lt;code&gt;samp&lt;/code&gt;
-    Defines sample output from computer program.&lt;br&gt;
-  &lt;code&gt;script&lt;/code&gt;
-    Where scripts instructions are kept or link to external ones. Used to dynamically create block and/or inline content&lt;br&gt;
-  &lt;code&gt;section&lt;/code&gt;
-    defines sections of a document like chapters headers or footers.&lt;br&gt;
-  &lt;code&gt;select&lt;/code&gt;
-    creates a drop down list. Used with &lt;code&gt;option&lt;/code&gt;&lt;br&gt;
-  &lt;code&gt;small&lt;/code&gt;
-    Defines smaller text or side comments.&lt;br&gt;
-  &lt;code&gt;span&lt;/code&gt;
-    Used to ground inline elements in a document.&lt;br&gt;
-  &lt;code&gt;strong&lt;/code&gt;
-    is a phrase tag that emphasizes important text.&lt;br&gt;
-  &lt;code&gt;sub&lt;/code&gt;
-    Allows for subscript text which appears half a character below the baseline of text.&lt;br&gt;
-  &lt;code&gt;sup&lt;/code&gt;
-    Allows for subscript text which appears half a character above the baseline of text.&lt;br&gt;
-  &lt;code&gt;svg&lt;/code&gt;
-    container for svg graphics which has many ways of drawing shapes, lines and images.&lt;br&gt;
-  &lt;code&gt;table&lt;/code&gt;
-    Creates an HTML table that contains &lt;code&gt;tr&lt;/code&gt; &lt;code&gt;th&lt;/code&gt; and &lt;code&gt;td&lt;/code&gt; and can also be as complex to include &lt;caption&gt; &lt;col&gt; &lt;colgroup&gt; &lt;thread&gt; &lt;tfoot&gt; &lt;tbody&gt;
-  &lt;code&gt;template&lt;/code&gt;
-    Allows content to be hidden from the user, and it won’t be rendered in the browser.&lt;br&gt;
-  &lt;code&gt;textarea&lt;/code&gt;
-    creates a multiline input control and can hold an unlimited number of characters.&lt;br&gt;
-  &lt;code&gt;time&lt;/code&gt;
-    human readable date or time. Can also encode dates/times in a machine readable way.&lt;br&gt;
-  &lt;code&gt;ul&lt;/code&gt;
-    defines an unordered, bulleted list. Each list item is defined by &lt;code&gt;li&lt;/code&gt;&lt;br&gt;
-  &lt;code&gt;var&lt;/code&gt;
-    phrase tage used to define a variable.&lt;br&gt;
-  &lt;code&gt;video&lt;/code&gt;
-    defines a video like a movie clip or video streaming. Files supported are .mp4, .ogg, .webm
-  &lt;code&gt;wbr&lt;/code&gt;
-    A position within text where the browser may optionally break a line, but not always at the location the element is in.
-    &lt;br&gt;
+&lt;h3 class=&quot;c-blog-header&quot;&gt;
+  Flow Content
+&lt;/h3&gt;
+  &lt;ul class=&quot;c-blog-list&quot;&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;a&lt;/code&gt;
+        Defines something as a hyperlink; an interactive element that will take the user to another page.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;abbr&lt;/code&gt;
+        Defines something as an abbreviation or an acronym
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;address&lt;/code&gt;
+        Contact info for the owner of a document
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;article&lt;/code&gt;
+        Defines an article in the document which could be a blog post, news story, comment, etc.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;aside&lt;/code&gt;
+        Defines content aside from main content. Aside content should still be related to the main content.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;audio&lt;/code&gt;
+        Defines audio content in the document. It accepts .mp3, .wav and .ogg
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;b&lt;/code&gt;
+        Styles text within the html to be bold.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;bdi&lt;/code&gt;
+        Stands for bidirectional isolation. This is to take specific text and change the directionality from the direction of
+        the text around it.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;bdo&lt;/code&gt;
+        Overrides the text direction of the entire document.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;blockquote&lt;/code&gt;
+        Will define content quoted from another source, and is usually indented.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;br&lt;/code&gt;
+        Creates a break in a line of text. It’s an empty tag, so there is no closing tag.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;button&lt;/code&gt;
+        Defines a clickable button. This can contain text or an image.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;canvas&lt;/code&gt;
+        Is used as a container to draw graphics via a script in javascript. This is just a container, the ability
+        to draw is in the javascript.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;cite&lt;/code&gt;
+        Defines the title of work in art, literature, film, theater, etc.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;code&lt;/code&gt;
+        Defines a piece of computer code.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;data&gt;&lt;/code&gt;
+        This allows content to be translated to a machine readable value and also provides for a browser rendering that
+        can be consumed by users.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;datalist&lt;/code&gt;
+        Provides a list of predefined for an &lt;code&gt;input&lt;/code&gt; element. This allows for autocomplete via a dropdown.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;del&lt;/code&gt;
+        Text that has been deleted from a document.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;details&lt;/code&gt;
+        Allows user to show/hide details about something. The default of &lt;code&gt;details&lt;/code&gt; should be hidden unless the
+        attribute is set to open.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;dfm&lt;/code&gt;
+        Defines an instance of a term and is usually the first time the term is used in the document.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;div&lt;/code&gt;
+        Creates a division within the html. Divs are used in css to style html or to do certain things in javascript.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;dl&lt;/code&gt;
+        Description list, is used with &lt;code&gt;dd&lt;/code&gt; and &lt;code&gt;dt&lt;/code&gt;.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;dt&lt;/code&gt;
+        Term/name description in a description list. Used with &lt;code&gt;dd&lt;/code&gt; and &lt;code&gt;dl&lt;/code&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;em&lt;/code&gt;
+        Emphasized text
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;embed&lt;/code&gt;
+        container for an external application or a plugin
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;fieldset&lt;/code&gt;
+        used to group information within a form and creates a box around it.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;figure&lt;/code&gt;
+        Specifies self contained content like an illustration, diagram, photos, etc.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;footer&lt;/code&gt;
+        Footer of a document, has information it’s containing content like author, related links, site map,
+        contact info, etc.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;form&lt;/code&gt;
+        creates an html form that the user can interact with and enter an input. &lt;code&gt;input&lt;/code&gt; &lt;code&gt;textarea&lt;/code&gt;
+        &lt;code&gt;button&lt;/code&gt; &lt;code&gt;select&lt;/code&gt; &lt;code&gt;option&lt;/code&gt; &lt;code&gt;optgroup&lt;/code&gt; &lt;code&gt;fieldset&lt;/code&gt;
+        &lt;code&gt;label&lt;/code&gt; can all be contained in a form. &lt;code&gt;h1&lt;/code&gt;  to &lt;code&gt;h6&lt;/code&gt; Define html headings.
+        H1 has the most importance, H6 has the least importance.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;header&lt;/code&gt;
+        Has introductory content and/or navigation. It can contain &lt;code&gt;h1&lt;/code&gt; to &lt;code&gt;h6&lt;/code&gt;, logo or authorship
+        info.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;hr&lt;/code&gt;
+        defines a thematic break in content and is often used to visually separate content
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;i&lt;/code&gt;
+        Identifies a shift in mood or tone within a set of text. Indicates a technical term, ship name, thought in a
+        foreign language, etc. This should be rarely used, other options are &lt;code&gt;em&lt;/code&gt; &lt;code&gt;strong&lt;/code&gt;
+        &lt;code&gt;mark&lt;/code&gt; &lt;code&gt;cite&lt;/code&gt; &lt;code&gt;dfn&lt;/code&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;iframe&lt;/code&gt;
+        defines an inline frame and embeds another document within the html.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;img&lt;/code&gt;
+        Defines an image within the document. Has 2 required attributes, src and alt.
+        &lt;code&gt;img&lt;/code&gt; holds a space for the image. The actual image is linked to the document within
+        &lt;code&gt;a&lt;/code&gt; tag.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;input&lt;/code&gt;
+        Used within the &lt;code&gt;form&lt;/code&gt; element, this allows user to input data into the form.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;ins&lt;/code&gt;
+        Defines text that has been inserted into a document.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;kpd&lt;/code&gt;
+        defines a keyboard input and is a phrase tag. Can be achieved with CSS.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;label&lt;/code&gt;
+        Defines a label for an input field
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;main&lt;/code&gt;
+        Specifies the main content of a document. There can only be one &lt;code&gt;main&lt;/code&gt; element per document.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;map&lt;/code&gt;
+        Creates an image map, which is an image with clickable areas. Contains multiple &lt;code&gt;area&lt;/code&gt; elements.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;mark&lt;/code&gt;
+        Will define a section of text you want to mark and highlights it.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;math&lt;/code&gt;
+        The top element in MathML, a mathematical markup language, used as an XML application.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;meter&lt;/code&gt;
+        Defines a scaled measurement like a gauge or fractional value. Examples are disk usage, query result, etc.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;nav&lt;/code&gt;
+        defines a set of navigation links.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;noscript&lt;/code&gt;
+        If there are disabled scripts or issues with browser support &lt;code&gt;noscript&lt;/code&gt; allows for alternate content.
+        It can be used in the &lt;code&gt;body&lt;/code&gt; and the &lt;code&gt;head&lt;/code&gt;. If in the &lt;code&gt;head&lt;/code&gt; elements are limited
+        to &lt;code&gt;link&lt;/code&gt; &lt;code&gt;style&lt;/code&gt; and &lt;code&gt;meta&lt;/code&gt;.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;object&lt;/code&gt;
+        Identifies embedded objects in the document such as audio, video, javascript, pdf, other web pages, etc.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;ol&lt;/code&gt;
+        specifies an ordered list and can be either numeric or alphabetical. Used with &lt;code&gt;li&lt;/code&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;optgroup&lt;/code&gt;
+        used to create groups of data in a dropdown list, each group with its own label.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;output&lt;/code&gt;
+        Shows the result of a calculation that is run by a script.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;p&lt;/code&gt;
+        Paragraph&lt;br&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;pre&lt;/code&gt;
+        Preformatted text that preserved line breaks and spaces within the html.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;progress&lt;/code&gt;
+        Shows the progress as a task
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;q&lt;/code&gt;
+        Short quotation
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;ruby&lt;/code&gt;
+        specifies a ruby annotation. It’s attached to the main text to indicate the pronunciation or meaning on the text.
+        Used with east asian typography.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;s&lt;/code&gt;
+        Indicates content is not longer accurate
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;samp&lt;/code&gt;
+        Defines sample output from computer program
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;script&lt;/code&gt;
+        Where scripts instructions are kept or link to external ones. Used to dynamically create block and/or inline content
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;section&lt;/code&gt;
+        defines sections of a document like chapters headers or footers.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;select&lt;/code&gt;
+        creates a drop down list. Used with &lt;code&gt;option&lt;/code&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;small&lt;/code&gt;
+        Defines smaller text or side comments
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;span&lt;/code&gt;
+        Used to ground inline elements in a document
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;strong&lt;/code&gt;
+        is a phrase tag that emphasizes important text
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;sub&lt;/code&gt;
+        Allows for subscript text which appears half a character below the baseline of text
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;sup&lt;/code&gt;
+        Allows for subscript text which appears half a character above the baseline of text
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;svg&lt;/code&gt;
+        container for svg graphics which has many ways of drawing shapes, lines and images
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;table&lt;/code&gt;
+        Creates an HTML table that contains &lt;code&gt;tr&lt;/code&gt; &lt;code&gt;th&lt;/code&gt; and &lt;code&gt;td&lt;/code&gt; and can also
+        be as complex to include &lt;caption&gt; &lt;col&gt; &lt;colgroup&gt; &lt;thread&gt; &lt;tfoot&gt; &lt;tbody&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;template&lt;/code&gt;
+        Allows content to be hidden from the user, and it won’t be rendered in the browser.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;textarea&lt;/code&gt;
+        creates a multiline input control and can hold an unlimited number of characters.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;ul&lt;/code&gt;
+        defines an unordered, bulleted list. Each list item is defined by &lt;code&gt;li&lt;/code&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;var&lt;/code&gt;
+        phrase tage used to define a variable.
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;video&lt;/code&gt;
+        defines a video like a movie clip or video streaming. Files supported are .mp4, .ogg, .webm
+    &lt;/li&gt;
+    &lt;li class=&quot;c-blog-list__item&quot;&gt;
+      &lt;code&gt;wbr&lt;/code&gt;
+        A position within text where the browser may optionally break a line, but not always at the location the element is in.
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
 
 &lt;h3&gt;Sectioning Content&lt;/h3&gt;
   &lt;code&gt;article&lt;/code&gt;
@@ -1546,8 +1914,8 @@
     &lt;br&gt;
 
 &lt;h3&gt;Embedded Content&lt;/h3&gt;
-  &lt;code&gt;audio&lt;/code&gt;
-    Defines audio content in the document. It accepts .mp3, .wav and .ogg&lt;br&gt;
+&lt;code&gt;audio&lt;/code&gt;
+  Defines audio content in the document. It accepts .mp3, .wav and .ogg&lt;br&gt;
   &lt;code&gt;canvas&lt;/code&gt;
     is used as a container to draw graphics via a script in javascript. This is just a container, the ability to draw is in the javascript.&lt;br&gt;
   &lt;code&gt;embed&lt;/code&gt;
@@ -1786,97 +2154,6 @@
         <category>blog</category>
         
         <category>post</category>
-        
-      </item>
-    
-      <item>
-        <title>Apprenticeship Goals</title>
-        <description>  &lt;p class=&quot;c-blog-content&quot;&gt;
-    This week I started my design apprenticeship at 8th Light. As I am at the beginning of my journey here, I have some thoughts
-    about how I want to improve during my apprenticeship.
-  &lt;/p&gt;
-&lt;h2 class=&quot;c-blog-header&quot;&gt;
-  Where I’ve been
-&lt;/h2&gt;
-  &lt;p class=&quot;c-blog-content&quot;&gt;
-    I’m a native Texan where I come from a traditional graphic design background. I received my undergrad there, and instantly
-    realized I couldn't stand the subjectivity of branding and art direction. My last year there I was fortunate enough to get
-    an introduction to UX by taking some usability and app design courses, which changed everything for me.
-  &lt;/p&gt;
-  &lt;p class=&quot;c-blog-content&quot;&gt;
-    Shortly after graduating I moved with my (now) wife up to Chicago, where I started working as a Product Designer at
-    Threadless. There I got to work in a more generalist environment, doing research, ux, visual design and some front end
-    on a platform called Artist Shops. I loved being able to have that focus on a single product and to have an impact on it
-    through every step of our design process.
-  &lt;/p&gt;
-  &lt;p class=&quot;c-blog-content&quot;&gt;
-    Since then, I’ve been a contract UX Designer at some larger fortune 500 corporations, first at United Airlines and most
-    recently at Blue Cross Blue Shield. The work that I’ve done in the past 2 years has given me valuable experience in
-    conducting ux research, evidence based design, interaction design, accessibility and visual design.
-  &lt;/p&gt;
-&lt;h2 class=&quot;c-blog-header&quot;&gt;
-  Where I want to go
-&lt;/h2&gt;
-  &lt;p class=&quot;c-blog-content&quot;&gt;
-    I’ve noticed a common frustration in my experience as a designer: bad code limits access between humans and quality user
-    experiences. This is common thing most professionals in the software world can understand. That sense of hopelessness you
-    get as a designer when after months of research, white boarding and prototyping gets de-scoped into something unrecognizable.
-    On the other hand,  developers often get handled a mock-up with zero documentation and functionality
-    that doesn’t exist within the current framework. I'm sure there are many reasons why this happens, but in the end, it's
-    hard handoffs between design and development that makes users hate bad software.
-  &lt;/p&gt;
-&lt;h4 class=&quot;c-blog-header&quot;&gt;
-  Front End Development
-&lt;/h4&gt;
-  &lt;p class=&quot;c-blog-content&quot;&gt;
-    My primary goal is to focus more on front end development, as I feel it is my weakest area. I'm competent in building a
-    pretty basic html/css responsive site. I would like to strengthen my skills and knowledge regarding implementation of my
-    code. I'm still very new to GitHub, and specifically would like to understand best practices about file structure,
-    branches and repositories. I’d also like to get experience workings in component libraries.
-  &lt;/p&gt;
-  &lt;p class=&quot;c-blog-content&quot;&gt;
-    On the design side, I'm pretty obsessed with pattern libraries, and have even built one myself, but would love to
-    understand the front end side of things as well. I've done extensive work on the design side of accessibility standards
-    but I would like to strengthen my development skills in that area as well.
-  &lt;/p&gt;
-&lt;h4 class=&quot;c-blog-header&quot;&gt;
-  Design
-&lt;/h4&gt;
-  &lt;p class=&quot;c-blog-content&quot;&gt;
-    In terms of UX and visual design, I'm experienced and confident in many subjects, but there are definitely areas to
-    improve. In the past I've planned, conducted and synthesized user research into UX strategy, but I've never had
-    the opportunity to sit down with stakeholders and define an mvp with feature prioritization. One of the things that
-    won me over during my interview was learning about how designers have impact on a product starting with the first
-    meeting with the client.
-  &lt;/p&gt;
-  &lt;p class=&quot;c-blog-content&quot;&gt;
-    In addition, I would like to strengthen my skills with content management and strategy. In my past role I did have
-    the opportunity to work with a content strategist. As designers, we tend to box the &quot;user experience&quot; to just the
-    interface on the screen and we often forget about the words that we use.
-  &lt;/p&gt;
-&lt;h2 class=&quot;c-blog-header&quot;&gt;
-  How I'm going to get there
-&lt;/h2&gt;
-  &lt;p class=&quot;c-blog-content&quot;&gt;
-    I think the biggest challenge for me is training my brain to think in a different way. Coming from a design background
-    where everything is done is a visual way.
-  &lt;/p&gt;
-  &lt;p class=&quot;c-blog-content&quot;&gt;
-    This week I began introducing myself to our blog framework which includes understanding the command line and working
-    with ruby. By forcing myself to change my visual right sided brain to think in a more analytical and linear way,
-    I'm making myself extremely uncomfortable, which I couldn't be happier about. Even though I'm putting myself in
-    unfamiliar territory, the people here at 8th Light have been amazing in helping me to work through my blockers
-    quickly and providing me with resources to grow as a professional.
-  &lt;/p&gt;
-</description>
-        <pubDate>Fri, 21 Sep 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/jekyll/update/2018/09/21/apprenticeship-goals.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/09/21/apprenticeship-goals.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
         
       </item>
     

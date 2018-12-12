@@ -408,9 +408,6 @@ template {
 [hidden] {
   display: none; }
 
-li {
-  font-family: "PT Serif"; }
-
 fieldset {
   border: 0;
   margin: 0;
@@ -686,9 +683,6 @@ code {
   color: #EA4F5E;
   font-family: "PT Mono", monospace;
   font-size: 1em; }
-
-ul {
-  font-family: "PT Serif"; }
 
 .o-main {
   margin: 0 auto;
