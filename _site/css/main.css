@@ -668,9 +668,10 @@ h5 {
       font-size: 1em; } }
 
 p {
-  color: #333333;
+  color: #000000;
   font-family: "Work Sans", sans-serif;
-  line-height: 1.75em; }
+  line-height: 1.75em;
+  padding-bottom: 1em; }
   @media screen and (min-width: 320px) {
     p {
       font-size: 1em; } }
